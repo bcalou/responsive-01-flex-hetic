@@ -1,0 +1,26 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "## Entraînement",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "all": "0.0.0",
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dorian-vidal/responsive-01-flex-hetic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dorian-vidal/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/dorian-vidal/responsive-01-flex-hetic#readme"
+}
