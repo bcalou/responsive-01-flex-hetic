@@ -1,0 +1,40 @@
+@import "./reset.scss";
+
+:root {
+  --color-primary: #9acd32;
+  --color-secondary: #fbe900;
+  --color-tertiary: #fb3200;
+}
+
+body {
+  background-color: var(--color-primary);
+  border: 10px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.id {
+  display: flex;
+  justify-content: space-between;
+  &__grade {
+  }
+  &__name {
+    font-weight: 700;
+  }
+}
+
+.img {
+  margin: 0% 5%;
+  border: 10px solid var(--color-secondary);
+}
+
+.caption {
+  background: rgb(251, 233, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 233, 0, 1) 30%,
+    rgb(44, 44, 44) 100%
+  );
+  margin: 0% 10%;
+}
