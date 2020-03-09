@@ -1,0 +1,8 @@
+.card {
+  background-color: rgb(123, 201, 5);
+
+  &__identity {
+    display: flex;
+    justify-content: space-between;
+  }
+}
