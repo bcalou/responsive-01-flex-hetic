@@ -1,0 +1,88 @@
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  //   background: linear-gradient( to right, yellow, #79751c);
+  //   padding: 5px;
+}
+
+.identity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.identity__name {
+  p {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.identity__life {
+  display: flex;
+  align-items: center;
+
+  p {
+    color: red;
+    font-size: 24px;
+  }
+}
+
+.image {
+  margin: 0 10px;
+  background-color: linear-gradient(to right, yellow, #79751c);
+}
+
+.characteristics {
+  background-color: linear-gradient(to right, yellow, #79751c);
+
+  p {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+.attack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  .attack__element {
+      display: flex;
+
+      img {
+      }
+  }
+
+  .attack__description {
+    flex-grow: 1;
+    margin: 0 30px;
+
+    p {
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    em {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .attack__puissance {
+    font-size: 24px;
+  }
+}

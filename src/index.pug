@@ -3,10 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.scss">
     <title>Document</title>
   </head>
   <body>
-    include includes/identity.pug
+    <div class="identity">
+      <div class="identity__name">
+        <p>Pokémon de base</p>
+        <h1>Bulbizarre</h1>
+      </div>
+      <div class="identity__life">
+        <p>40 PV</p>
+        <img src="/assets/img/leaf.png" />
+      </div>
+    </div>
 
     <div class="image">
       <img src="/assets/img/bulbizarre.jpg" />
@@ -23,9 +33,7 @@
       </div>
       <div class="attack__description">
         <p>
-          <em>Vampigraine</em> A moins que tous les dégâts infligés par cette
-          attaque ne soient prévenus, vous pouvez retirer 1 marquer de dégâts de
-          Bulbizarre
+          <em>Vampigraine</em> A moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marquer de dégâts de Bulbizarre.
         </p>
       </div>
       <div class="attack__puissance">
