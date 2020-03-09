@@ -1,0 +1,16 @@
+.attack {
+    display: flex;
+    .attack__type {
+        display: flex;
+        align-items: center;
+    }
+
+    .attack__infos {
+        display: flex;
+        flex-wrap: wrap;
+
+        .attack__infos--name {
+            font-weight:bold;
+        }
+    }
+}
