@@ -1,0 +1,15 @@
+{
+  "name": "tp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/index.pug"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4"
+  }
+}
