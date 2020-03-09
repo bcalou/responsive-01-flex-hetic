@@ -1,0 +1,41 @@
+@import "reset";
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  background-color: gold;
+}
+
+body {
+  background-color: rgb(132, 194, 41);
+  margin: 12px;
+}
+
+.identity {
+  &__evolution {
+    font-size: 10px;
+    display: flex;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+  &__name {
+    display: flex;
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  &__hp {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+  &__type {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
