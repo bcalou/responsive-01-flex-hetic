@@ -1,0 +1,16 @@
+@import "footer.scss";
+@import "head.scss";
+@import "main.scss";
+@import "reset.scss";
+:root {
+  --main-color: #9acd32;
+  --secondary-color: #fbe900;
+}
+
+body {
+  background-color: var(--main-color);
+  border: 4px solid var(--secondary-color);
+  // padding: 4px;
+  // padding-left: 4px;
+  // padding-right: 4px;
+}

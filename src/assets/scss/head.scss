@@ -1,0 +1,34 @@
+@import "mixins.scss";
+
+.identity {
+  @include flex__center;
+
+  &__grade {
+    font-size: 20px;
+  }
+  &__name {
+    font-size: 36px;
+  }
+
+  &__life {
+    font-size: 30px;
+  }
+  div:nth-child(1) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 5;
+  }
+  div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid red;
+    align-self: flex-end;
+    flex-grow: 1;
+  }
+  &__life {
+    color: red;
+  }
+}
