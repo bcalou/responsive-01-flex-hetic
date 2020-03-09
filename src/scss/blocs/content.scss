@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px 0;
+
+  &__description {
+    max-width: 60%;
+  }
+}
+
+strong {
+  font-weight: 600;
+  font-family: sans-serif;
+}

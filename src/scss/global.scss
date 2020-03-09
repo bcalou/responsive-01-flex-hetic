@@ -7,10 +7,14 @@ img {
 }
 
 body {
-  border: 10px solid #e2c424;
+  border: 12px solid;
+  border-image: linear-gradient(#c2a60a, #ddda0a) 15;
   padding: 12px;
   max-height: 100vh;
   background-color: #81a247;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -22,11 +26,16 @@ h1 {
 h2 {
   font-size: 20px;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 10px;
   font-weight: 600;
   font-family: sans-serif;
+}
+
+p {
+  font-size: 14px;
+  line-height: 16px;
 }
