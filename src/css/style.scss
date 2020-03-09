@@ -1,24 +1,53 @@
 @import "reset.scss";
 
+/* variables */
+$red: red;
+$gradient: linear-gradient(-90deg, #486921, #eefa04)10;
+
 body{
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   border: 15px solid ;
-  border-image: linear-gradient(-90deg, #486921, #eefa04)10;
+  border-image: $gradient;
   background-color: yellowgreen;
 }
 
 .identity{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  border: red 2px solid;
 }
 
+.identity__container--left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: blue 4px solid;
+}
+
+
+.identity__name{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 35px;
+}
+
+/*.identity__container--rigth{
+  display: flex;
+  flex-direction: row;
+  border: blue 2px solid;
+  justify-content: space-around;
+}*/
+
 .identity__hp{
-  color: red;
+  color: $red;
 }
 
 .identity__type{
-
+  
 }
 /*.identity__class .identity__name .identity__hp{
   display: flex;
@@ -32,7 +61,7 @@ body{
 
 .imageLegend__Bulbizare{
   border: 5px solid;
-  border-image: linear-gradient(-90deg, #486921, #eefa04)10;
+  border-image: $gradient;
   justify-content: center ;
 }
 
