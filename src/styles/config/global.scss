@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: $green;
+  border: 10px solid;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+}

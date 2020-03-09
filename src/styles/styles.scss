@@ -1,0 +1,13 @@
+// Reset.css
+@import "vendors/reset";
+
+// Configuration
+@import "config/colors";
+@import "config/global";
+
+// Blocs
+@import "blocs/id";
+@import "blocs/pokemon";
+@import "blocs/attacks";
+@import "blocs/stats";
+@import "blocs/details";
