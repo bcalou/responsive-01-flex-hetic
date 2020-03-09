@@ -1,0 +1,21 @@
+.attack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__type {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__damage {
+    font-size: 24px;
+  }
+
+  &__details {
+    flex: 1;
+    font-size: 18px;
+    em {
+      font-weight: 800;
+    }
+  }
+}

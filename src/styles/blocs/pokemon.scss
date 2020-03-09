@@ -4,5 +4,13 @@
   flex-direction: column;
   &__image {
     width: 90%;
+    border: 5px solid;
+    border-image-source: $gradient;
+    border-image-slice: 1;
+  }
+
+  &__details {
+    font-size: 14px;
+    // background-color: $gradient;
   }
 }
