@@ -1,4 +1,7 @@
 @import "reset.css";
+:root {
+  --font-sizesmall: 10px;
+}
 * {
   box-sizing: border-box;
 }
@@ -6,11 +9,101 @@ img {
   max-width: 100%;
 }
 body {
-  background-color: #9acd33;
-  border: 15px solid;
-  border-image: linear-gradient(gold, #7a751e) 10;
+  background-image: url(assets/img/greenclouds.jpg);
+  background-size: cover;
+  // background-color: #9acd33;
+  border: 12px solid;
+  border-image: linear-gradient(90deg, gold, #7a751e) 15;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  //   justify-content: space-between;
+  flex-direction: column;
+  padding-right: 6%;
+  padding-left: 6%;
+  padding-top: 5%;
 }
 .illustration__image {
-  border-image: linear-gradient(gold, #7a751e);
-  border: 10px solid;
+  border: solid 3px;
+  border-image: linear-gradient(90deg, gold, #7a751e) 15;
+  box-shadow: 5px 5px 5px black;
+}
+h1 {
+  font-weight: bold;
+  font-size: large;
+}
+.identity__hp {
+  color: red;
+}
+.character {
+  border-top: solid black 1px;
+  display: flex;
+  justify-content: space-around;
+  font-size: small;
+}
+.character__resist {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 15%;
+  margin-bottom: 10%;
+  margin-top: 3%;
+}
+.attack {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
+}
+.identity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.identity__general {
+  display: flex;
+  flex-direction: column;
+}
+.illustration {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.illustration__text {
+  background: radial-gradient(gold, #7a751e);
+  margin-top: 2%;
+}
+.attack__type {
+  display: flex;
+  margin-right: 10%;
+  width: 100%;
+  height: 100%;
+}
+.character__description {
+  border: solid 2px;
+  border-image: linear-gradient(90deg, gold, #7a751e) 15;
+  font-size: small;
+  justify-content: center;
+  display: flex;
+}
+.character__description--container {
+  margin-top: -7%;
+}
+.attack__damage {
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 10%;
+  margin-right: 0;
+}
+.attack__description {
+  display: block;
+}
+.attack__text--misc {
+  font-size: 14px;
+}
+.identity__grade {
+  font-size: small;
 }
