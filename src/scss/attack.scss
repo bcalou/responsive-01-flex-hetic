@@ -20,7 +20,8 @@
             font-weight: bold;
         }
         .attack__infos--description {
-            font-size: 12px;;
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 
@@ -29,7 +30,7 @@
         font-size: 21px;
         display: flex;
         align-self: center;
-        margin-left: 10px;
+        margin-left: 30px;
         margin-right: 10px;
     }
 }
