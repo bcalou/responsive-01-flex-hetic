@@ -1,0 +1,24 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "## Entraînement",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hgo0123/responsive-01-flex-hetic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hgo0123/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/Hgo0123/responsive-01-flex-hetic#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
