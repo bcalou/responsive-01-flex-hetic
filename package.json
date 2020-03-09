@@ -4,7 +4,7 @@
   "description": "## Entraînement",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel src/index.pug"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Axel28/responsive-01-flex-hetic/issues"
   },
-  "homepage": "https://github.com/Axel28/responsive-01-flex-hetic#readme"
+  "homepage": "https://github.com/Axel28/responsive-01-flex-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.26.2"
+  }
 }
