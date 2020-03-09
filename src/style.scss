@@ -1,0 +1,36 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  border: 12px solid;
+  border-image: linear-gradient(90deg, gold, #7a751e) 20;
+}
+
+.identity__global {
+  display: flex;
+  justify-content: space-between;
+  .identity__global--space p {
+    margin-bottom: 3px;
+  }
+}
+.identity__life {
+  margin-top: 8px;
+}
+
+.identity__base {
+  font-size: 10px;
+}
+
+.identity__name {
+  font-size: 18px;
+  font-weight: bold;
+}
