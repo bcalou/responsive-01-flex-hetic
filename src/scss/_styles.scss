@@ -1,3 +1,10 @@
+@import "layouts/_reset.scss";
+@import "layouts/_identity.scss";
+@import "layouts/_appearance.scss";
+@import "layouts/_skill.scss";
+@import "layouts/_types.scss";
+@import "layouts/_pokedex.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -6,9 +13,13 @@ img {
   max-width: 100%;
 }
 
-@import 'layouts/_reset.scss';
-@import 'layouts/_identity.scss';
-@import 'layouts/_appearance.scss';
-@import 'layouts/_skill.scss';
-@import 'layouts/_types.scss';
-@import 'layouts/_pokedex.scss';
+html {
+  background: linear-gradient(35.11deg, #fbea4f -23.25%, #7a752e 133.76%);
+  padding: 10px;
+  height: 100vh;
+}
+
+body {
+  background: #a5ca50;
+  padding: 5px 10px;
+}

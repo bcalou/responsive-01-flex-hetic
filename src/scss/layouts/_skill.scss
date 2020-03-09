@@ -1,0 +1,26 @@
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 22% 0 22% 0;
+
+  &__attack {
+    max-width: 65%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+
+
+    span {
+      font-weight: 900;
+      font-size: 15px;
+    }
+  }
+
+  &__damages {
+    font-size: 25px;
+  }
+
+
+}
