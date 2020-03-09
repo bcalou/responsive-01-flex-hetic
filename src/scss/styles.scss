@@ -1,1 +1,21 @@
 @import 'reset.scss';
+
+//parts of card
+@import 'identity.scss';
+//@import 'pokemon.scss';
+//@import 'attack.scss';
+//@import 'skill.scss';
+//@import 'descriptionLife.scss';
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #9acd32;
+  }
+  
+  img {
+    max-width: 100%;
+  }
