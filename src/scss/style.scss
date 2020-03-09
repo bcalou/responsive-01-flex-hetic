@@ -1,6 +1,38 @@
 @import "../scss/reset.scss";
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* IDENTITY */
+
 .identity {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  font-family: sans-serif;
+
+  div:nth-child(2) {
+    display: flex;
+  }
+}
+
+.identity__evolution {
+  font-size: 8px;
+}
+
+.identity__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.identity__life {
+  font-size: 18px;
+  color: orangered;
 }
