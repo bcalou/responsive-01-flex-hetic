@@ -9,14 +9,15 @@ img {
 }
 
 body{
-  background-color: green;
-
+  background-color:#90EE90;
 }
+
 /* Header */
 
 .header{
   display:flex;
   justify-content: space-between;
+  height: 50px;
   .header__pokemon{
     display:flex;
   flex-direction: column;
@@ -59,9 +60,11 @@ body{
   }
   .attaque__leaf{
     justify-self: center;
+   padding-top: 20px;
   }
   .attaque__points{
-    font-size: 18px;
+    font-size: 24px;
+    padding-top: 18px;
   }
 }
 
