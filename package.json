@@ -1,0 +1,23 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "Pour se familiariser avec les différentes propriétés :\r [Flexbox Froggy](https://flexboxfroggy.com/#fr)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanoker/responsive-01-flex-hetic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanoker/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/nanoker/responsive-01-flex-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
