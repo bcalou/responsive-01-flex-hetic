@@ -1,0 +1,9 @@
+.pokemon {
+  display: flex;
+  flex-direction: column;
+
+  &__details {
+    font-size: 13px;
+    align-items: center;
+  }
+}
