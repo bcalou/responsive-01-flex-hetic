@@ -1,47 +1,19 @@
-<!DOCTYPE html>
+
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    link(rel="stylesheet", href="styles/styles.scss")
   </head>
   <body>
-
+include includes/id.pug
+include includes/pokemon.pug
+include includes/attack.pug
+include includes/stats.pug
 
     
-    <section class="attack">
-      <div class="attack_type">
-        <img src="assets/img/leaf.png" alt="type leaf" class="attack_img" />
-        <img src="assets/img/leaf.png" alt="type leaf" class="attack_img" />
-      </div>
-      <p class="attack__details">
-        <em>Vampigraine</em> A moins que tous les dégâts infligés par cette
-        attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégâts de
-        Bulbizarre.
-      </p>
-      <p class="skills__damage">20</p>
-    </section>
 
-    <footer>
-      <section class="stats">
-        <article class="stats__weakness">
-          <p class="stats__name">Faiblesse</p>
-          <img src="assets/img/fire.png" alt="fire" class="stats__type" />
-        </article>
-        <article class="stats__weakness">
-          <p class="stats__name">Résistance</p>
-        </article>
-        <article class="stats__weakness">
-          <p class="stats__name">Coût de retraite</p>
-          <img src="assets/img/normal.png" alt="fire" class="stats__type" />
-        </article>
-        <article class="stats__details">
-          <p class="details__text">
-            Il y une étrange graine plantée sur son dos. Elle grandit avec lui
-            depuis la naissance. NIV 13 No.1
-          </p>
-        </article>
-      </section>
-    </footer>
+
   </body>
 </html>

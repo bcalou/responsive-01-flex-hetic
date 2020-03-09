@@ -1,0 +1,29 @@
+.id {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__pokemon {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__rareness {
+    font-size: 12px;
+  }
+
+  &__name {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  &__pv {
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    color: red;
+    font-size: 24px;
+  }
+}

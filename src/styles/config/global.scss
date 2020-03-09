@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  color: #1d1d1d;
+  font-family: sans-serif;
+  background-color: #9acd32;
+  border: 15px solid;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+}
