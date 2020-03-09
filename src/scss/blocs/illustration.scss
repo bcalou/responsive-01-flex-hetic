@@ -1,0 +1,15 @@
+.illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__pokemon {
+    border: 5px solid #e2c424;
+  }
+  &__description {
+    margin-top: 2px;
+    background-color: #e2c424;
+    padding: 0 10px;
+  }
+}

@@ -1,8 +1,6 @@
 .id {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
-  max-height: 5%;
 
   &__titles {
     display: flex;
@@ -10,5 +8,6 @@
   }
   &__description {
     display: flex;
+    align-items: center;
   }
 }

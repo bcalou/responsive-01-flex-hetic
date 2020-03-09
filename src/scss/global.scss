@@ -8,7 +8,25 @@ img {
 
 body {
   border: 10px solid #e2c424;
-  padding: 15px;
+  padding: 12px;
   max-height: 100vh;
   background-color: #81a247;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: sans-serif;
 }
