@@ -13,6 +13,9 @@ body {
   border: 10px solid;
   border-image-source: linear-gradient(45deg, #e4c829, #c0ab40);
   border-image-slice: 1;
+  background-color: #9acd33;
+  display: flex;
+  flex-direction: column;
 }
 
 .identity {
@@ -59,4 +62,55 @@ body {
     font-style: italic;
     letter-spacing: 1px;
   }
+}
+
+.powers {
+  margin: 6px;
+  .power {
+    display: flex;
+    align-items: center;
+
+    &__type {
+      margin: 2px;
+    }
+
+    &__description {
+      margin: 2px;
+      font-size: 14px;
+
+      &--title {
+        font-weight: bold;
+      }
+    }
+
+    &__intensity {
+      font-size: 30px;
+      margin: 8px;
+    }
+  }
+}
+
+.hability {
+  display: flex;
+  justify-content: space-between;
+
+  &__type {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: bold;
+
+    &--intensity {
+      align-self: center;
+    }
+  }
+}
+
+.description {
+  font-size: 10px;
+  font-weight: bolder;
+  font-style: italic;
+  border: 3px solid #c0ab40;
+  margin: 3px;
+  padding: 3px;
 }
