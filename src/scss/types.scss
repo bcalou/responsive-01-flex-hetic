@@ -1,9 +1,12 @@
 .types {
   display: flex;
-  justify-content: space-evenly;
-  border-top: 2px solid black;
+  justify-content: space-around;
+  border-top: 1.5px solid black;
+  margin-top: 16%;
 
   &__type {
     text-align: center;
+    font-weight: bold;
+    font-size: 12px;
   }
 }

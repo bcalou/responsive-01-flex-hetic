@@ -1,6 +1,7 @@
 .skill {
   display: flex;
-  margin: 8%;
+  margin-top: 3%;
+  padding: 5%;
   align-items: center;
   justify-content: space-between;
 
@@ -12,5 +13,15 @@
 
   &__description {
     text-align: left;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+  h2 {
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 18px;
   }
 }

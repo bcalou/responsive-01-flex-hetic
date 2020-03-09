@@ -2,10 +2,22 @@
   box-sizing: border-box;
 }
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 img {
   max-width: 100%;
 }
 
+body {
+  background-color: rgb(93, 167, 10);
+}
+
+@import "reset.scss";
+@import "container.scss";
 @import "identity.scss";
 @import "appearence.scss";
 @import "skill.scss";

@@ -2,4 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5px;
+
+  &__img {
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #ccc901 0%, #635400 100%);
+    border-image-slice: 1;
+  }
+
+  &__legend {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ccc901 0%, #635400 100%);
+  }
 }

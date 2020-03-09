@@ -1,4 +1,11 @@
 .pokedex {
+  margin-top: 2%;
   text-align: justify;
-  border: 2px solid goldenrod;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ccc901 0%, #635400 100%);
+  border-image-slice: 1;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bolder;
 }
