@@ -1,0 +1,14 @@
+.identity {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 6px 16px 0;
+
+  .identity__evolution {
+    font-size: 8px;
+  }
+  .identity__name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

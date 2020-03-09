@@ -1,0 +1,7 @@
+.image {
+  margin: 2px 16px;
+  .image__content {
+    border: 5px solid;
+    border-image: var(--gradient) 5;
+  }
+}
