@@ -12,5 +12,16 @@
         .attack__infos--name {
             font-weight:bold;
         }
+        .attack__infos--description {
+            font-size: 12px;;
+        }
+    }
+
+    .attack__damage {
+        font-weight: bold;
+        font-size: 21px;
+        display: flex;
+        align-self: center;
+        margin-left: 10px;;
     }
 }
