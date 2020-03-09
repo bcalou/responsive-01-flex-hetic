@@ -4,15 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.scss">
   <title>Bubizarre</title>
 </head>
 
 <body>
   <header class="header">
-    <p>Pokemon de base</p>
-    <h1>Bulbizarre</h1>
-    <p>40 PV <img src="assets/img/leaf.png" alt=""></p>
-
+    <div class="header__pokemon">
+      <p>Pokemon de base</p>
+      <p>Bulbizarre</p>
+    </div>
+    <div class="header__div">
+      <p>40 PV <img src="assets/img/leaf.png" alt=""></p>
+    </div>
   </header>
 
   <article class="description">
@@ -21,21 +25,27 @@
   </article>
 
   <article class="attaque">
-    <img src="assets/img/leaf.png" alt="">
-    <img src="assets/img/leaf.png" alt="">
-    <p>Vampigraine à moins que tous les dégats infligés par cette attaque ne soient prévenus, vous pouvez retirer l
+    <!-- <div class="attaque__leaf"> -->
+    <img src="assets/img/leaf.png" alt="" class="attaque__leaf">
+    <img src="assets/img/leaf.png" alt="" class="attaque__leaf">
+    <!-- </div> -->
+    <p class="attaque__text"><strong>Vampigraine</strong> à moins que tous les dégats infligés par cette attaque ne soient prévenus, vous pouvez retirer l
       marqueur de dégats de Bulbizarre</p>
-    <p>20</p>
+    <p class="attaque__points">20</p>
   </article>
 
 
   <article class="forces">
     <!-- Ligne -->
-    <p>Faiblesse</p>
-    <img src="assets/img/fire.png" alt="">
+    <div class="forces__faiblesse">
+      <p>Faiblesse</p>
+      <img src="assets/img/fire.png" alt="">
+    </div>
     <p>Résistance</p>
-    <p>Faiblesse</p>
-    <img src="assets/img/fire.png" alt="">
+    <div class="forces__coût">
+      <p>Coût de retraite</p>
+      <img src="assets/img/fire.png" alt="">
+    </div>
   </article>
 
   <footer class="footer">

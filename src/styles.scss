@@ -1,0 +1,87 @@
+// @import 'src/reset.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body{
+  background-color: green;
+
+}
+/* Header */
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  .header__pokemon{
+    display:flex;
+  flex-direction: column;
+  background-color: red;
+  }
+  .header__div{
+    display:flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    color: red;
+  }
+}
+
+// Description
+
+.description{
+  margin-top: 2px;
+  img{
+    border: 2px solid yellow;
+  }
+  .description__text{
+    background-color: yellow;
+    padding: 4px;
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+//Attaque
+
+.attaque{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  .attaque__text{
+    width: 70%;
+  }
+  .attaque__leaf{
+    justify-self: center;
+  }
+  .attaque__points{
+    font-size: 18px;
+  }
+}
+
+//Forces
+.forces{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: bold;
+  text-align: center;
+  .forces__faiblesse, .forces__coût{
+    text-align: center;
+  }
+}
+
+// Footer
+
+.footer{
+  border: 1px solid yellow;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
