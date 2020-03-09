@@ -1,0 +1,23 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "Pour se familiariser avec les différentes propriétés :\r [Flexbox Froggy](https://flexboxfroggy.com/#fr)",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZooDiacc/responsive-01-flex-hetic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZooDiacc/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/ZooDiacc/responsive-01-flex-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4"
+  }
+}
