@@ -1,0 +1,32 @@
+.pokemon {
+  display: flex;
+  justify-content: space-between;
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__rarity {
+    font-size: 10px;
+  }
+
+  &__name {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  &__description {
+    display: flex;
+  }
+
+  &__hp {
+    display: flex;
+    color: red;
+    font-size: 20px;
+    align-items: baseline;
+    margin: auto;
+    justify-content: baseline;
+    padding: 5px;
+  }
+}

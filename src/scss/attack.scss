@@ -1,0 +1,20 @@
+.attack {
+  display: flex;
+  padding: 25px;
+  margin: auto;
+
+  &__type,
+  &__effect {
+    display: inline-flex;
+    margin: auto;
+    flex-shrink: 0;
+  }
+
+  &__description {
+    font-size: 15px;
+  }
+
+  &__effect {
+    font-size: 25px;
+  }
+}
