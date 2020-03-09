@@ -6,4 +6,13 @@ img {
   max-width: 100%;
 }
 
+body {
+  background-color: #99cc00;
+}
+
 @import "reset.scss";
+@import "../src/assets/styles/identity.scss";
+@import "../src/assets/styles/appearances.scss";
+@import "../src/assets/styles/skill.scss";
+@import "../src/assets/styles/capacity.scss";
+@import "../src/assets/styles/pokedex.scss";
