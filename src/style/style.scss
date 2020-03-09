@@ -20,6 +20,7 @@ html {
   &__life {
     color: red;
     font-weight: bold;
+    font-size: 20px;
   }
 }
 
@@ -30,7 +31,7 @@ html {
   }
   figcaption {
     font-size: 14px;
-    background-color: gold;
+    background: linear-gradient(0.25turn, yellow, goldenrod);
     text-align: center;
     font-style: italic;
   }
@@ -38,10 +39,10 @@ html {
 
 .bulbizarre {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 60px;
+  margin: 50px 5px 60px 5px;
   span {
     font-weight: bold;
   }
@@ -55,6 +56,7 @@ html {
     flex: 1;
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
   }
 }
 hr {
