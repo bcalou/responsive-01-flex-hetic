@@ -1,0 +1,23 @@
+body {
+	background-color: rgb(123, 201, 5);
+}
+.identity__type {
+	border: 5px solid
+		linear-gradient(
+			90deg,
+			rgba(2, 0, 36, 1) 0%,
+			rgba(255, 255, 0, 1) 0%,
+			rgba(99, 94, 29, 1) 100%
+		);
+}
+.card__skills {
+	display: flex;
+	justify-content: space-around;
+	margin: 10%;
+	&:nth-child(2) {
+	}
+}
+.card__pokedex {
+	display: flex;
+	justify-content: space-between;
+}
