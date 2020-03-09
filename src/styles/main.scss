@@ -8,7 +8,13 @@
   --margin-horiz-m: 10%;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
   background-color: var(--color-primary);
   border: 10px solid var(--color-secondary);
   display: flex;
@@ -17,29 +23,38 @@ body {
 }
 
 .id {
-  margin: var(--margin-horiz-s);
+  margin: 0% var(--margin-horiz-s);
+  margin-top: 1%;
   display: flex;
   justify-content: space-between;
+
+  & div:first-child {
+  }
+
   & div:last-child {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-items: flex-end;
   }
   &__grade {
+    font-size: 12px;
   }
   &__name {
     font-weight: 700;
+    font-size: 30px;
   }
   &__life {
     color: var(--color-tertiary);
+    font-size: 26px;
   }
-  &__life {
-    color: var(--color-tertiary);
+  &__type {
+    padding-bottom: 3%;
   }
 }
 
 .img {
-  margin: var(--margin-horiz-s);
+  margin: 0.5% var(--margin-horiz-s);
   border: 10px solid var(--color-secondary);
 }
 
@@ -50,7 +65,8 @@ body {
     rgba(251, 233, 0, 1) 30%,
     rgb(44, 44, 44) 100%
   );
-  margin: var(--margin-horiz-m);
+  margin: 0 var(--margin-horiz-m);
+  padding: 5px 15px;
 }
 
 .spell {
@@ -61,7 +77,7 @@ body {
   flex-grow: 3;
 
   em {
-    font-weight: 900;
+    font-weight: 700;
   }
 
   &__dammage {
@@ -78,9 +94,11 @@ body {
 }
 
 .stats {
-  margin: var(--margin-horiz-s);
+  margin: 0 var(--margin-horiz-s);
   display: flex;
   justify-content: space-around;
+  font-weight: 700;
+  border-top: solid 3px black;
 
   div {
     display: flex;
@@ -91,7 +109,7 @@ body {
 }
 
 .details {
-  margin: var(--margin-horiz-s);
+  margin: 2% var(--margin-horiz-s);
   border: 5px solid (var(--color-secondary));
   font-style: italic;
 }
