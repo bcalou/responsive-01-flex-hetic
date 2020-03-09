@@ -1,5 +1,11 @@
 @import "reset.scss";
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 //GENERAL
 
 * {
@@ -11,11 +17,15 @@ img {
 }
 
 .card {
-  background-color: rgb(82, 160, 58);
+  background-image: url("/assets/img/fond.png");
   border: solid 12px;
   border-image-source: linear-gradient(90deg, yellow, rgb(102, 87, 2));
   border-image-slice: 1;
   padding: 10px;
+
+  @media (min-aspect-ratio: 1/1) {
+    display: none;
+  }
 }
 
 //HEADER
@@ -51,6 +61,7 @@ img {
   border: solid 4px;
   border-image-source: linear-gradient(90deg, yellow, rgb(102, 87, 2));
   border-image-slice: 1;
+  box-shadow: 5px 2px 2px rgba(78, 75, 75, 10);
 }
 
 .pokeHero__stats {
