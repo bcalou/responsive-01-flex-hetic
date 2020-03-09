@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9acd32;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.identity__title__hp {
+  display: flex;
+  justify-content: space-between;
+}
