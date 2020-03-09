@@ -1,16 +1,22 @@
 .attack {
     display: flex;
-    .attack__type {
+    .attack__type1, .attack__type2 {
         display: flex;
-        align-items: center;
+        align-self: center;
     }
-
+    .attack__type1 {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .attack__type2 {
+        margin-right: 10px;
+    }
     .attack__infos {
         display: flex;
         flex-wrap: wrap;
 
         .attack__infos--name {
-            font-weight:bold;
+            font-weight: bold;
         }
         .attack__infos--description {
             font-size: 12px;;
@@ -22,6 +28,7 @@
         font-size: 21px;
         display: flex;
         align-self: center;
-        margin-left: 10px;;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
