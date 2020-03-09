@@ -4,8 +4,9 @@
   "description": "## Entraînement",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
+    "serve": "parcel src/index.pug"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/Aymeric-Gillet/responsive-01-flex-hetic#readme",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4"
   }
 }
