@@ -1,0 +1,23 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "Bulbizarre",
+  "main": "\u001b[D\u001bhtml",
+  "scripts": {
+    "serve": "parcel src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinHuber/responsive-01-flex-hetic.git"
+  },
+  "author": "Quentin Huber feat Bcalou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinHuber/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/QuentinHuber/responsive-01-flex-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4"
+  }
+}
