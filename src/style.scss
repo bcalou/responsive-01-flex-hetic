@@ -1,0 +1,16 @@
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color: #9acd33;
+  border: 15px solid;
+  border-image: linear-gradient(gold, #7a751e) 10;
+}
+.illustration__image {
+  border-image: linear-gradient(gold, #7a751e);
+  border: 10px solid;
+}
