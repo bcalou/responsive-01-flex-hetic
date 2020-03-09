@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
     link(rel="stylesheet", href="../style.scss")
+    link(rel="stylesheet", href="../reset.scss")
   </head>
   <body>
     include includes/header.pug
@@ -20,7 +21,7 @@
           </p>
         </div>
         <hr />
-        <div>
+        <div class="card__info">
           <div class="card__weak">
             <p>Faiblesse</p>
             <img src="/assets/img/fire.png" alt="fire" />
@@ -34,9 +35,7 @@
           </div>
         </div>
         <div class="card__more">
-          <p>
-            Il a une étrange graine plantée sur son dos. Elle grandit avec lui
-            depuis la anissance. NIV.13 No.1
+          <p> Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la anissance. NIV.13 No.1
           </p>
         </div>
       </div>

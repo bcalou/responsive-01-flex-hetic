@@ -4,6 +4,7 @@
 }
 html {
   background-color: yellow;
+  margin: 0;
 }
 body {
   background-color: green;
@@ -13,9 +14,24 @@ img {
 }
 .identity {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.identity__grade {
+  font-size: 12px;
 }
 .identity__life {
   color: red;
-  font-size: 30px;
+  font-size: 20px;
+}
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.card__more {
+  padding: 10px;
+  border: solid 3px yellow;
+  p {
+    font-size: 13px;
+  }
 }
