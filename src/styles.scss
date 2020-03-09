@@ -10,6 +10,10 @@ img {
 
 body{
   background-color:#90EE90;
+  border: 8px solid yellow;
+  margin:0px;
+  padding: 8px;
+
 }
 
 /* Header */
@@ -17,17 +21,22 @@ body{
 .header{
   display:flex;
   justify-content: space-between;
-  height: 50px;
+  padding: 0px;
   .header__pokemon{
     display:flex;
   flex-direction: column;
   background-color: red;
+  font-size: 10px;
+  }
+  .header__pokemonName{
+    font-size: 18px;
   }
   .header__div{
     display:flex;
     flex-direction: column;
     background-color: rebeccapurple;
     color: red;
+    font-weight: lighter;
   }
 }
 
