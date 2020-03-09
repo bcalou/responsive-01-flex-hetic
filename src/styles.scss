@@ -112,26 +112,26 @@ img {
   flex-direction: column;
 }
 
-.pokeAffinities {
+.pokeAffinity {
   display: flex;
   justify-content: space-between;
   font-weight: bolder;
   font-size: 14px;
 }
 
-.pokeAffinities__weakness {
+.pokeAffinity__weakness {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.pokeAffinities__strength {
+.pokeAffinity__strength {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.pokeAffinities__retreat {
+.pokeAffinity__retreat {
   display: flex;
   flex-direction: column;
   align-items: center;
