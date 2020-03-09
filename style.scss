@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-size: 13px;
+}
+html {
+  background-color: yellow;
+}
+body {
+  background-color: green;
+}
+img {
+  max-width: 100%;
+}
+.identity {
+  display: flex;
+  justify-content: space-around;
+}
+.identity__life {
+  color: red;
+  font-size: 30px;
+}
