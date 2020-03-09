@@ -1,10 +1,18 @@
-@import 'reset.css';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'attack.scss';
-@import 'image.scss';
-@import 'stat.scss';
-@import 'characteristics.scss';
+@mixin landscape {
+  @media (min-width: 320px) {
+    body {
+      display: flex;
+    }
+  }
+}
+
+@import "reset.css";
+@import "header.scss";
+@import "footer.scss";
+@import "attack.scss";
+@import "image.scss";
+@import "stat.scss";
+@import "characteristics.scss";
 
 :root {
   --gradient: linear-gradient(
