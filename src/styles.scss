@@ -1,0 +1,137 @@
+@import "reset.scss";
+
+//GENERAL
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: rgb(82, 160, 58);
+  border: solid 12px;
+  border-image-source: linear-gradient(90deg, yellow, rgb(102, 87, 2));
+  border-image-slice: 1;
+  padding: 10px;
+}
+
+//HEADER
+
+.pokeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 10px;
+}
+
+.pokeHeader__name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.pokeHeader__rarity {
+  font-size: 12px;
+}
+
+.pokeHeader__hp {
+  font-size: 22px;
+  color: red;
+}
+
+// HERO
+
+.pokeHero {
+  padding: 0px 10px;
+}
+
+.pokeHero__image {
+  border: solid 4px;
+  border-image-source: linear-gradient(90deg, yellow, rgb(102, 87, 2));
+  border-image-slice: 1;
+}
+
+.pokeHero__stats {
+  font-size: 12px;
+  text-align: center;
+  background: linear-gradient(90deg, yellow, rgb(102, 87, 2));
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+// SPELL
+
+.pokeSpell {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pokeSpell__description {
+  padding-left: 5px;
+}
+.first-word {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.pokeSpell__damage {
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+// HR
+
+.hrFooter {
+  height: 0.1px;
+  border: 0.5px solid black;
+  color: black;
+}
+
+// FOOTER
+
+.pokeFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokeAffinities {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.pokeAffinities__weakness {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokeAffinities__strength {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokeAffinities__retreat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokeFooter__info {
+  font-size: 12px;
+  border: solid 1px;
+  border-image-source: linear-gradient(90deg, yellow, rgb(102, 87, 2));
+  border-image-slice: 1;
+  margin: 5px 0px;
+  padding: 5px;
+  font-style: italic;
+}
