@@ -1,0 +1,71 @@
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  background-color: goldenrod;
+}
+
+body {
+  background-color: #8bce34;
+  margin: 0.6rem;
+  padding: 0.5rem;
+}
+
+.identity {
+  &__evolution {
+    font-size: 12px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__nameLifeType {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__life {
+    color: red;
+  }
+}
+
+.appearance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__illustration {
+    border: solid 0.3rem goldenrod;
+  }
+
+  &__charateristics {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: goldenrod;
+    padding: 1px 10px 1px 10px;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
