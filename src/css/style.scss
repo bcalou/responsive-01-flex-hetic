@@ -1,10 +1,42 @@
+@import "reset.scss";
 
 body{
-  border: 10px solid ;
+  display: flex;
+  flex-direction: column;
+  border: 15px solid ;
   border-image: linear-gradient(-90deg, #486921, #eefa04)10;
   background-color: yellowgreen;
 }
 
-.imageLegend__Bulbizare{
-  border-image: linear-gradient(-90deg, #486921, #eefa04)10;
+.identity{
+  display: flex;
+  justify-content: space-around;
 }
+
+.identity__hp{
+  color: red;
+}
+
+.identity__type{
+
+}
+/*.identity__class .identity__name .identity__hp{
+  display: flex;
+  justify-content: space-around;
+}*/
+
+.imageLegend{
+  display: flex-wrap;
+  justify-content: center;
+}
+
+.imageLegend__Bulbizare{
+  border: 5px solid;
+  border-image: linear-gradient(-90deg, #486921, #eefa04)10;
+  justify-content: center ;
+}
+
+.imageLegend__description{
+ 
+}
+
