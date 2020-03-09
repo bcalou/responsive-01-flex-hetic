@@ -1,0 +1,23 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "## Entraînement",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aymeric-Gillet/responsive-01-flex-hetic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aymeric-Gillet/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/Aymeric-Gillet/responsive-01-flex-hetic#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
