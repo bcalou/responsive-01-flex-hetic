@@ -1,0 +1,90 @@
+@import "reset";
+
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+.carte{
+    padding: 20px;
+  background-color: #97cd2a;
+  border: solid 13px yellow;
+  .carte__identity{
+      font-size: 12px;
+  }
+  .identity__name{
+      font-size: 22px;
+      font-weight: bold;
+  }
+  .identity__info{
+      color: red;
+  }
+}
+
+.identity__name{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.carte__apparence{
+
+    .apparence__image{
+        object-fit: cover;
+        border: solid 6px yellow;
+     }
+     .apparence__description{
+         display: flex;
+         background: rgb(2, 0, 36);
+         background: linear-gradient(
+           90deg,
+           rgba(2, 0, 36, 1) 0%,
+           rgba(255, 255, 0, 1) 0%,
+           rgba(99, 94, 29, 1) 100%
+         );
+        font-size: 12px;
+        justify-content: center;
+        margin:0 8%
+       }
+}
+
+.carte__information{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .information__degats{
+        font-size: 25px;
+    }
+}
+strong {
+    font-weight: bold;
+}
+.carte__footer {
+    padding-top: 60px;
+    .footer__title {
+    border-top: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: space-around;
+    }
+
+    .footer__element {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .footer__texte {
+        display: flex;
+        border: solid 2px yellow;
+        font-size: 10px;
+    }
+}
