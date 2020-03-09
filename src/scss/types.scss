@@ -1,0 +1,9 @@
+.types {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 2px solid black;
+
+  &__type {
+    text-align: center;
+  }
+}

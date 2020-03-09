@@ -1,0 +1,8 @@
+.identity {
+  display: flex;
+  justify-content: space-between;
+
+  &__health {
+    align-self: flex-end;
+  }
+}
