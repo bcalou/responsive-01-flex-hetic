@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+body {
+  border: 15px solid yellow;
+  padding: 8px;
+  background-color: yellowgreen;
+  .identity__grade {
+    font-size: 10px;
+  }
+  .identity__option {
+    display: flex;
+    .identity__name {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .identity__life {
+      color: red;
+      font-weight: 300;
+    }
+  }
+}

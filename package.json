@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/yo-gif12/responsive-01-flex-hetic#readme",
   "devDependencies": {
-    "parcel": "^1.12.4"
+    "parcel": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.26.2"
   }
 }
