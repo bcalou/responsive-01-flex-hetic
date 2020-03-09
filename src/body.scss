@@ -33,11 +33,8 @@ body {
       }
     }
     .description__image {
-      border: 5px solid transparent;
-      //background: linear-gradient(gold, rgb(65, 104, 1));
-
+      border: 5px solid gold;
       margin-top: 5px;
-      
     }
     .description__text {
       font-size: 12px;
@@ -60,18 +57,25 @@ body {
       }
       .attack__points {
         align-self: center;
-        .attack__points--number{
+        .attack__points--number {
           font-size: 22px;
         }
       }
     }
-    .stats__option{
+    .stats__option {
       display: flex;
       justify-content: space-between;
     }
-    .stats__image{
+    .stats__image {
       display: flex;
       justify-content: space-between;
+    }
+    .stats__evo {
+      border: solid gold 3px;
+      font-size: 12px;
+      padding: 3px;
+      font-style: italic;
+      margin-top: 8px;
     }
   }
 }
