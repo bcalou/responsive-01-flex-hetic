@@ -1,0 +1,9 @@
+$background-color: #9ace33;
+$border-color: #ffec01;
+
+@mixin flex($direction: row, $justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: $align;
+}

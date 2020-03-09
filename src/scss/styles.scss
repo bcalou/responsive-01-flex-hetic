@@ -1,0 +1,29 @@
+/************ IMPORT PAGES ************/
+
+@import "/scss/pages/_header.scss";
+
+
+/************ IMPORT GLOBAL ************/
+
+@import "/scss/global/reset.scss";
+@import "global/variables.scss";
+
+
+
+/************ CODES START HERE ************/
+
+
+body {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  background-color: $background-color;
+  border: 12px solid $border-color;
+}
+
