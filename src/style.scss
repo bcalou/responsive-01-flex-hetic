@@ -35,7 +35,13 @@
 
     .apparence__image{
         object-fit: cover;
-        border: solid 6px yellow;
+        border: 8px solid;
+        border-image-source: linear-gradient(
+          90deg,
+          rgb(250, 224, 66),
+          rgb(122, 117, 29)
+        );
+        border-image-slice: 1;
      }
      .apparence__description{
          display: flex;
@@ -84,7 +90,13 @@ strong {
     }
     .footer__texte {
         display: flex;
-        border: solid 2px yellow;
+        border: 3px solid;
+        border-image-source: linear-gradient(
+          90deg,
+          rgb(250, 224, 66),
+          rgb(122, 117, 29)
+        );
+        border-image-slice: 1;
         font-size: 10px;
     }
 }
