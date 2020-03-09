@@ -2,36 +2,59 @@
   box-sizing: border-box;
   font-size: 13px;
 }
-html {
-  background-color: yellow;
-  margin: 0;
-}
-body {
+.card {
   background-color: green;
+  border: solid 8px yellow;
 }
 img {
   max-width: 100%;
 }
 .identity {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .identity__grade {
-  font-size: 12px;
+  font-size: 10px;
+}
+.identity__name {
+  font-size: 25px;
 }
 .identity__life {
-  color: red;
+  color: rgb(206, 64, 64);
   font-size: 20px;
 }
-.card__info {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-.card__more {
-  padding: 10px;
-  border: solid 3px yellow;
+.image {
+  color: black;
+  font-size: 10px;
+  padding: 0 34px;
   p {
-    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    background-color: rgb(114, 114, 48);
   }
+  img {
+    border: solid 3px yellow;
+  }
+}
+.attack {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 30px;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  img {
+    margin-top: 10px;
+  }
+}
+.more {
+  font-size: 13px;
+  border: solid 3px yellow;
+  margin: 10px 15px;
+  padding: 3px;
 }

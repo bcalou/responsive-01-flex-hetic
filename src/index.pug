@@ -3,41 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokemon</title>
+    <title>Pokémon</title>
     link(rel="stylesheet", href="../style.scss")
     link(rel="stylesheet", href="../reset.scss")
   </head>
-  <body>
+  <body class="card">
     include includes/header.pug
-      <div class="card">
-        <div class="card__img">
-          <img src="assets/img/bulbizarre.jpg" alt="bulbizarre" />
-        </div>
-        <p>Pokémon Graine. Taille: 0,7m, poids : 6,9kg</p>
-        <div class="card__description">
-          <img src="assets/img/leaf.png" alt="leaf" />
-          <img src="assets/img/leaf.png" alt="leaf" />
-          <p> Vampigraine A moins que tout les dégats infligés par cette attaque ne soine prévenus, vous pouvez retirer I marqueur de dégats de Bulbizarre.
-          </p>
-        </div>
+        include includes/image.pug
+        include includes/attack.pug
         <hr />
-        <div class="card__info">
-          <div class="card__weak">
-            <p>Faiblesse</p>
-            <img src="/assets/img/fire.png" alt="fire" />
-          </div>
-          <div class="card__resistance">
-            <p>Resistance</p>
-          </div>
-          <div class="retirement">
-            <p>Coût de retraite</p>
-            <img src="/assets/img/normal.png" alt="normal" />
-          </div>
-        </div>
-        <div class="card__more">
-          <p> Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la anissance. NIV.13 No.1
-          </p>
-        </div>
-      </div>
+        include includes/info.pug
+        include includes/footer.pug
+
   </body>
 </html>
