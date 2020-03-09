@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  border: 1rem solid gold;
+  background-color: lightgreen;
+}
+
+.identity {
+  display: flex;
+  justify-content: space-between;
+}
