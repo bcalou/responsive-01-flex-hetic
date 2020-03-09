@@ -1,0 +1,83 @@
+html {
+  border: 10px solid gold;
+  height: 100vh;
+  background-color: greenyellow;
+}
+
+.pokemon__details {
+  margin: 10px 20px 0px 20px;
+  font-size: 12px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__life {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+.pokemon__picture {
+  margin: 0px 20px 0px 20px;
+  img {
+    border: 5px solid gold;
+  }
+  figcaption {
+    font-size: 14px;
+    background-color: gold;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.bulbizarre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  span {
+    font-weight: bold;
+  }
+  &__leaf {
+    flex: 1;
+  }
+  &__text {
+    flex: 3;
+  }
+  &__degats {
+    flex: 1;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+hr {
+  height: 2px;
+  background-color: black;
+  border: 1px solid black;
+  margin-top: 40px;
+}
+.power {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px 0px 10px;
+  &__weakness,
+  &__punch {
+    text-align: center;
+  }
+  p {
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+.pokemon__life {
+  font-size: 12px;
+  margin: 5px 15px 0px 15px;
+  border: 2px solid gold;
+}
