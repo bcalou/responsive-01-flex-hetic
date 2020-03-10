@@ -1,5 +1,6 @@
 html {
   border: 10px solid gold;
+  border-image: linear-gradient(80deg, yellow, goldenrod) 1;
   height: 100vh;
   background-color: greenyellow;
 }
@@ -27,7 +28,8 @@ html {
 .pokemon__picture {
   margin: 0px 20px 0px 20px;
   img {
-    border: 5px solid gold;
+    border: 5px solid;
+    border-image: linear-gradient(80deg, yellow, goldenrod) 1;
   }
   figcaption {
     font-size: 14px;
@@ -81,5 +83,6 @@ hr {
 .pokemon__life {
   font-size: 12px;
   margin: 5px 15px 0px 15px;
-  border: 2px solid gold;
+  border: 2px solid;
+  border-image: linear-gradient(80deg, yellow, goldenrod) 1;
 }
