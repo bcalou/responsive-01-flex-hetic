@@ -1,0 +1,14 @@
+footer {
+  border: 2px solid;
+  border-image: var(--linear-gradient) 2;
+  margin-top: 10px;
+  padding: 2px;
+
+  p {
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 0.2px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
