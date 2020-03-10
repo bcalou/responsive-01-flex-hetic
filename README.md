@@ -1,2 +1,2 @@
-# template-repository
-Template repository for directory structure and files
+# School Homework
+Create a pokemon card only with flexbox
