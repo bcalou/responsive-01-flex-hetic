@@ -34,9 +34,11 @@ body {
 }
 
 .landscape {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .identity {
