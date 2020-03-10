@@ -23,7 +23,8 @@ body {
       }
       .identity__life {
         color: red;
-        font-weight: 300;
+        font-weight: 500;
+        font-size: 20px;
       }
       .identity__option {
         display: flex;
@@ -40,13 +41,15 @@ body {
     .description__text {
       font-size: 12px;
       padding: 2px;
+      margin-top: 5px;
       text-align: center;
-      background-color: gold; 
-      margin-left: 15px ;
+      background-color: gold;
+      margin-left: 15px;
       margin-right: 15px;
     }
     .attack {
-      margin-top: 40px;
+      margin-top: 50px;
+      margin-bottom: 50px;
       display: flex;
       justify-content: space-between;
       .attack__type {
@@ -54,6 +57,7 @@ body {
       }
       .attack__description--text {
         font-size: 14px;
+
         .attack__description--vampigraine {
           font-weight: bolder;
         }
@@ -65,28 +69,27 @@ body {
         }
       }
     }
-    .stats{ 
+    .stats {
       font-size: 12px;
       display: flex;
       justify-content: space-between;
-      .stats__option--1--image{
+      .stats__option--1--image {
         display: block;
-      margin-left: auto;
-      margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
       }
-    .stats__option--3--image{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      .stats__option--3--image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
-    
+    .footer__evo {
+      border: solid gold 2px;
+      font-size: 10px;
+      padding: 3px;
+      font-style: italic;
+      margin-top: 10px;
+    }
   }
-  .footer__evo {
-    border: solid gold 3px;
-    font-size: 12px;
-    padding: 3px;
-    font-style: italic;
-    margin-top: 8px;
-  }
-}
 }
