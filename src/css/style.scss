@@ -11,6 +11,10 @@ $black: black;
   color: $black;
 }
 
+img {
+  max-width: 100%;
+}
+
 body{
   display: flex;
   flex-direction: column;
@@ -42,7 +46,7 @@ body{
   font-weight: bold;
 }
 
-.identity__container--rigth{
+.identity__container--right{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -83,9 +87,8 @@ body{
 .attack{
   display: flex;
   align-items: center;
-  justify-content: space-around;
   margin-top: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 .attack__image{
@@ -115,7 +118,35 @@ body{
 
 .line{
   border: 2px solid $black;
+  margin-top: 20px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
+.resilience__stats--container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resilience__name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.resilience__border{
+  border: 3px solid;
+  border-image: $gradient;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.resilience__lvl{
+  display: flex;
+  padding-left: 50px;
+}
