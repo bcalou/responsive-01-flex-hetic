@@ -9,43 +9,53 @@ img {
 }
 
 body {
-  //   background: linear-gradient( to right, yellow, #79751c);
-  //   padding: 5px;
+  background: linear-gradient(to right, yellow, #79751c);
+  padding: 10px;
+}
+
+.background {
+  background-color: yellowgreen;
+  padding: 0 0 8px 0;
 }
 
 .identity {
   display: flex;
   justify-content: space-between;
-}
+  margin: 0 15px 0 15px;
+  padding: 5px 0 0 0;
 
-.identity__name {
-  p {
-    font-size: 10px;
+  .identity__name {
+    p {
+      font-size: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
   }
 
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
+  .identity__life {
+    display: flex;
+    align-items: center;
+
+    p {
+      color: red;
+      font-size: 24px;
+    }
   }
 }
 
-.identity__life {
-  display: flex;
-  align-items: center;
-
-  p {
-    color: red;
-    font-size: 24px;
-  }
-}
-
-.image {
-  margin: 0 10px;
-  background-color: linear-gradient(to right, yellow, #79751c);
+.background2 {
+  background: linear-gradient(to right, yellow, #79751c);
+  padding: 5px;
+  margin: 0 15px;
 }
 
 .characteristics {
-  background-color: linear-gradient(to right, yellow, #79751c);
+  background: linear-gradient(to right, yellow, #79751c);
+  margin: 5px 25px 0 25px;
+  padding: 2px 0;
 
   p {
     font-size: 14px;
@@ -57,23 +67,22 @@ body {
 .attack {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 10px;
+  margin: 45px 0;
 
   .attack__element {
-      display: flex;
-
-      img {
-      }
+    display: flex;
   }
 
   .attack__description {
     flex-grow: 1;
     margin: 0 30px;
+    width: 50%;
 
     p {
       text-align: justify;
-      font-size: 15px;
+      font-size: 16px;
+      text-align: left;
     }
 
     em {
@@ -84,5 +93,45 @@ body {
 
   .attack__puissance {
     font-size: 24px;
+  }
+}
+
+.line {
+  background-color: black;
+  padding: 1px;
+  margin: 0 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+  margin: 0 5px;
+
+  .stats__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-weight: bold;
+      font-size: 13px;
+    }
+  }
+}
+
+.background3 {
+  background: linear-gradient(to right, yellow, #79751c);
+  padding: 5px;
+  margin: 5px 5px 0 5px;
+}
+
+.details {
+  font-style: italic;
+  background: yellowgreen;
+
+  p {
+    font-size: 13px;
+    padding: 1px 5px;
   }
 }
