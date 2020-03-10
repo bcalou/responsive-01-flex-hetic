@@ -3,29 +3,25 @@
   margin: 0 15px 0 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-
-
 .attack {
   display: flex;
   align-items: center;
-
-  .attack__cost {
-    flex-shrink: 0;
-    display: flex;
-  }
-  .attack__description {
-    flex-shrink: 1;
-    margin: 0 5px;
-  }
-  .attack__name {
-    font-weight: bold;
-  }
-  .attack__details {
-    font-size: 13px;
-  }
-  .attack__damage {
-    font-size: 24px;
-  }
+}
+.attack__cost {
+  flex-shrink: 0;
+  display: flex;
+}
+.attack__description {
+  flex-shrink: 1;
+  margin: 0 5px;
+}
+.attack__name {
+  font-weight: bold;
+}
+.attack__details {
+  font-size: 13px;
+}
+.attack__damage {
+  font-size: 24px;
 }
