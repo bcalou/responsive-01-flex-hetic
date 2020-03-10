@@ -3,7 +3,11 @@
     justify-content: space-around;
     margin-top: 5px;
     margin-bottom: 5px;
-    @include landscape;
+    @include landscape {
+        max-width: 50%;
+        font-size: 21px;
+        font-weight: bold;
+    }
 
     .identity__grade {
         .identity__grade--type {
@@ -18,7 +22,6 @@
     .identity__life {
         display: flex;
         align-items: center;
-
 
         .identity__life--pv {
             color: #fe4600;

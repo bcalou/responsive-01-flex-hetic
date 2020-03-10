@@ -1,17 +1,22 @@
 .pokemon {
     display: flex;
     flex-direction: column;
-    @include landscape;
+    @include landscape {
+        max-width: 50%;
+    }
     .pokemon__img {
         max-width: 90%;
         align-self: center;
         border: 5px solid;
-    border-image: linear-gradient(150deg, rgba(253,235,0,1) 0%, rgba(120,116,30,1) 100%) 5;
+        border-image: linear-gradient(150deg, rgba(253,
+        235,0,1) 0%, rgba(120,116,30,1) 100%) 5;
     }
     .pokemon__details {
         display: flex;
         justify-content: center;
-        background: linear-gradient(150deg, rgba(253,235,0,1) 0%, rgba(120,116,30,1) 100%);
+        background: linear-gradient(150deg,
+        rgba(253,235,0,1) 0%, rgba(120,116,30,1)
+        100%);
         font-size: 12px;
         padding: 3px;
         margin-left: 30px;
