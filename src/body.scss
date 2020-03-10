@@ -10,6 +10,7 @@ body {
     border: 15px solid gold;
     padding: 12px;
     background-color: yellowgreen;
+    font-family: Arial;
     overflow: hidden;
     .identity {
       .identity__grade {
@@ -40,7 +41,9 @@ body {
       font-size: 12px;
       padding: 2px;
       text-align: center;
-      background-color: gold;
+      background-color: gold; 
+      margin-left: 15px ;
+      margin-right: 15px;
     }
     .attack {
       margin-top: 40px;
@@ -50,7 +53,7 @@ body {
         align-self: center;
       }
       .attack__description--text {
-        font-size: 16px;
+        font-size: 14px;
         .attack__description--vampigraine {
           font-weight: bolder;
         }
@@ -62,20 +65,28 @@ body {
         }
       }
     }
-    .stats__option {
-      display: flex;
-      justify-content: space-between;
-    }
-    .stats__image {
-      display: flex;
-      justify-content: space-between;
-    }
-    .stats__evo {
-      border: solid gold 3px;
+    .stats{ 
       font-size: 12px;
-      padding: 3px;
-      font-style: italic;
-      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      .stats__option--1--image{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+    .stats__option--3--image{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
+    
   }
+  .footer__evo {
+    border: solid gold 3px;
+    font-size: 12px;
+    padding: 3px;
+    font-style: italic;
+    margin-top: 8px;
+  }
+}
 }
