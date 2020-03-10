@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.identity {
+  display: flex;
+  justify-content: space-between;
+
+  .identity__grade {
+    font-size: 12px;
+  }
+
+  .identity__name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .identity__life {
+    color: red;
+  }
+  .identity__pv {
+    display: flex;
+  }
+}
