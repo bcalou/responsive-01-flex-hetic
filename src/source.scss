@@ -6,23 +6,38 @@ img {
   max-width: 100%;
 }
 
-.identity {
-  display: flex;
-  justify-content: space-between;
+body {
+  border: 15px solid gold;
+  padding: 20px;
+  overflow: hidden;
 
-  .identity__grade {
-    font-size: 12px;
-  }
-
-  .identity__name {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .identity__life {
-    color: red;
-  }
-  .identity__pv {
+  .identity {
     display: flex;
+    justify-content: space-between;
+
+    .identity__grade {
+      font-size: 12px;
+    }
+
+    .identity__name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .identity__life {
+      color: red;
+    }
+    .identity__pv {
+      display: flex;
+    }
+  }
+
+  .image {
+    border: 5px solid gold;
+  }
+  .image__information {
+    font-size: 12px;
+    text-align: center;
+    background-color: gold;
   }
 }
