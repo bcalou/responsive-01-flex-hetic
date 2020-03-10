@@ -5,6 +5,8 @@
 @import'../scss/blocs/attack.scss';
 @import'../scss/blocs/stats.scss';
 @import'../scss/blocs/footer.scss';
+@import'../scss/blocs/cloud.scss';
+@import'../scss/blocs/landscape.scss';
 
 
 * {
@@ -31,7 +33,6 @@ body {
   border-image: var(--linear-gradient) 5;
   padding: 10px;
   min-height: 100vh;
-  background-color: var(--primary-color-green);
 
   @include landscape {
     flex-direction: row;
@@ -47,29 +48,4 @@ body {
   }
 }
 
-// landscape
 
-@include landscape {
-
-  .image {
-    order: 1;
-  }
-  header {
-    order:2;
-  }
-  .pokemon {
-    order:3;
-  }
-  .description {
-    order:4;
-    text-align: start;
-    margin: 0;
-  }
-
-  .first-part {
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
-  }
-
-}

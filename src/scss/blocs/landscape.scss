@@ -1,0 +1,25 @@
+// landscape
+
+@include landscape {
+
+  .image {
+    order: 1;
+  }
+  header {
+    order:2;
+  }
+  .pokemon {
+    order:3;
+  }
+  .description {
+    order:4;
+    text-align: start;
+    margin: 0;
+  }
+
+  .first-part {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+  }
+}

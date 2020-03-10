@@ -7,6 +7,18 @@ html(lang="en")
     link(rel="stylesheet" href="scss/styles.scss")
   body
 
+    #cloud-circle1
+    #cloud-circle2
+    #cloud-circle3
+    #cloud-circle4
+    
+    <svg width="0" height="0"> 
+      <filter id="filter">
+        <feTurbulence type="fractalNoise" baseFrequency=".01" numOctaves="10" />
+        <feDisplacementMap in="SourceGraphic" scale="180" />
+      </filter>
+    </svg>
+
     .first-part
       include includes/header.pug
       include includes/image.pug
