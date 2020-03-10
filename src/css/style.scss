@@ -2,13 +2,21 @@
 
 /* variables */
 $red: red;
-$gradient: linear-gradient(-90deg, #486921, #eefa04)10;
+$gradient: linear-gradient(-90deg, #5e6921, #eefa04)10;
+$gradient-radial: radial-gradient(#eefa04, #5e6921);
+$black: black;
+
+* {
+  box-sizing: border-box;
+  color: $black;
+}
 
 body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   border: 15px solid ;
+  //overflow: hidden;
   border-image: $gradient;
   background-color: yellowgreen;
 }
@@ -17,55 +25,87 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: red 2px solid;
 }
 
 .identity__container--left{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: blue 4px solid;
+  margin-left: 15px;
 }
-
 
 .identity__name{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 35px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-/*.identity__container--rigth{
+.identity__container--rigth{
   display: flex;
   flex-direction: row;
-  border: blue 2px solid;
-  justify-content: space-around;
-}*/
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-top: 16px;;
+}
 
 .identity__hp{
   color: $red;
+  padding-top: 3px;
+  font-size: 20px;
 }
 
 .identity__type{
-  
+  padding-left: 5px;
 }
-/*.identity__class .identity__name .identity__hp{
-  display: flex;
-  justify-content: space-around;
-}*/
 
 .imageLegend{
-  display: flex-wrap;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .imageLegend__Bulbizare{
   border: 5px solid;
   border-image: $gradient;
   justify-content: center ;
+  max-width: 90%;
+  margin-bottom: 5px;
 }
 
 .imageLegend__description{
- 
+  padding: 5px;
+  background: $gradient-radial;
+}
+
+.attack{
+  display: flex;
+  flex-direction: row;
+  border: red 2px solid;
+  max-width: 100%;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.attack__image{
+  max-width: 25px;
+  max-height: 23px;
+  display: flex;
+  border: blue 2px solid;
+  justify-content: center;
+  align-items: center;
+}
+
+.attack__name{
+  font-size: 25px;
+  border: blue solid 2px;
+}
+
+.attack__description{
+
+  
+  border: blue solid 2px;
 }
 
