@@ -3,6 +3,7 @@
     justify-content: space-around;
     margin-top: 5px;
     margin-bottom: 5px;
+    @include landscape;
 
     .identity__grade {
         .identity__grade--type {

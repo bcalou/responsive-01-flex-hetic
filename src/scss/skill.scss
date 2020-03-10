@@ -6,6 +6,11 @@
     margin-right: 10px;
     margin-left: 10px;
     padding-top: 5px;
+    color: black;
+    @include landscape {
+        color: red;
+    }
+
     .skill__less {
         display: flex;
         flex-direction: column;

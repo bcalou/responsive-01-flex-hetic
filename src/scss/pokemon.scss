@@ -1,6 +1,7 @@
 .pokemon {
     display: flex;
     flex-direction: column;
+    @include landscape;
     .pokemon__img {
         max-width: 90%;
         align-self: center;
