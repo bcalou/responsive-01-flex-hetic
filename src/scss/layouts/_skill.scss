@@ -4,6 +4,14 @@
   align-items: center;
   margin: 22% 0 22% 0;
 
+  @include landscape {
+    margin: 10% 0 10% 0;
+
+    @include iphone6-7-8 {
+      margin: 16% 0 20% 0;
+    }
+  }
+
   &__attack {
     max-width: 65%;
     text-align: left;
@@ -11,6 +19,12 @@
     line-height: 1.2;
     font-weight: 400;
 
+    @include landscape {
+      max-width: 60%;
+
+
+
+    }
 
     span {
       font-weight: 900;
