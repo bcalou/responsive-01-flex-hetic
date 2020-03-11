@@ -7,56 +7,60 @@ img {
 }
 
 body {
-  border: 15px solid gold;
-  padding: 20px;
-  background-color: rgb(120, 204, 95);
+  .card {
+    border: 15px solid gold;
+    padding: 20px;
+    background-color: rgb(120, 204, 95);
+    overflow: hidden;
 
-  .identity {
-    display: flex;
-    justify-content: space-between;
-
-    .identity__grade {
-      font-size: 12px;
-    }
-
-    .identity__name {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .identity__pv {
+    .identity {
       display: flex;
-    }
-    .identity__life {
-      color: red;
-    }
-  }
+      justify-content: space-between;
 
-  .image {
-    border: 5px solid gold;
-  }
+      .identity__grade {
+        font-size: 12px;
+      }
 
-  .image__information {
-    font-size: 12px;
-    text-align: center;
-    background-color: gold;
-  }
+      .identity__name {
+        font-size: 24px;
+        font-weight: bold;
+      }
 
-  .attack {
-    margin-top: 30px;
-    display: flex;
-
-    .attack__type {
-      align-self: center;
+      .identity__pv {
+        display: flex;
+        align-self: center;
+      }
+      .identity__life {
+        color: red;
+      }
     }
 
-    .attack__description {
-      // padding-right: 20px;
+    .image {
+      border: 5px solid gold;
     }
 
-    .attack__degats {
-      align-self: center;
-      font-size: 24px;
+    .image__information {
+      font-size: 12px;
+      text-align: center;
+      background-color: gold;
+    }
+
+    .attack {
+      margin-top: 30px;
+      display: flex;
+
+      .attack__type {
+        align-self: center;
+      }
+
+      .attack__description {
+        // padding-right: 20px;
+      }
+
+      .attack__degats {
+        align-self: center;
+        font-size: 24px;
+      }
     }
   }
 }
