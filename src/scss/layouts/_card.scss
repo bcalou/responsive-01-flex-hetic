@@ -6,6 +6,7 @@
 
 
 $iphone6-7-8: 374px;
+$iphone6-7-8__: 375px;
 $iphone6-7-8_max: 413px;
 
 $desktop-up: 1200px;
@@ -13,7 +14,7 @@ $desktop-down: 1199px;
 
 
 @mixin iphone6-7-8 {
-  @media (min-width: $iphone6-7-8) {
+  @media (min-width: $iphone6-7-8) and (min-height: $iphone6-7-8__) {
     @content;
   }
 }
@@ -52,30 +53,52 @@ body {
 }
 
 .leftSide {
+  padding: 0 2% 5.5% 2%;
+
   @include iphone6-7-8 {
-    padding-top: 5%;
+    padding: 2% 0 7% 0;
+  }
 
-    // min-height: 50%;
-    @include landscape {
-      // padding-top: 15%;
+  @include landscape {
+    .leftSide {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0% 2% 0% 2%;
 
+      @include iphone6-7-8 {
+        padding: 6% 2% 6% 2%;
+      }
     }
   }
 }
 
 .rightSide {
+  padding: 0 2% 5.5% 2%;
+  align-items: center;
+  // margin: 3% 0 3% 0;
+
+
   @include iphone6-7-8 {
-    // min-height: 50%;
-    padding: 3% 0 7% 0;
+    padding: 7% 0 7% 0;
   }
+
+  @include landscape {
+
+
+    @include iphone6-7-8 {
+      padding: 6% 2% 6% 2%;
+    }
+  }
+
 }
+
 
 
 @include landscape {
   .leftSide {
     display: flex;
     flex-direction: column-reverse;
-    padding: 2%;
+    padding: 5.5% 2% 5.5% 2%;
 
     @include iphone6-7-8 {
       padding: 6% 2% 6% 2%;
@@ -84,13 +107,13 @@ body {
 
   .rightSide {
     max-width: 50%;
-    padding: 2%;
+    padding: 5.5% 2% 5.5% 2%;
     align-items: center;
     // margin: 3% 0 3% 0;
 
-    // @include iphone6-7-8 {
-    //   padding: 3% 2% 3% 2%;
-    // }
+    @include iphone6-7-8 {
+      padding: 6% 2% 6% 2%;
+    }
   }
 
 }
