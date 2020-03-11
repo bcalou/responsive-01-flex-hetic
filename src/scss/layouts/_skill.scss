@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 22% 0 22% 0;
+  margin: 18% 0 18% 0;
 
   @include landscape {
     margin: 10% 0 10% 0;
 
-    @include iphone6-7-8 {
-      margin: 16% 0 20% 0;
-    }
+
+  }
+
+  @include iphone6-7-8 {
+    margin: 16% 0 20% 0;
   }
 
   &__attack {
