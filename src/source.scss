@@ -9,7 +9,7 @@ img {
 body {
   border: 15px solid gold;
   padding: 20px;
-  overflow: hidden;
+  background-color: rgb(120, 204, 95);
 
   .identity {
     display: flex;
@@ -24,20 +24,39 @@ body {
       font-weight: bold;
     }
 
-    .identity__life {
-      color: red;
-    }
     .identity__pv {
       display: flex;
+    }
+    .identity__life {
+      color: red;
     }
   }
 
   .image {
     border: 5px solid gold;
   }
+
   .image__information {
     font-size: 12px;
     text-align: center;
     background-color: gold;
+  }
+
+  .attack {
+    margin-top: 30px;
+    display: flex;
+
+    .attack__type {
+      align-self: center;
+    }
+
+    .attack__description {
+      // padding-right: 20px;
+    }
+
+    .attack__degats {
+      align-self: center;
+      font-size: 24px;
+    }
   }
 }
