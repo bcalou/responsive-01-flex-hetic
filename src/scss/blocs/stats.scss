@@ -1,0 +1,16 @@
+.stats {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+
+  &__description {
+    padding-top: 3px;
+
+    p{
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}

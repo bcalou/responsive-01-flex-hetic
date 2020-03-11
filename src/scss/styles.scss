@@ -1,0 +1,51 @@
+@import'../scss/vendors/reset.scss';
+@import'../scss/vendors/mixin.scss';
+@import'../scss/blocs/header.scss';
+@import'../scss/blocs/image.scss';
+@import'../scss/blocs/attack.scss';
+@import'../scss/blocs/stats.scss';
+@import'../scss/blocs/footer.scss';
+@import'../scss/blocs/cloud.scss';
+@import'../scss/blocs/landscape.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+  --primary-color-yellow: #FDEB00;
+  --primary-color-green: #9ACD32;
+  --secondary-color-yellow: rgb(167, 156, 11);
+  --secondary-color-green : rgba(153, 205, 50, 0.7);
+  --linear-gradient: linear-gradient(100deg, var(--primary-color-yellow), var(--secondary-color-yellow))
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 8px solid;
+  border-image: var(--linear-gradient) 5;
+  padding: 10px;
+  min-height: 100vh;
+
+  @include landscape {
+    flex-direction: row;
+    align-items: center;
+
+    .first-part {
+      flex: 0.9;
+    }
+
+    .second-part {
+      flex: 1;
+    }
+  }
+}
+
+

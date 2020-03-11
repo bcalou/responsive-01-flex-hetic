@@ -1,0 +1,18 @@
+.image {
+    margin: 5px 5px;
+    box-shadow: 10px 7px 6px -2px rgba(0, 0, 0, 0.8);
+
+    img {
+      outline: 5px outset (var(--primary-color-yellow));
+    }
+}
+
+.description {
+  text-align: center;
+  font-style: italic;
+  font-size: 11px;
+  background:linear-gradient(to right, var(--primary-color-yellow), var(--secondary-color-yellow));
+  padding: 4px 0;
+  margin: 10px 15px;
+  box-shadow: 12px 13px 16px -5px rgba(0, 0, 0, 0.2);
+}

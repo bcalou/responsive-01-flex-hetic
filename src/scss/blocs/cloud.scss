@@ -1,0 +1,63 @@
+body {
+  background: var(--primary-color-green);
+  overflow: hidden;
+}
+
+#cloud-circle1 {
+    width: 150px;
+    height: 175px;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 500px 700px 60px 0px rgba(255, 254, 254, 0.7);
+    position: absolute;
+    top: -320px;
+    left: -320px;
+    z-index: -1;
+
+    @include landscape {
+
+      box-shadow: 800px 500px 60px 0px rgba(255, 254, 254, 0.7);
+    }
+}
+
+#cloud-circle2 {
+    width: 150px;
+    height: 175px;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 300px 420px 60px 0px rgba(255, 254, 254, 0.7);
+    position: absolute;
+    top: -320px;
+    left: -320px;
+    z-index: -1;
+} 
+
+#cloud-circle3 {
+    width: 250px;
+    height: 175px;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 500px 350px 60px 0px rgba(255, 254, 254, 0.7);
+    position: absolute;
+    top: -320px;
+    left: -320px;
+    z-index: -1;
+} 
+
+#cloud-circle4 {
+    width: 250px;
+    height: 175px;
+    border-radius: 50%;
+    filter: url(#filter);
+    box-shadow: 120px 700px 60px 0px rgba(255, 254, 254, 0.7);
+    position: absolute;
+    top: -320px;
+    left: -320px;
+    z-index: -1;
+
+    @include landscape {
+
+      box-shadow: 750px 250px 60px 0px rgba(255, 254, 254, 0.7);
+
+    }
+}

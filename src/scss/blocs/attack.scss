@@ -1,0 +1,32 @@
+.attack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0 55px;
+
+  .attack__cost {
+    flex: 0.75;
+    flex-shrink: 0;
+  }
+
+  .attack__description {
+    flex: 3.5;
+    font-size: 14px;
+    padding-left: 5px;
+
+    @include landscape {
+      padding-right: 5px;
+
+    }
+    b {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  .attack__damage {
+    flex: 0.65;
+    text-align: center;
+    font-size: 24px;
+  }
+}

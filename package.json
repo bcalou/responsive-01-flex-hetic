@@ -1,0 +1,26 @@
+{
+  "name": "template-repository",
+  "version": "1.0.0",
+  "description": "Template repository for directory structure and files",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "serve": "parcel src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berrichinawel/template-repository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berrichinawel/template-repository/issues"
+  },
+  "homepage": "https://github.com/berrichinawel/template-repository#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.26.2"
+  }
+}
