@@ -1,5 +1,11 @@
 @import "reset";
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,6 +22,11 @@ body {
 .background {
   background-color: yellowgreen;
   padding: 0 0 8px 0;
+
+  @include landscape {
+    display: flex;
+    padding: 0 0 50px 0;
+  }
 }
 
 .identity {
@@ -133,5 +144,20 @@ body {
   p {
     font-size: 13px;
     padding: 1px 5px;
+  }
+}
+
+.disposition {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.disposition2 {
+  @include landscape {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
