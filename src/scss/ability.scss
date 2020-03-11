@@ -1,0 +1,37 @@
+@import "mixins";
+
+.ability {
+    display: flex;
+    align-items: center;
+    padding: 60px 0px;
+
+    @include landscape {
+        grid-area: 1 / 2 / 2 / 3;
+        padding: 0px;
+    }
+}
+
+.ability__type--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: fit-content;
+    margin-right: 4px;
+}
+
+.ability__damage {
+    font-size: 24px;
+    padding: 0px 0px 0px 12px;
+}
+
+.ability__description {
+    font-weight: bold;
+    margin-left: 4px;
+    text-align: left;
+
+    &::after {
+        content: " À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégâts de Bulbizarre.";
+        font-size: 13px;
+        font-weight: lighter;
+    }
+}

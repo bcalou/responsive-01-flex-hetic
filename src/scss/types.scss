@@ -1,0 +1,22 @@
+@import "mixins";
+
+.types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 2px 0px;
+
+    @include landscape {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+.type {
+    text-align: center;
+}
+
+.type__effect {
+    font-size: 12px;
+    font-weight: 550;
+}

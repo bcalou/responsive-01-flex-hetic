@@ -1,0 +1,11 @@
+@import "mixins";
+@import "variables";
+
+.picture {
+    border: 6px solid;
+    border-image: $border-color 1;
+    
+    @include landscape {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
