@@ -7,7 +7,8 @@
     <title>Pokemon</title>
   </head>
   <body>
-    <header class="id">
+    <section class="first__section">
+      <header class="id">
       <div>
         <p class="id__grade">Pokémon de base</p>
         <h1 class="id__name">Bulbizarre</h1>
@@ -16,44 +17,51 @@
         <p class="id__life">40 PV</p>
         <img class="id__type" src="./assets/img/leaf.png" />
       </div>
-    </header>
-    <img src="./assets/img/bulbizarre.jpg" class="img" />
-    <p class="caption">
-      Pokémon Graine. Taille: 0,7m, poids: 6,9 kg
-    </p>
-    <div class="attack">
-      <div class="attack__imgs">
-        <img src="./assets/img/leaf.png" alt="type" /><img
-          src="./assets/img/leaf.png"
-          alt="type"
-        />
+      </header>
+      <div>
+      </div class="bulbizarre__box">
+        <img src="./assets/img/bulbizarre.jpg" class="bulbizarre__picture" />
       </div>
-      <div class="attack__info">
-        <p>
-          Vampigraine À moins que tous les dégats infligés par cette
+      <p class="caption">
+        Pokémon Graine. Taille: 0,7m, poids: 6,9 kg
+      </p>
+    </section>
+    <section class="second__section">
+      <div class="attack">
+        <div class="attack__imgs">
+          <img src="./assets/img/leaf.png" alt="type" /><img
+            src="./assets/img/leaf.png"
+            alt="type"
+          />
+        </div>
+        <p class="attack__info">
+          <strong>Vampigraine</strong> À moins que tous les dégats infligés par cette
           attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégats
-          Bulizarre
+          Bulizarre.
         </p>
+        <div class="attack__dammage">20</div>
       </div>
-      <div class="attack__dammage">20</div>
-    </div>
-    <div class="stats">
-      <div>
-        <p class="stats__title">Faiblesse</p>
-        <img class="stats__img" alt="feu" src="./assets//img/fire.png" />
+      <div class="stats">
+        <div>
+          <p class="stats__title">Faiblesse</p>
+          <div class="stats__img--box">
+            <img class="stats__img" alt="feu" src="./assets//img/fire.png" />
+          </div>
+        </div>
+        <div>
+          <p class="stats__title">Résistance</p>
+        </div>
+        <div>
+          <p class="stats__title">Coût de retraite</p>
+          <div class="stats__img--box">
+            <img class="stats__img" alt="normal" src="./assets//img/normal.png" />
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="stats__title">Resistance</p>
-        <img class="stats__img" alt="" src="./assets//img/fire.png" />
+      <div class="details">
+        Il a une étrange graine planté sur son dos. Elle grandit avec lui depuis
+        la naissance. NIV. 13 No.1
       </div>
-      <div>
-        <p class="stats__title">Coût de retraite</p>
-        <img class="stats__img" alt="normal" src="./assets//img/normal.png" />
-      </div>
-    </div>
-    <div class="details">
-      Il a une étrange graine planté sur son dos. Elle grandit avec lui depuis
-      la naissance. NIV. 10 No.1
-    </div>
+    </section>
   </body>
 </html>
