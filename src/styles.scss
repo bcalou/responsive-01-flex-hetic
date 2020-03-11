@@ -1,19 +1,20 @@
-// @import 'src/reset.scss';
+@import './reset.scss';
 
-* {
+*{
   box-sizing: border-box;
 }
-
-img {
+img{
   max-width: 100%;
 }
 
 body{
   background-color:#90EE90;
-  border: 8px solid yellow;
-  margin:0px;
-  padding: 8px;
-
+  border: 10px solid yellow;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Header */
@@ -21,20 +22,18 @@ body{
 .header{
   display:flex;
   justify-content: space-between;
-  padding: 0px;
   .header__pokemon{
     display:flex;
   flex-direction: column;
-  background-color: red;
-  font-size: 10px;
+  font-size: 8px;
   }
   .header__pokemonName{
     font-size: 18px;
+    font-weight: bold;
   }
   .header__div{
     display:flex;
     flex-direction: column;
-    background-color: rebeccapurple;
     color: red;
     font-weight: lighter;
   }
@@ -43,17 +42,18 @@ body{
 // Description
 
 .description{
-  margin-top: 2px;
   img{
-    border: 2px solid yellow;
+    background: linear-gradient(to right, #e6d825, #c9a00c);
+    padding: 3px;
   }
   .description__text{
     background-color: yellow;
     padding: 4px;
-    margin-top: 0px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     font-style: italic;
+    margin-left: 18px;
+    margin-right: 18px;
   }
 }
 
@@ -64,16 +64,30 @@ body{
   flex-direction: row;
   justify-content: space-between;
   font-size: 14px;
-  .attaque__text{
-    width: 70%;
+  margin-top: 51px;
+  margin-bottom: 51px;
+  line-height: 120%;
+  strong{
+    font-size: 18px;
+    font-weight: bold;
   }
   .attaque__leaf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-self: center;
-   padding-top: 20px;
+    flex-shrink: 0;
+    margin-right: 4%;
+
   }
   .attaque__points{
     font-size: 24px;
-    padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    font-weight: bold;
+
   }
 }
 
@@ -81,19 +95,22 @@ body{
 .forces{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   font-weight: bold;
+  font-size: 12px;
+  margin-top: 16px;
   text-align: center;
-  .forces__faiblesse, .forces__coût{
-    text-align: center;
-  }
+  border-top: 2px solid #000000;
+  padding-top: 4px;
+  margin-bottom: 8px;
 }
 
 // Footer
 
 .footer{
   border: 1px solid yellow;
-  font-size: 12px;
+  font-size: 8px;
   font-style: italic;
   text-align: center;
+
 }
