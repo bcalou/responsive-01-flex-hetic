@@ -3,51 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.scss" rel="stylesheet">
   <link href="style.scss" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
+  <div>
+    <header class="identity">
+      <div class="identity__name">
+        <p class="identity__name--evolution">Pokémon de base</p>
+        <h1 class="identity__name--name">Bulbizarre</h1>
+      </div>
+      <h1 class="identity__HP">40 PV<img class="identity__type" src="assets/img/leaf.png" alt="Plante"></h1>
+    </header>
 
-  <header class="identity">
-    <p class="identity__evolution">Pokémon de base</p>
-    <h1 class="identity__name">Bulbizarre</h1>
-    <h1 class="identity__HP">40 PV</h1>
-    <img class="identity__type" src="assets/img/leaf.png" alt="Plante">
-  </header>
-
-  <section class="description">
-    <img class="description__img" src="assets/img/bulbizarre.jpg">
-    <p class="description__stats">Pokémon Graine. Taille: 0,7 m, poids: 6,9 kg</p>
-  </section>
-
-  <section class="attack">
-    <div class="attack__ressources">
+    <section class="description">
+      <img class="description__img" src="assets/img/bulbizarre.jpg">
+      <p class="description__stats">Pokémon Graine. Taille: 0,7 m, poids: 6,9 kg</p>
+    </section>
+  </div>
+  <div>
+    <section class="attack">
       <img src="assets/img/leaf.png" alt="Plante">
       <img src="assets/img/leaf.png" alt="Plante">
-    </div>
-    <p class="attack__description">
-      Vampigraine À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégats de Bulbizarre.
-    </p>
-    <h1 class="attack__dammages">20</h1>
-  </section>
+      <p class="attack__description"><span>Vampigraine</span> À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégats de Bulbizarre.</p>
+      <h1 class="attack__damages">20</h1>
+    </section>
 
-  <section class="stats">
-    <div class="stats__weakness">
-      <p>Faiblesse</p>
-      <img src="assets/img/fire.png" alt="Feu">
-    </div>
-    <div class="stats__resistance">
-      <p>Résistance</p>
-    </div>
-    <div class="stats__price">
-      <p>Coût de retraite</p>
-      <img src="assets/img/normal.png">
-    </div>
-  </section>
+    <section class="stats">
+      <div class="stats__weakness">
+        <p>Faiblesse</p>
+        <img src="assets/img/fire.png" alt="Feu">
+      </div>
+      <div class="stats__resistance">
+        <p>Résistance</p>
+      </div>
+      <div class="stats__price">
+        <p>Coût de retraite</p>
+        <img src="assets/img/normal.png">
+      </div>
+    </section>
 
-  <section class="pokedex">
-    <p>Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV. 13 No. 1</p>
-  </section>
+    <section class="pokedex">
+      <p>Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV. 13 No. 1</p>
+    </section>
+  </div>
 
 </body>
 </html>

@@ -1,11 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
-  border: 1rem solid gold;
-  background-color: lightgreen;
-}
+  border: 15px solid #E7C72E;
+  background-image: url(assets/img/grasspkmn.png);
 
-.identity {
-  display: flex;
-  justify-content: space-between;
+  @include landscape {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .identity {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 5px 20px 2px 20px;
+
+    &__name {
+
+      &--evolution {
+        font-size: small;
+      }
+
+      &--name {
+        font-size: x-large;
+        font-weight: bold;
+      }
+    }
+
+    &__HP {
+      color: red;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      font-size: x-large;
+      font-weight: bold;
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+
+    &__img {
+      border: 8px solid;
+      border-image: linear-gradient(#FCEA01, #78741E) 15;
+    }
+
+    &__stats {
+      margin-top: 5px;
+      background-color: gold;
+      font-size: small;
+      font-style: italic;
+      font-weight: bold;
+      padding: 2px 20px 2px 20px;
+    }
+  }
+
+  .attack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 15px 15px 5px;
+
+    &__description {
+      margin: 0px 15px 0px 10px;
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    &__damages {
+      font-size: x-large;
+      font-weight: bold;
+    }
+  }
+
+  .stats {
+    margin: 0px 5px 0px 5px;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__weakness, &__resistance, &__price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .pokedex {
+    border: 2px solid;
+    border-image: linear-gradient(#FCEA01, #78741E) 15;
+    margin: 2px 15px 15px 15px;
+    padding: 2px 5px 2px 5px;
+  }
 }
