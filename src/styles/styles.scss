@@ -1,5 +1,18 @@
 @import "./reset.scss";
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+.selector {
+  color: red;
+
+  @include landscape {
+    color: blue;
+  }
+}
+
 
 * {
   box-sizing: border-box;
@@ -128,3 +141,10 @@ hr {
   
 }
 
+@media (min-width: 568px) and (min-height:320px){
+  .flex1{
+    display: flex;
+   
+
+  }
+}
