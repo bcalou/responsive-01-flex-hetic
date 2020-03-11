@@ -1,0 +1,15 @@
+.stats {
+  border-top: 2px solid black;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+
+  &__weakness {
+    // background-color: blue;
+    // display: flex;
+    margin-left: none;
+  }
+}

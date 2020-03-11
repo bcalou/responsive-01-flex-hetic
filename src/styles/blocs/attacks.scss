@@ -1,0 +1,28 @@
+.attacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  &__cost {
+    align-items: center;
+    display: flex;
+  }
+
+  &__desc {
+    margin-left: 30px;
+    margin-right: 30px;
+
+    em {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
+
+.power {
+  font-weight: bold;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+}

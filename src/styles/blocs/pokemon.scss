@@ -2,8 +2,21 @@
   display: flex;
   flex-direction: column;
 
+  &__name {
+    margin-left: $margin;
+    margin-right: $margin;
+    border: 5px solid;
+    border-image-source: $gradient;
+    border-image-slice: 1;
+  }
+
   &__details {
     font-size: 13px;
-    align-items: center;
+    align-content: center;
+    background: linear-gradient(120deg, #fbe900, #7b771d);
+    text-align: center;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-top: 5px;
   }
 }

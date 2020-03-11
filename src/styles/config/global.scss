@@ -11,6 +11,9 @@ body {
   border: 10px solid;
   border-image-source: $gradient;
   border-image-slice: 1;
-  font-size: 18px;
+  // font-size: 18px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  // display: flex;
+  // flex-direction: column;
 }

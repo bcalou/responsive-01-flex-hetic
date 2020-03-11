@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-left: $margin;
+  margin-right: $margin;
 
   &__group {
     display: flex;
@@ -16,14 +18,8 @@
     font-size: 24px;
   }
 
-  &__lifeType {
-    align-items: center;
-    display: flex;
-  }
   &__life {
     color: red;
     font-weight: bold;
-  }
-  &__type {
   }
 }
