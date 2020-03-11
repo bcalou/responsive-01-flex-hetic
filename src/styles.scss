@@ -14,6 +14,7 @@ html {
 body {
   background-color: rgb(132, 194, 41);
   margin: 12px;
+  padding: 5px;
 }
 
 .identity {
@@ -23,19 +24,66 @@ body {
     padding-left: 15px;
     padding-top: 5px;
   }
+  &__nameHp {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+  }
   &__name {
     display: flex;
-    font-size: 20px;
+    font-size: 26px;
     padding-left: 15px;
     font-weight: bold;
   }
   &__hp {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
+    color: red;
+    font-size: 18px;
   }
-  &__type {
-    display: flex;
-    justify-content: flex-end;
+}
+
+.appearance {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image {
+    border: solid 4px gold;
   }
+  &__details {
+    font-size: 12px;
+    background-color: gold;
+    margin-top: 2px;
+  }
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10px 50px 10px;
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+  &__description {
+    flex-shrink: 15;
+    padding: 0 14px 0 5px;
+  }
+}
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  &__weakness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Pokedex {
+  font-size: 13px;
+  display: flex;
+  border: solid 2px gold;
 }
