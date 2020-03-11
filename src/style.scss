@@ -8,12 +8,37 @@ img {
   max-width: 100%;
 }
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;
   border: 12px solid;
   border-image: linear-gradient(90deg, gold, #7a751e) 20;
+  background-color: #9acd32;
+  font-family: Arial, Helvetica, sans-serif;
+
+  @include landscape {
+    flex-direction: row;
+  }
 }
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  @include landscape {
+    flex: 50%;
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+}
+
+//part-1
 
 .identity__global {
   display: flex;
@@ -21,16 +46,123 @@ body {
   .identity__global--space p {
     margin-bottom: 3px;
   }
+  @include landscape {
+    order: 2;
+  }
 }
-.identity__life {
+.identity__global--life {
   margin-top: 8px;
+  color: red;
 }
 
-.identity__base {
+.identity__global--base {
   font-size: 10px;
 }
 
-.identity__name {
+.identity__global--name {
   font-size: 18px;
   font-weight: bold;
+}
+
+.img_chara {
+  border: 5px solid;
+  border-image: linear-gradient(90deg, gold, #7a751e) 20;
+  margin-bottom: 6px;
+  @include landscape {
+    order: 1;
+  }
+}
+
+.chara__text {
+  display: inline-block;
+  align-self: center;
+  padding: 3px 9px 3px 9px;
+  font-size: 9.5px;
+  @include landscape {
+    order: 3;
+    display: block;
+    margin-top: 3px;
+    font-size: 10.5px;
+    align-self: flex-start;
+  }
+  background: linear-gradient(90deg, gold, #7a751e);
+}
+
+p {
+  padding: 2px;
+}
+
+// part 2
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px 0 5px;
+  @include landscape {
+    flex: 50%;
+    padding-left: 20px;
+
+    margin-top: 8.5px;
+  }
+}
+
+.description__text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 40px 0 41px 0;
+  letter-spacing: 1px;
+  line-height: 14px;
+
+  div {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .description__text--life {
+    flex: 15%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .description__text--center {
+    flex: 65%;
+    span {
+      font-weight: bold;
+      font-size: 15px;
+    }
+  }
+}
+
+// part 3
+
+.description__substats {
+  border-top: 2px solid black;
+  font-size: 11px;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+
+.description__logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 40px 2px 18px;
+}
+
+.description__level {
+  display: inline-block;
+  font-size: 10.5px;
+  font-style: italic;
+  border: 2px solid;
+  border-image: linear-gradient(90deg, gold, #7a751e) 10;
+  margin: 5px 0 12px 0;
+  padding: 5px;
+  align-self: center;
+  @include landscape {
+    font-size: 11px;
+  }
 }
