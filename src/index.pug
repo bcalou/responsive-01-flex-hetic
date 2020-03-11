@@ -4,21 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+    link(rel="stylesheet", href="style.scss")
     <title>Carte pokemon</title>
   </head>
   <body>
+  <p class="identitfy_evolution">Pokemon de base</p>
     <header class="identify">
       <div class="identify_left">
-        <p class="identitfy_evolution">Pokemon de base</p>
         <h1 class="identify_name_truc">Bulbizarre</h1>
+        <p class="identify_life">40PV <img src="assets/img/leaf.png" alt="logo type feuille" />
+      </p>
       </div>
     </header>
-    <div>
-      <p class="identify_life">40PV <img src="assets/img/leaf.png" alt="logo type feuille" />
-      </p>
-    </div>
-    <div>
+    <div class="img_bulbizarre">
       <img src="assets/img/bulbizarre.jpg" alt="Bulbizarre" />
     </div>
     <div class="identify_taille">Pokémon Graine. Taille: 0,7m, poids: 6,9kg
@@ -26,23 +24,23 @@
     <div class="skill">
       <img src="assets/img/leaf.png" alt="logo type feuille" />
       <img src="assets/img/leaf.png" alt="logo type feuille" />
-      <p class="skill_Vampigraine">
-        Vampigraine À moins que tous les dégats infligés par cette attaque ne
+      <p class="skill_Vampigraine">Vampigraine À moins que tous les dégats infligés par cette attaque ne
         soient prévenus, vous pouvez retirer 1 marqueur de dégats de Bulbizarre.
       </p>
+      <p class="damage">20</p>
     </div>
     <div class="types">
-      <p class="type__faiblesse">
-        Faiblesse <img src="assets/img/fire.png" alt="logo type feu" />
+      <p class="type__faiblesse">Faiblesse
       </p>
       <p class="type__resistance">Résistance</p>
       <p> Coût de retraite
-        <img src="assets/img/normal.png" alt="logo type normal" />
       </p>
     </div>
-    <div class="pokedex">
-      Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis
-      la naissance. NIV. 13 No. 1
+    <div  class="logo-types">
+    <img src="assets/img/fire.png" alt="logo type feu" />
+      <img src="assets/img/normal.png" alt="logo type normal" />
+    </div>
+    <div class="pokedex">Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV. 13 No. 1
     </div>
   </body>
 </html>
