@@ -18,3 +18,25 @@
     border: 10px solid;
     border-image: linear-gradient(150deg, rgba(253,235,0,1) 0%, rgba(120,116,30,1) 100%) 10;
   }
+@include landscape {
+  body {
+    display: flex;
+    flex-direction: column;
+    .pokemon {
+      order: -1;
+      margin-top: -70px;
+    }
+    .attack {
+      order: -3;
+      align-self: flex-end;
+      max-width: 50%;
+    }
+    .skill {
+      max-width: 50%;
+    }
+    .descriptionLife {
+      max-width: 50%;
+      align-self: flex-end;
+    }
+  }
+}
