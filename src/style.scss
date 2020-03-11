@@ -1,3 +1,9 @@
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +11,6 @@
 body {
   background-color: #9acd32;
   margin: 0;
-  padding: 0;
   border: 10px solid;
   border-image-source: linear-gradient(
     90deg,
@@ -29,16 +34,33 @@ h2 {
 .identity__type {
   font-family: sans-serif;
   font-size: 10px;
+  @include landscape {
+    order: 1;
+    padding-top: 4%;
+  }
 }
 
 .identity__title__hp {
   display: flex;
   justify-content: space-between;
+  @include landscape {
+    order: 2;
+  }
 
   .identity_title_hp_number {
     font-family: sans-serif;
     text-transform: uppercase;
     color: red;
+    @include landscape {
+      font-size: 12px;
+    }
+  }
+
+  .identity__title-h2 {
+    @include landscape {
+      font-size: 16px;
+      margin-top: 4%;
+    }
   }
 }
 
@@ -67,6 +89,26 @@ h2 {
   margin-left: 4%;
   margin-right: 4%;
   padding: 1%;
+  @include landscape {
+    order: 4;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 10px;
+  }
+}
+
+
+.landscape__div {
+  @include landscape {
+    display: flex;
+  }
+}
+
+.landscape__div_second {
+  @include landscape {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 
 .skills {
@@ -75,6 +117,10 @@ h2 {
   align-items: center;
   margin-top: 20%;
   margin-bottom: 20%;
+  @include landscape {
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
 
   .skills__logo {
     display: flex;
@@ -88,10 +134,18 @@ h2 {
   .skills__damage {
     padding-left: 10%;
   }
+
+  @include landscape {
+    margin-left: 10%;
+  }
 }
 
-hr.new4 {
+hr.separating_bar {
   border: 1px solid black;
+
+  @include landscape {
+    margin-left: 10%;
+  }
 }
 
 .types {
@@ -100,6 +154,10 @@ hr.new4 {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 12px;
+
+  @include landscape {
+    margin-left: 10%;
+  }
 }
 
 .logo-of-types {
@@ -107,6 +165,17 @@ hr.new4 {
   justify-content: space-between;
   padding-left: 6%;
   padding-right: 15%;
+
+  @include landscape {
+    margin-left: 10%;
+  }
+}
+
+.identity {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .pokedex {
@@ -122,4 +191,8 @@ hr.new4 {
     rgba(0, 212, 255, 1) 100%
   );;
   border-image-slice: 1;
+
+  @include landscape {
+    margin-left: 10%;
+  }
 }
