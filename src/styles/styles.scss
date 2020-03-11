@@ -1,0 +1,12 @@
+@import "vendors/reset";
+
+// IMPORT CONFIG
+@import "config/global";
+@import "config/variables";
+
+// IMPORT BLOCS
+@import "blocs/identity";
+@import "blocs/profil";
+@import "blocs/attacks";
+@import "blocs/weakness";
+@import "blocs/history";
