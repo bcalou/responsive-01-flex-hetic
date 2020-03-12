@@ -9,16 +9,17 @@
     border-image-slice: 1;
 
     @include landscape {
-      order: 1;
+      order: 0;
+      align-self: flex-start;
     }
   }
 
   &__details {
     background: linear-gradient( to right, $border-color1 0%, $border-color2 100%);
 
-    
+
     @include landscape {
-      order: 3;
+      order: 0;
     }
   }
 

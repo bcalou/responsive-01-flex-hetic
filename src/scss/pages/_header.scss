@@ -14,10 +14,11 @@
   }
 
   &__type {
-    align-self: flex-end;
+    align-items: flex-end;
   }
 
   @include landscape{
-    order: 1;
+    flex-shrink: 1;
+  
   }
 }
