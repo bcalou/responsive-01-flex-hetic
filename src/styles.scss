@@ -1,0 +1,130 @@
+@import "reset";
+
+@mixin small-font {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  background-color: gold;
+}
+
+body {
+  background: #8bce34;
+  margin: 0.6rem;
+  padding: 0.5rem;
+  font-family: calibri;
+  @include landscape {
+    display: flex;
+  }
+}
+
+.landscape {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.identity {
+  &__evolution {
+    font-size: 12px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  &__nameLifeType {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__life{
+    color: red;
+    font-size: 18px;
+  }
+
+  @include landscape() {
+    order: 1;
+  }
+}
+
+.appearance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__illustration {
+    border: solid 0.3rem goldenrod;
+  }
+
+  &__characteristics{
+    @include small-font();
+    margin-top: 5px;
+    background-color: yellow; 
+    padding: 1px 10px 1px 10px;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 115px 0 135px 0;
+
+  &__leaves {
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &__description {
+    font-size: 14px;
+    flex-shrink: 15;
+    padding: 0 14px 0 5px;
+  }
+
+  &__damage {
+    font-size: 26px;
+  }
+}
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px;
+  @include small-font();
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.pokedex {
+  border: solid 2px rgb(211, 160, 31);
+  margin-top: 3px;
+  @include small-font();
+  padding: 3px;
+}
+
