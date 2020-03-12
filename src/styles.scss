@@ -1,0 +1,189 @@
+@import "reset.scss";
+@import "global.scss";
+
+@include landscape {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__bulbizarre {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .identity {
+        display: flex;
+        order: 2;
+        margin-top: 5px;
+      }
+
+      .features {
+        margin: 0;
+        order: 3;
+        margin-top: 5px;
+      }
+    }
+
+    &__attack {
+      max-width: 50%;
+
+      .skill {
+        margin: 0;
+      }
+
+      .types {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.card {
+  background-image: url(/assets/img/pokemon-fond-vert.png);
+  border: solid 10px;
+  border-image: linear-gradient(to right, #e5c92c, #e6c629) 1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.identity {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 0 20px 0;
+
+  div:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+
+  &__evolution {
+    font-size: 10px;
+  }
+
+  &__name {
+    font-size: 18px;
+  }
+
+  &__life {
+    font-size: 18px;
+    color: rgb(199, 91, 14);
+    margin-right: 5px;
+  }
+}
+
+.appearance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+
+  &__bulbizarre {
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #aa9d43, #d8d092, #d6c509, #d8d092)
+      1;
+    box-shadow: rgb(20, 20, 20) 5px 5px 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+
+  &__info {
+    background: linear-gradient(
+      to right,
+      #aa9d43,
+      #d6c509,
+      #d8d092,
+      #d6c509,
+      #aa9d43
+    );
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 3px 15px;
+    max-width: 100%;
+  }
+}
+
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+
+  div {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  &__leaf {
+    margin-left: 5px;
+  }
+
+  &__info {
+    font-size: 15px;
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+
+  &__attack {
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: bold;
+  border-top: black 2px solid;
+  margin: 0 10px;
+
+  div {
+    margin-top: 5px;
+  }
+
+  &__fire {
+    padding: 0 25%;
+  }
+
+  &__normal {
+    padding: 0 25%;
+  }
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
+  border: 2px solid;
+  border-image: linear-gradient(
+      to right,
+      #aa9d43,
+      #d8d092,
+      #d6c509,
+      #d8d092,
+      #aa9d43
+    )
+    1;
+  margin: 5px 15px 0px;
+  padding: 3px 5px;
+}
