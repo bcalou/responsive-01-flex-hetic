@@ -5,56 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.scss">
-  <title>Bubizarre</title>
+  <title>Bulbizarre</title>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__pokemon">
-      <p>Pokemon de base <br><strong class="header__pokemonName">Bulbizarre</strong></p>
+  <main>
+    <div class="premier__bloc">
+      <header class="header">
+        <div class="header__pokemon">
+          <p>Pokemon de base <br><strong class="header__pokemonName">Bulbizarre</strong></p>
+        </div>
+        <div class="header__div">
+          <p>40 PV <img src="assets/img/leaf.png" alt=""></p>
+        </div>
+      </header>
 
+      <div class="description">
+        <img src="assets/img/bulbizarre.jpg" alt="" class="">
+      </div>
+      <div class="description__div">
+        <p class="description__text">Pokémon Graine. Taille : 0,7 m, poids : 0,9 kg</p>
+      </div>
     </div>
-    <div class="header__div">
-      <p>40 PV <img src="assets/img/leaf.png" alt=""></p>
+
+    <div class="second__bloc">
+      <article class="attaque">
+        <div class="attaque__leaf">
+          <img src="assets/img/leaf.png" alt="" class="attaque__leaf">
+          <img src="assets/img/leaf.png" alt="" class="attaque__leaf">
+        </div>
+        <p class="attaque__text"><strong>Vampigraine</strong> à moins que tous les dégats infligés par cette attaque ne
+          soient prévenus, vous pouvez retirer l
+          marqueur de dégats de Bulbizarre</p>
+        <p class="attaque__points">20</p>
+      </article>
+
+
+      <div class="footer">
+        <div class="forces">
+          <!-- Ligne -->
+          <div class="forces__faiblesse">
+            <p>Faiblesse</p>
+            <img src="assets/img/fire.png" alt="">
+          </div>
+          <p>Résistance</p>
+
+          <div class="forces__coût">
+            <p>Coût de retraite</p>
+            <img src="assets/img/normal.png" alt="">
+          </div>
+        </div>
+
+        <div class="graine">Il y a une étrange graine palntée sur son dos. Elle grandit avec lui depuis la naissance.
+          NIV.13
+          No.1
+        </div>
+      </div>
     </div>
-  </header>
-
-  <article class="description">
-    <img src="assets/img/bulbizarre.jpg" alt="" class="">
-    <p class="description__text">Pokémon Graine. Taille : 0,7 m, poids : 0,9 kg</p>
-  </article>
-
-  <article class="attaque">
-    <div class="attaque__leaf">
-      <img src="assets/img/leaf.png" alt="" class="attaque__leaf">
-      <img src="assets/img/leaf.png" alt="" class="attaque__leaf">
-    </div>
-    <p class="attaque__text"><strong>Vampigraine</strong> à moins que tous les dégats infligés par cette attaque ne
-      soient prévenus, vous pouvez retirer l
-      marqueur de dégats de Bulbizarre</p>
-    <p class="attaque__points">20</p>
-  </article>
-
-
-  <div class="forces">
-    <!-- Ligne -->
-    <div class="forces__faiblesse">
-      <p>Faiblesse</p>
-      <img src="assets/img/fire.png" alt="">
-    </div>
-    <div class="yo">
-      <p>Résistance</p>
-    </div>
-    <div class="forces__coût">
-      <p>Coût de retraite</p>
-      <img src="assets/img/normal.png" alt="">
-    </div>
-  </div>
-
-  <footer class="footer">
-    <p>Il y a une étrange graine palntée sur son dos. Elle grandit avec lui depuis la naissance. NIV.13 No.1</p>
-  </footer>
-
+  </main>
 </body>
 
 </html>

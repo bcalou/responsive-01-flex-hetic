@@ -1,31 +1,58 @@
 @import './reset.scss';
-
-*{
-  box-sizing: border-box;
-}
-img{
-  max-width: 100%;
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
 }
 
 body{
+  height: 100vh;
+}
+
+main{
+  height: 100%;
   background-color:#90EE90;
-  border: 10px solid yellow;
+  border: 10px solid;
+  border-image: linear-gradient(to right, #e6d825, #c9a00c) 10%;
+  ;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  @include landscape{
+    display: flex;
+  flex-direction: row;
+  }
 }
 
 /* Header */
-
+.premier__bloc{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include landscape{
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+  }
 .header{
   display:flex;
   justify-content: space-between;
+  margin-top: 8px;
+  @include landscape{
+    order: 1;
+  }
+
   .header__pokemon{
     display:flex;
   flex-direction: column;
   font-size: 8px;
+  @include landscape{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
   }
   .header__pokemonName{
     font-size: 18px;
@@ -42,31 +69,48 @@ body{
 // Description
 
 .description{
+  align-self: center;
   img{
     background: linear-gradient(to right, #e6d825, #c9a00c);
     padding: 3px;
-  }
-  .description__text{
-    background-color: yellow;
-    padding: 4px;
-    font-size: 10px;
-    text-align: center;
-    font-style: italic;
-    margin-left: 18px;
-    margin-right: 18px;
+    
   }
 }
-
+.description__div{
+  background: linear-gradient(to right, #e6d825, #c9a00c);
+  padding: 4px;
+  font-size: 10px;
+  text-align: center;
+  font-style: italic;
+  @include landscape{
+    order: 2;
+}
+}
+}
 //Attaque
 
+.second__bloc{
+justify-content: space-between;
+justify-self: center;
+  @include landscape{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 16px;
+  }
 .attaque{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 14px;
-  margin-top: 51px;
-  margin-bottom: 51px;
+  font-size: 12px;
   line-height: 120%;
+  padding-top: 14%;
+  padding-bottom: 14%;
+  @include landscape{
+    margin-top: 20%;
+    padding-top: 0;
+  }
   strong{
     font-size: 18px;
     font-weight: bold;
@@ -92,6 +136,8 @@ body{
 }
 
 //Forces
+.footer{
+  margin-bottom: 32%;
 .forces{
   display: flex;
   flex-direction: row;
@@ -103,14 +149,22 @@ body{
   border-top: 2px solid #000000;
   padding-top: 4px;
   margin-bottom: 8px;
+  
 }
 
-// Footer
-
-.footer{
+.graine{
   border: 1px solid yellow;
   font-size: 8px;
   font-style: italic;
   text-align: center;
-
+  padding: 2px;
+  border: 1px solid;
+  border-image: linear-gradient(to right, #e6d825, #c9a00c) 10%;
+  @include landscape{
+    text-align: initial;
+  }
+  }
 }
+}
+//Landscape 
+
