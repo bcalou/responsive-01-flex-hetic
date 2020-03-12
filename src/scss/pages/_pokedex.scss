@@ -1,0 +1,13 @@
+.pokedex {
+  border: 1px solid;
+  border-image-source: $mix-border-color;
+  border-image-slice: 1;
+  margin: 0 12px 12px 12px;
+  padding: 2px 8px;
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+}

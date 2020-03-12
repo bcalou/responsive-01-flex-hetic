@@ -1,0 +1,19 @@
+.type {
+  border-top: 2px solid $black;
+  margin: 4px 8px;
+  @include flex;
+
+  &__weakness {
+    @include flex(column);
+  }
+
+  &____resistance {
+    p {
+      align-items: flex-start;
+    }
+  }
+
+  &__retreatCost {
+    @include flex(column);
+  }
+}

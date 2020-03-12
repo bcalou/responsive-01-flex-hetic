@@ -1,3 +1,23 @@
 .identity {
-  background-color: red;
+  @include flex;
+  padding: 0 20px;
+
+  &__name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  &__life {
+    font-size: 32px;
+    color: red;
+    align-self: flex-end;
+  }
+
+  &__type {
+    align-self: flex-end;
+  }
+
+  @include landscape{
+    order: 1;
+  }
 }

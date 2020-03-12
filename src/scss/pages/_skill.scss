@@ -1,0 +1,21 @@
+.skill {
+
+  @include flex(row, space-around, center);
+  margin: 64px 0;
+
+  &__element {
+  
+  }
+
+  &__details {
+
+    &__details::first-word {
+      font-weight: bold;
+    }
+  }
+
+  &__attackPoint {
+    font-size:  32px;
+    font-weight: bold;
+  }
+}
