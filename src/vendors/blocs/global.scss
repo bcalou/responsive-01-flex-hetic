@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #9acd32;
+  border: 11px solid;
+  border-image-source: linear-gradient(70deg, #fdeb00, #feec00, #77731e);
+  border-image-slice: 1;
+}
