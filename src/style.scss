@@ -1,7 +1,7 @@
 @import 'reset.css';
 
 :root {
-
+  --golden-border:linear-gradient(90deg, gold, #a59a05) 1
 }
 
 * {
@@ -15,8 +15,8 @@
   body {
     background-size: cover;
     background-color: #9acd33;
-    border: 15px solid;
-    border-image: gold;
+    border: solid 15px;
+    border-image: var(--golden-border);
     overflow: hidden;
     min-height: 100vh;
     display: flex;
@@ -29,4 +29,9 @@
   h1 {
     font-weight: bold;
     font-size: large;
+  }
+
+  .image {
+    border: solid 5px;
+    border-image: var(golden-border);
   }
