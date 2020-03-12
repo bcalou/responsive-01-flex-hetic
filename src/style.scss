@@ -1,9 +1,8 @@
 @mixin landscape {
-    @media (min-aspect-ratio: 1/1) {
-      @content;
-    }
+  @media (min-aspect-ratio: 1/1) {
+    @content;
   }
-  
+}
 body {
   background-color: #a4d043;
   border: 10px solid;
@@ -79,7 +78,7 @@ h1 {
 }
 
 .pokedex {
-    border: 2px solid;
+  border: 2px solid;
   border-image-source: linear-gradient(
     90deg,
     rgb(250, 224, 66),
