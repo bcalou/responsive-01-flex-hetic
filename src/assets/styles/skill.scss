@@ -4,8 +4,18 @@
   justify-content: space-between;
 }
 
+.skill__cost {
+  display: flex;
+  align-items: center;
+}
+
+.skill__attack {
+  margin: 0 10px;
+}
+
 .skill__damages {
   display: flex;
+  align-items: center;
 
   p {
     font-size: 18px;

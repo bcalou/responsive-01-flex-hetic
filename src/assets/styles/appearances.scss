@@ -5,7 +5,8 @@
 
 .appearence__border {
   max-width: 100%;
-  border: 8px solid black;
+  border: 8px solid;
+  border-image: linear-gradient(35.11deg, #fbea4f -23.25%, #7a752e 133.76%) 12;
 }
 
 .appearence__infos {
