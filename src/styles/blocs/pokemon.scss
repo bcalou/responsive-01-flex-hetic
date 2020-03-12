@@ -1,22 +1,23 @@
 .pokemon {
   display: flex;
   flex-direction: column;
+}
+.pokemon__name {
+  margin-left: $margin;
+  margin-right: $margin;
+  border: 5px solid;
+  display: flex;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+}
 
-  &__name {
-    margin-left: $margin;
-    margin-right: $margin;
-    border: 5px solid;
-    border-image-source: $gradient;
-    border-image-slice: 1;
-  }
-
-  &__details {
-    font-size: 13px;
-    align-content: center;
-    background: linear-gradient(120deg, #fbe900, #7b771d);
-    text-align: center;
-    margin-left: 23px;
-    margin-right: 23px;
-    margin-top: 5px;
-  }
+.pokemon__details {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  background: $gradient;
+  font-style: italic;
+  margin-left: $margin + 7;
+  margin-right: $margin + 7;
+  margin-top: 5px;
 }

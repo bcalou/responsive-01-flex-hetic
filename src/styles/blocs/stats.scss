@@ -4,12 +4,8 @@
   margin-right: 8px;
   font-weight: bold;
   display: flex;
+  justify-content: space-between;
   text-align: center;
-  font-size: 16px;
-
-  &__weakness {
-    // background-color: blue;
-    // display: flex;
-    margin-left: none;
-  }
+  font-size: 15px;
+  margin-top: 40px;
 }
