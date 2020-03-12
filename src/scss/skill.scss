@@ -1,0 +1,23 @@
+.skill {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skill__photo{
+    flex-direction: row;
+}
+
+.skill__text{
+    margin: 5px;
+    align-content: stretch;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.skill__point{
+    font-size: 30px;
+}
