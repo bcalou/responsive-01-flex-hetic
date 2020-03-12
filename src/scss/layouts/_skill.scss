@@ -1,0 +1,35 @@
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18% 0 18% 0;
+
+  @include landscape {
+    margin: 10% 0 10% 0;
+  }
+
+  @include iphone6-7-8 {
+    margin: 16% 0 20% 0;
+  }
+
+  &__attack {
+    max-width: 65%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    @include landscape {
+      max-width: 60%;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 15px;
+    }
+  }
+
+  &__damages {
+    font-size: 25px;
+  }
+}

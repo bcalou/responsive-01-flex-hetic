@@ -1,0 +1,105 @@
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+$iphone6-7-8: 374px;
+$iphone6-7-8__: 375px;
+
+@mixin iphone6-7-8 {
+  @media (min-width: $iphone6-7-8) and (min-height: $iphone6-7-8__) {
+    @content;
+  }
+}
+
+@mixin iphone6-7-8_max {
+  @media (max-width: $iphone6-7-8_max) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  background: linear-gradient(35.11deg, #fbea4f -23.25%, #7a752e 133.76%);
+  padding: 10px;
+  height: 100vh;
+}
+
+body {
+  background: #a5ca50;
+  padding: 5px 10px;
+
+  @include landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.leftSide {
+  padding: 0 2% 5.5% 2%;
+
+  @include iphone6-7-8 {
+    padding: 2% 0 7% 0;
+  }
+
+  @include landscape {
+    .leftSide {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0% 2% 0% 2%;
+
+      @include iphone6-7-8 {
+        padding: 6% 2% 6% 2%;
+      }
+    }
+  }
+}
+
+.rightSide {
+  padding: 0 2% 5.5% 2%;
+  align-items: center;
+  // margin: 3% 0 3% 0;
+
+  @include iphone6-7-8 {
+    padding: 7% 0 7% 0;
+  }
+
+  @include landscape {
+    @include iphone6-7-8 {
+      padding: 6% 2% 6% 2%;
+    }
+  }
+}
+
+@include landscape {
+  .leftSide {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5.5% 2% 5.5% 2%;
+
+    @include iphone6-7-8 {
+      padding: 6% 2% 6% 2%;
+    }
+  }
+
+  .rightSide {
+    max-width: 50%;
+    padding: 5.5% 2% 5.5% 2%;
+    align-items: center;
+    // margin: 3% 0 3% 0;
+
+    @include iphone6-7-8 {
+      padding: 6% 2% 6% 2%;
+    }
+  }
+}
