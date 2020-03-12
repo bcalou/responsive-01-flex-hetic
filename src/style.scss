@@ -1,0 +1,26 @@
+@import "reset.css"
+
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+body {
+    background-color: #9acd33;
+}
+
+// Problème npm run dev
+/*
+npm ERR! missing script: dev
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Lowee\AppData\Roaming\npm-cache\_logs\2020-03-12T16_58_26_788Z-debug.log
+
+*/

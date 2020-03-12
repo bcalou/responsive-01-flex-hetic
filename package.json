@@ -2,8 +2,9 @@
   "name": "responsive-01-flex-hetic",
   "version": "1.0.0",
   "description": "Bulbizarre",
-  "main": "\u001b[D\u001bhtml",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "parcel src/index.pug"
   },
   "repository": {
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/QuentinHuber/responsive-01-flex-hetic#readme",
   "devDependencies": {
     "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4"
   }
 }
