@@ -1,0 +1,21 @@
+.identity__grade {
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.identity__name {
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.identity__life {
+  text-align: right;
+  margin-top: -20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+}
