@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
+body {
+  background-color: #9acd32;
 }
 
-body {
-  background-color: #99cc00;
+main {
+  border: 13px solid gold;
 }
 
 @import "reset.scss";
