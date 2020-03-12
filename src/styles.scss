@@ -1,0 +1,233 @@
+@import "reset.scss";
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+.card {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/81ccfdb7-ac1d-423f-a276-af63abae5ba2/d5oulfh-45f9111f-d787-4040-8609-50e8ce099b31.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgxY2NmZGI3LWFjMWQtNDIzZi1hMjc2LWFmNjNhYmFlNWJhMlwvZDVvdWxmaC00NWY5MTExZi1kNzg3LTQwNDAtODYwOS01MGU4Y2UwOTliMzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wt8BhJoij8hLyZ30gBjZMpDZqt2-R78C8gpKybza1VU);
+  border: 11px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  display: flex;
+  flex-direction: column;
+  border-image-slice: 1;
+  height: 100vh;
+  box-sizing: border-box;
+  @include landscape {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & div {
+    @include landscape {
+    max-width: 50vw;
+    align-items: center;
+    
+    }
+  }
+
+
+  &__identity  {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 20px 0px;
+    @include landscape {
+      order: 2;
+      
+    }
+  }
+
+  .identity {
+  
+    &__evolution {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      text-align: left;
+    }
+  
+    &__name {
+      font-weight: bolder;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    &__right {
+      display: flex;
+      align-items: center;
+      @include landscape {
+        
+        
+      }
+    }
+
+    &__life {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color:red;
+    }
+
+    &__type {
+      margin-left: 5px;
+    }
+  }
+
+
+  &__appearance {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px;
+    @include landscape {
+      order: 1;
+    }
+    img {
+      @include landscape {
+       
+      }
+      max-width: 100%;
+      border: 5px solid;
+      box-shadow: 5px 5px 20px;
+      border-image-source: linear-gradient(
+        90deg,
+        rgb(250, 224, 66),
+        rgb(122, 117, 29)
+      );
+      border-image-slice: 1;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    @include landscape {
+      order: 2;
+    }
+    
+    & div {
+      padding: 2px 10px;
+      background: linear-gradient(
+        to right,
+        #aa9d43,
+        #d6c509,
+        #d8d092,
+        #d6c059,
+        #aa9d43,
+      );
+      
+    }
+  }
+
+  .feature {
+    
+    &__info {
+      font-size: 12px;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  &__skills {
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include landscape {
+       padding: 0;
+    }
+
+    & em {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+
+  .skills__leaf {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .skills__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    max-width: 90%;
+    text-align: start;
+  }
+  .skills__attack {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  &__types {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 2px solid black;
+    margin: 0px 5px;
+    margin-top: 25px;
+    @include landscape {
+       margin: 0;
+       text-align: center;
+    }
+  }
+  
+  .types__weakness {  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .types__resistance {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .types__retirement {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .types__fire {
+    
+  }
+
+  .types__normal {
+    
+  }
+
+  &__pokedex {
+    padding-bottom: 10px;
+    margin: 0px 10px;
+    & div {
+      border: 3px solid;
+      border-image-source: linear-gradient(
+        90deg,
+        rgb(250, 224, 66),
+        rgb(122, 117, 29)
+      );
+      border-image-slice: 1;
+      
+    }
+  }
+
+  .pokedex__description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+
+  }
+}
+
