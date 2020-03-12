@@ -1,0 +1,153 @@
+@import 'reset.scss';
+
+$gradient: linear-gradient(to right, #FCEA01,#78741E);
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+body{
+  background: $gradient; 
+  font-family: Helvetica;
+}
+.elem{
+  background-image:url(/assets/img/background.png) ;
+  margin: 10px;
+  padding-bottom: 10px;
+  @include landscape{
+    display: flex;
+  }
+  &__col1{
+    @include landscape{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      margin: 10px;
+      margin-left: 10px ;
+      
+    }
+      .appearance-id{
+        @include landscape{
+          order: -1;
+        }
+      .identity{
+        @include landscape{
+        }
+      }
+
+      .appearance__img{
+        @include landscape{
+          margin-bottom: 0px;
+      }
+    }
+    
+     
+    }
+    
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.identity{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin: 10px 10px 0px 10px;
+  font-size: 13px;
+  
+  &__name{
+    font-weight: bold;
+    font-size:20px ;
+  }
+}
+
+.identity__group-2{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color:red;
+}
+
+
+.appearance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  &__img{
+    background: $gradient; 
+    margin: 5px;
+    padding: 5px;
+  }
+
+  &__description{
+    background: $gradient;
+    font-style: italic;
+    font-size: 13px;
+  }
+}
+
+.skill{
+  display: flex;
+  align-items: center;
+  margin: 40px 15px 40px 15px;
+  font-size: 13px;
+
+  
+  &__attack{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  &__dammage{
+    font-size: 30px;
+    margin: 5px;
+  }
+  .name{
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.types{
+  display:flex;
+  justify-content: space-around;
+  border-top: 2px solid black;
+  margin: 10px;
+  font-size: 15px;
+
+  &__weakness{
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin-left: 15px;
+    }
+  }
+  &__cost{
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin-left: 40px;
+    }
+  }
+}
+
+.pokedex-group{
+  border: $gradient 10px;
+}
+.pokedex{
+  text-align: center;
+  font-size: 13px;
+  border:2px solid;
+  border-image: $gradient 15;
+  margin: 2px 15px 10px;
+}
+
