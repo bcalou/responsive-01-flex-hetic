@@ -1,14 +1,47 @@
 @import "../style/vendor/reset.scss";
+@import "../style/mixin.scss";
 @import "../style/component/head.scss";
 @import "../style/component/img.scss";
 @import "../style/component/caption.scss";
-:root  {
+@import "../style/component/info.scss";
+@import "../style/component/stats.scss";
+@import "../style/component/detail.scss";
+
+:root {
   --main-color: #9acd32;
   --secondary-color: #fbe900;
+  --gradien-yellow: linear-gradient(
+    90deg,
+    rgba(236, 255, 0, 1) 0%,
+    rgba(228, 255, 0, 1) 67%,
+    rgba(60, 66, 13, 1) 95%,
+    rgba(60, 66, 13, 1) 98%
+  );
+  --primary-margin: 5%;
 }
 body {
   background-color: var(--main-color);
   border: solid var(--secondary-color) 10px;
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
+  @include landscape {
+    flex-direction: row;
+  }
+}
+
+.first-part {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 150%;
+  }
+}
+
+.seconde_part {
+  @include landscape {
+    display: flex;
+    align-items: center;
+    flex-basis: 150%;
+  }
 }

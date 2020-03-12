@@ -1,6 +1,13 @@
 .img {
   display: flex;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: var(--primary-margin);
+  margin-right: var(--primary-margin);
+  margin-bottom: 20px;
   border: solid var(--secondary-color) 5px;
+  img {
+    min-width: 100%;
+  }
+  @include landscape {
+    margin-top: 20px;
+  }
 }

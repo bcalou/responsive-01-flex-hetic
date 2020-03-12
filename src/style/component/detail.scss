@@ -1,0 +1,10 @@
+.details {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-left: var(--primary-margin);
+  margin-right: var(--primary-margin);
+  text-align: center;
+  p {
+    border: solid var(--secondary-color);
+  }
+}

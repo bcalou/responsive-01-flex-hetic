@@ -6,9 +6,11 @@ html(lang="en")
         title Document
         link(rel='stylesheet' href='../src/style/style.scss')
     body
-        include include/head.pug
-        include include/card-img.pug
-        include include/caption.pug
-        include include/info.pug
-        include include/stat.pug
-        include include/footer.pug
+        .first-part
+            include include/head.pug
+            include include/card-img.pug
+            include include/caption.pug
+        .seconde-part
+            include include/info.pug
+            include include/stat.pug
+            include include/footer.pug

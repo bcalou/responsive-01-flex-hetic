@@ -1,7 +1,9 @@
 .head {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: var(--primary-margin);
+  margin-right: var(--primary-margin);
   &__name {
     p {
       font-size: small;
@@ -17,5 +19,9 @@
     font-size: 20px;
     font-weight: 700;
     color: red;
+    align-self: flex-end;
+  }
+  @include landscape {
+    order: 1;
   }
 }
