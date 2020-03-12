@@ -1,0 +1,9 @@
+.caption {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 10px;
+  p {
+    background-color: var(--secondary-color);
+  }
+}

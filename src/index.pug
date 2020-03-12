@@ -1,24 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carte bulbizare</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <header>
-      <p>Pokemon de base</p>
-      <h1>Bulbizare</h1>
-    </header>
-    <h3>40PV <img src="assets/img/leaf.png" alt="img leaf" /></h3>
-    <img src="assets/img/bulbizarre.jpg" alt="" />
-    <p>Pokémon Graine:Taille:0,7m,poids:6,9kg</p>
-    <img src="assets/img/leaf.png" alt="" />
-    <img src="assets/img/leaf.png" alt="" />
-    <p>
-      Vampigraine A moins que tous les dégats infligés par cette attaque ne
-      soient prévenus,vous pouvez retirer 1 marqueur de dégats de bullbizarre.
-    </p>
-  </body>
-</html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel='stylesheet' href='../src/style/style.scss')
+    body
+        include include/head.pug
+        include include/card-img.pug
+        include include/poids.pug
+        include include/info.pug
+        include include/stat.pug
+        include include/footer.pug

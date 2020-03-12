@@ -1,0 +1,14 @@
+@import "../style/vendor/reset.scss";
+@import "../style/component/head.scss";
+@import "../style/component/img.scss";
+@import "../style/component/poids.scss";
+:root  {
+  --main-color: #9acd32;
+  --secondary-color: #fbe900;
+}
+body {
+  background-color: var(--main-color);
+  border: solid var(--secondary-color) 10px;
+  display: flex;
+  flex-direction: column;
+}
