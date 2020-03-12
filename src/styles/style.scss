@@ -53,21 +53,31 @@ body {
 @media (min-width: 400px) {
   body {
     flex-direction: row;
-    max-height: 40vh;
   }
   .description {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 40%;
   }
   .gameplay {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    margin-bottom: 9vh;
   }
   .attacks {
     justify-content: center;
   }
   .image {
     min-width: 100%;
+  }
+  .identity {
+    order: 1;
+  }
+  .characteristics {
+    order: 3;
+    margin: 0;
+    margin-left: 2vw;
   }
 }
