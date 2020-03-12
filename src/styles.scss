@@ -2,14 +2,50 @@
 
 $gradient: linear-gradient(to right, #FCEA01,#78741E);
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 body{
   background: $gradient; 
   font-family: Helvetica;
 }
 .elem{
-  background-color: #9ACD31 ;
+  background-image:url(/assets/img/background.png) ;
   margin: 10px;
   padding-bottom: 10px;
+  @include landscape{
+    display: flex;
+  }
+  &__col1{
+    @include landscape{
+      display: flex;
+      flex-wrap: wrap-reverse;
+      margin: 10px;
+      margin-left: 10px ;
+      
+    }
+      .appearance-id{
+        @include landscape{
+          order: -1;
+        }
+      .identity{
+        @include landscape{
+        }
+      }
+
+      .appearance__img{
+        @include landscape{
+          margin-bottom: 0px;
+      }
+    }
+    
+     
+    }
+    
+  }
 }
 * {
   box-sizing: border-box;
@@ -25,6 +61,7 @@ img {
   padding-top: 15px;
   margin: 10px 10px 0px 10px;
   font-size: 13px;
+  
   &__name{
     font-weight: bold;
     font-size:20px ;
@@ -37,6 +74,7 @@ img {
   font-size: 18px;
   color:red;
 }
+
 
 .appearance{
   display: flex;
