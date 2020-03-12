@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "reset.scss";
+@import "apperance.scss";
+@import "skill.scss";
+@import "types.scss";
+@import "reset.scss";
+@import "pokedex.scss";
