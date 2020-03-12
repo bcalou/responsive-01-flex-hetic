@@ -1,0 +1,15 @@
+$border-color: linear-gradient(to right, #f7e501, #79751e);
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
