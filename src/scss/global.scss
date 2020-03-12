@@ -10,7 +10,7 @@ body {
   border: 12px solid;
   border-image: linear-gradient(#c2a60a, #ddda0a) 15;
   padding: 12px;
-  max-height: 100vh;
+  min-height: 100vh;
   background-color: #81a247;
   display: flex;
   flex-direction: column;
