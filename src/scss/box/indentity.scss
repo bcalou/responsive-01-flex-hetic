@@ -1,0 +1,35 @@
+.identity{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 4%;
+    font-size: 10px;
+
+  
+    .identity__evolution {
+        font-size: 12px;
+    
+    }
+    .identity__right{
+        display: flex;
+        flex-direction: flex-end;
+        align-items: center;
+        font-size: 16px;
+    }
+    .identity__name {
+        font-weight: bold;
+        font-size: 25px;
+        
+        
+    }
+    .identity__life{
+        color: orangered;
+        font-size: 18px;
+        padding-right: 2%;
+        align-items: center;
+        
+    
+    }
+}
+
+

@@ -1,0 +1,29 @@
+@import "reset";
+@import "../scss/box/appearance.scss";
+@import "../scss/box/indentity.scss";
+@import "../scss/box/skill.scss";
+@import "../scss/box/types.scss";
+@import "../scss/box/pokedex.scss";
+
+
+:root{
+  --main-color:#94d3a2;
+  
+}
+body {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    border: 10px solid yellow;
+    display: block;
+  }
+  
+* {
+  box-sizing: border-box;
+}
+  
+img {
+  max-width: 100%;
+}
+  
+  

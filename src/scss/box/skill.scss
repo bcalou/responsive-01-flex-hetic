@@ -1,0 +1,29 @@
+.skill{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 35px 0 55px;
+
+  .skill__leaf {
+      max-width: 30%;
+  }
+
+
+  .skill_texte {
+    margin: 5px;
+    font-size: 10px;
+    align-content: stretch;
+    padding-right: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+.skill__point{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+
+}
+  
+}
