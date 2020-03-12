@@ -1,0 +1,36 @@
+.identity__grade{
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+.identity__name{
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+
+.life{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -22px;
+
+  &__pv{ 
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+}
+
+.cadre__bulbizarre{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+
+  .Bulbizarre_img{
+  border: 5px solid;
+  border-image-source: linear-gradient(120deg, #fbe900, #7b771d);
+  border-image-slice: 1;
+}
+}
