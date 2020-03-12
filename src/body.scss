@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+body {
+  .card {
+    border: 15px solid gold;
+    padding: 12px;
+    background-color: yellowgreen;
+    font-family: Arial;
+    overflow: hidden;
+    .identity {
+      .identity__grade {
+        font-size: 10px;
+      }
+
+      .identity__name {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .identity__life {
+        color: red;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      .identity__option {
+        display: flex;
+      }
+      .indentity__all {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .description__image {
+      border: 5px solid gold;
+      margin-top: 5px;
+    }
+    .description__text {
+      font-size: 12px;
+      padding: 2px;
+      margin-top: 5px;
+      text-align: center;
+      background-color: gold;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .attack {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      .attack__type {
+        align-self: center;
+      }
+      .attack__description--text {
+        font-size: 14px;
+
+        .attack__description--vampigraine {
+          font-weight: bolder;
+        }
+      }
+      .attack__points {
+        align-self: center;
+        .attack__points--number {
+          font-size: 22px;
+        }
+      }
+    }
+    .stats {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      .stats__option--1--image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .stats__option--3--image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .footer__evo {
+      border: solid gold 2px;
+      font-size: 10px;
+      padding: 3px;
+      font-style: italic;
+      margin-top: 10px;
+    }
+  }
+}
