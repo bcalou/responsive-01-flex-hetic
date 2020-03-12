@@ -1,0 +1,17 @@
+.picture {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  &__bulbi {
+    border: 4px solid #e7ca23;
+  }
+
+  &__info {
+    background-color: #e7ca23;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+  }
+}

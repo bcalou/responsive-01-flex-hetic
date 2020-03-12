@@ -1,0 +1,14 @@
+.stats {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: bold;
+  border-top: 2px solid black;
+
+  &__type {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+}
