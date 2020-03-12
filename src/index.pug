@@ -5,12 +5,16 @@ head
   link(href='./styles/global.scss' rel='stylesheet')
   title Pokemon Card
 body
-  include includes/id
-  include includes/img
-  include includes/caption
-  include includes/attack
-  include includes/stats
-  include includes/details
+  <div class="section1">
+    include includes/id
+    include includes/img
+    include includes/caption
+  </div>
+  <div class="section2">
+    include includes/attack
+    include includes/stats
+    include includes/details
+  </div>
 
   //Les deux lignes suivantes sont à activer 
   //avec les lignes des fichiers section1.pug et section2.pug

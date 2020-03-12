@@ -1,4 +1,10 @@
 @import "./reset.scss";
+
+@mixin landscape {
+    @media (min-aspect-ratio: 1/1) {
+      @content;
+    }
+  }
   
 :root {
     --primary-color: #9acd32;
@@ -9,7 +15,8 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: (var(--primary-color));
+    //background-color: (var(--primary-color));
+    background-image: url(../assets/img/fond-carte.png);
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 5px;
@@ -17,6 +24,14 @@ body {
     border: 10px solid var(--secondary-color);
     font-size: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-height: 100vh;
+    @include landscape {
+        flex-direction: row;
+        max-height: 100vh;
+        align-items: center;
+        background-size: cover;
+    }
+    
 }
 
 .id {
@@ -50,6 +65,9 @@ body {
         border: 5px solid;
         border-image: linear-gradient(90deg,  #fff600, #697300)10;
         box-shadow: 4px 4px 10px black;
+        @include landscape {
+            margin-bottom: 4%;
+        }
     }
 }
 
@@ -67,6 +85,11 @@ body {
      font-weight: bold;
      margin-right: 20px;
      margin-left: 20px;
+     @include landscape {
+         font-size: 8px;
+         margin-left: 12px;
+         margin-right: 12px;
+     }
  }
 
  .attack {
@@ -89,9 +112,16 @@ body {
         padding-left: 5%;
         font-size: 25px;
         margin-left: 5%; //pour coïncider avec le modèle du cours
+        @include landscape {
+            padding-left: 0;
+        }
     }
     & + p {
         line-height: 120%;
+    }
+    @include landscape {
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 }
 
@@ -133,4 +163,28 @@ strong {
      padding: 3px;
      font-size: 9px;
      font-style: italic;
+ }
+
+ .section1 {
+     @include landscape {
+         //margin-right: 20%;
+         flex-basis: 50%;
+         max-width: 100%;
+         display: flex;
+         flex-direction: column;
+         flex-shrink: 0;
+         padding-right: 5%;
+         & > header {
+             order: 2;
+         }
+         & > p {
+             order: 3;
+         }
+     }
+ }
+
+ .section2 {
+     @include landscape {
+         margin-right: 5%;
+     }
  }
