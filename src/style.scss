@@ -1,4 +1,4 @@
-@import "reset.css"
+@import 'reset.css';
 
 :root {
 
@@ -12,15 +12,21 @@
     max-width: 100%;
   }
 
-body {
+  body {
+    background-size: cover;
     background-color: #9acd33;
-}
+    border: 12px solid;
+    border-image: gold 15;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
 
-// Problème npm run dev
-/*
-npm ERR! missing script: dev
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     C:\Users\Lowee\AppData\Roaming\npm-cache\_logs\2020-03-12T16_58_26_788Z-debug.log
-
-*/
+  h1 {
+    font-weight: bold;
+    font-size: large;
+  }

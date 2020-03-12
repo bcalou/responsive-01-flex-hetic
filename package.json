@@ -20,6 +20,10 @@
   "devDependencies": {
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "reset.css": "^2.0.2"
   }
 }
