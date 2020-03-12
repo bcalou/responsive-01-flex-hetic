@@ -1,0 +1,43 @@
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  border: 10px solid;
+  border-image: linear-gradient(45deg, #fde934, olive);
+  border-image-slice: 1;
+  background-color: #9bcb40;
+
+  @include landscape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+header {
+  @include landscape {
+    // padding: 1% 5% 0 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    // padding: 5.5% 2% 5.5% 2%;
+  }
+}
+
+main {
+  padding: 5% 1%;
+  align-items: center;
+  @include landscape {
+    max-width: 50%;
+  }
+}
