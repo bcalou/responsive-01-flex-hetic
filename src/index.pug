@@ -4,33 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/scss/reset.scss">
+    <link rel="stylesheet" href="/scss/style.scss">
+
+
 </head>
-<header class="identity">
-    <p class="identity__evolution">Pokémon de base</p>
-    <p class="identity__name">Bulbizarre</p>
-    <p class="identity__life"> 40 PV</p>
-    <img class="identitytype "src="assets/img/leaf.png"alt="Type plante">
-</header>
 <body>
-    <section class="appearence">
-        <img class="bulbizarre" src="assets/img/bulbizarre.jpg">
-        <p>Pokémon Graine. Taille : 0,7m, poids: 6,9 KG</p>
-    </section>
-    <section class="skill">
-        <img class="skill__leaf" src="assets/img/leaf.png">
-        <img class="skill__leaf2" src="assets/img/leaf.png">
-        <p class="skill__text"> Vampigraine À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégâts de Bulbizarre.</p>
-        <p>20</p>
-    </section>
-    <section class="type">
-        <p>Faiblesse</p>
-        <p>Résistance</p>
-        <p>Coût de retraite</p>
-        <img class="type__fire" src="assets/img/fire.png">
-        <img class="type__normal" src="assets/img/normal.png">
-    </section>
-    <section class="pokedex">
-        <p class="pokedex__text">Il y a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV. 13 No. 1</p>
-    </section>
+   include includes/indentity.pug
+   include includes/appearance.pug
+   include includes/skill.pug
+   include includes/types.pug
+   include includes/pokedex.pug
 </body>
 </html>

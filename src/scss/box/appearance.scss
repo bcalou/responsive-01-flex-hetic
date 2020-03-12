@@ -1,0 +1,24 @@
+
+.appearence{
+    margin-top: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+    
+.bulbizarre {
+    border: 5px solid;
+    border-image: linear-gradient(90deg, #faef01 0.5%, #797901 90%) 10;
+    margin-top: 0.5%;
+}
+.appearence__text{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #faef01 0.5%, #797901 90%);
+    text-align: center;
+}
+
+    
+
+    
