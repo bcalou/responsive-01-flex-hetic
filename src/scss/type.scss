@@ -1,0 +1,22 @@
+.type{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-top: solid 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.type__one{
+    .type__fire{
+        margin-left: 20px;
+    }
+
+}
+
+.type__three{
+    .type__normal{
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,18 @@
+
+.appearence{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.appearence__text {
+    background: linear-gradient(o right, #FCEA01,#78741E);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.bulbizarre{
+    background-color: var(--main-color);
+    display: flex;
+    border: 2px solid yellow;
+  }
