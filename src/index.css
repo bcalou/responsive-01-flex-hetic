@@ -1,0 +1,122 @@
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 99%;
+}
+body {
+  background-color: #80d827;
+  border: 10px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(255, 250, 110),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+  padding: 20px 20px;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  p {
+    margin: 0;
+  }
+  .identify__evolution {
+    font-size: 4px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  hr {
+    background-color: black;
+    margin-bottom: 1px;
+  }
+  h1 {
+    margin: 0;
+  }
+  .identify__xx {
+    justify-content: space-between;
+    display: flex;
+  }
+  .identify {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+
+    .identify__life {
+      font-size: 18px;
+      color: red;
+      margin-left: 30px;
+    }
+    .identify__tx {
+      display: flex;
+      align-items: center;
+    }
+    .identify__name {
+      font-size: 18px;
+      margin-top: 5px;
+      margin-right: 50px;
+      margin-left: 10px;
+    }
+  }
+
+  .photo__taille {
+    border: #d5c446 solid 6px;
+    background-color: #cebf4a;
+    margin-top: 3px;
+    font-size: 5px;
+    justify-content: center;
+    display: inline-table;
+    line-height: 6px;
+    margin-left: 32px;
+  }
+
+  .skill__all {
+    display: flex;
+    align-items: center;
+  }
+  .skill__Vampigraine {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .skill__number {
+    font-size: 23px;
+  }
+  .types {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: x-small;
+    }
+  }
+}
+.photos {
+  justify-content: space-between;
+  display: flex;
+  margin-right: 30px;
+  margin-left: 11px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.photo__img {
+  border: solid 5px #ffc300;
+  box-shadow: 4px 5px 13px;
+  margin-left: 2px;
+}
+.pokedex {
+  border: rgb(255, 244, 89) solid 1.5px;
+}
+.pokedex__text {
+  font-size: 10px;
+  padding: 4px;
+  text-align: center;
+}
