@@ -1,0 +1,15 @@
+@import "mixins";
+@import "variables";
+
+.pokedex__description {
+    font-size: 11px;
+    font-style: oblique;
+    border: 3px solid;
+    border-image: $border-color 1;
+    padding: 2px 4px;
+    text-align: left;
+
+    @include landscape {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+}

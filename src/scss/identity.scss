@@ -1,0 +1,33 @@
+@import "mixins";
+@import "variables";
+
+.identity {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-end;
+
+    @include landscape {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-top: 4px;
+        align-self: start;
+    }
+}
+
+.identity__evolution {
+    font-size: 10px;
+}
+
+.identity__name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.identity__hp {
+    font-size: 20px;
+    color: $hp-color;
+}
+
+.identity__type {
+    margin-left: 5px;
+}

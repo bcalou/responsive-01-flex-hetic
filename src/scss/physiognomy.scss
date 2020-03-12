@@ -1,0 +1,15 @@
+@import "mixins";
+@import "variables";
+
+.physiognomy {
+    display: inline-table;
+    margin-top: 8px;
+    font-size: 12px;
+    background-image: $border-color;
+
+    @include landscape {
+        grid-area: 3 / 1 / 4 / 2;
+        margin-top: 0px;
+        align-self: start;
+    }
+}
