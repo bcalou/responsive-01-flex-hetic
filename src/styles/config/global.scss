@@ -12,4 +12,17 @@ body {
   border: 10px solid;
   border-image-source: $gradient;
   border-image-slice: 1;
+  padding: 15px;
+
+  @include landscape {
+    display: flex;
+  }
+}
+
+.landscape {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

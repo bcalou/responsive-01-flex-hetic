@@ -1,7 +1,8 @@
 .supp {
   display: flex;
+  justify-content: center;
   font-size: 13px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 2px solid;
   border-image-slice: 1;
   border-image-source: $gradient;

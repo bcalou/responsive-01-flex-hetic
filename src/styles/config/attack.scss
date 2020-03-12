@@ -6,7 +6,6 @@
   &__type {
     align-items: center;
     display: flex;
-    margin-left: 10px;
     flex-shrink: 0;
   }
 }
@@ -14,8 +13,6 @@
 .info {
   flex-direction: column;
   margin-top: 10px;
-  margin-right: 20x;
-  margin-left: 20px;
   text-align: left;
 
   em {
@@ -25,7 +22,6 @@
 }
 
 .damage {
-  margin-right: 10px;
   font-size: 30px;
   align-items: center;
   display: flex;
