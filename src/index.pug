@@ -8,11 +8,15 @@
   <title>Pokémon</title>
 </head>
 <body class="card">
-  include assets/includes/header.pug
-  include assets/includes/image.pug
-  include assets/includes/who.pug
-  include assets/includes/attacks.pug
-  include assets/includes/stats.pug
-  include assets/includes/details.pug
+  <div class="landscape__left">
+    include assets/includes/header.pug
+    include assets/includes/image.pug
+    include assets/includes/who.pug
+  </div>
+  <div class="landscape__right">
+    include assets/includes/attacks.pug
+    include assets/includes/stats.pug
+    include assets/includes/details.pug
+  </div>
 </body>
 </html>
