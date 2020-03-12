@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -94,6 +93,8 @@ body {
       font-size: x-small;
     }
   }
+.star{
+  margin-left:10px;
 }
 .photos {
   justify-content: space-between;
