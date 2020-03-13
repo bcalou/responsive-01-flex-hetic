@@ -1,0 +1,37 @@
+@import 'reset.css';
+
+:root {
+  --golden-border:linear-gradient(90deg, gold, #a59a05) 1
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    background-size: cover;
+    background-color: #9acd33;
+    border: solid 15px;
+    border-image: var(--golden-border);
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .image {
+    border: solid 5px;
+    border-image: var(--golden-border);
+  }
