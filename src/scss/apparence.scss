@@ -1,0 +1,13 @@
+.apparence {
+  &__img {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px blue;
+  }
+
+  &__description {
+    font-size: 10px;
+    display: flex;
+    justify-content: right;
+  }
+}
