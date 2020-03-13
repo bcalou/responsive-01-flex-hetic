@@ -9,6 +9,10 @@
     border: 8px solid;
     border-image: linear-gradient(45deg, #fde934, olive);
     border-image-slice: 1;
+
+    @include landscape {
+      order: -1;
+    }
   }
 }
 
@@ -19,6 +23,7 @@
   margin: 1% 9%;
   align-self: center;
   text-align: center;
+
   //   @include landscape {
   //     display: flex;
   //     flex-direction: column;
