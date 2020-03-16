@@ -1,0 +1,112 @@
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  background-color: #97cd2a;
+  border: 10px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+  padding: 20px;
+}
+
+.card__base {
+  font-size: 10px;
+}
+
+.identity__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.identity__info {
+  color: red;
+  display: flex;
+}
+
+.identity__title {
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.identity__preview {
+  object-fit: cover;
+  border: 5px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+}
+
+.identity__description {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(99, 94, 29, 1) 100%
+  );
+  margin: 0 18px;
+}
+
+.card__information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.information__dommage {
+  font-size: 25px;
+}
+
+.types__title {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.types__element {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card__pokedex {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+  margin-top: 5px;
+  font-size: 10px;
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
