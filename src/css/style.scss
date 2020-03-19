@@ -18,9 +18,8 @@ img {
 body{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   border: 15px solid ;
-  //overflow: hidden;
+  min-height: 100vh;
   border-image: $gradient;
   background-color: yellowgreen;
 }
@@ -35,7 +34,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 15px;
+  margin-left: 5%;
 }
 
 .identity__name{
@@ -50,7 +49,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 15px;
+  margin-right: 5%;
   margin-top: 16px;;
 }
 
@@ -87,7 +86,7 @@ body{
 .attack{
   display: flex;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 14%;
   margin-bottom: 60px;
 }
 
@@ -118,12 +117,13 @@ body{
 
 .line{
   border: 2px solid $black;
-  margin-top: 20px;
+  margin-top: 3%;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 .resilience__stats--container{
+  margin-top: 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -140,13 +140,19 @@ body{
   border: 3px solid;
   border-image: $gradient;
   flex-direction: row;
-  margin-top: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+
+.resilience__description{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex-wrap: wrap;
 }
 
 .resilience__lvl{
-  display: flex;
-  padding-left: 50px;
+  align-self: flex-end;
 }
