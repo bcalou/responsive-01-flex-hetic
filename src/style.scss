@@ -1,0 +1,89 @@
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+body {
+  background-color: #a4d043;
+  border: 10px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+  padding: 20px 20px;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+.identify_left {
+  display: flex;
+  justify-content: space-between;
+}
+.identify_life {
+  padding-top: 10px;
+  color: red;
+}
+p {
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+
+.img_bulbizarre {
+  border: 7px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+}
+
+.identify_taille {
+  background-color: a4d043;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .skill_Vampigraine {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo-types {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pokedex {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgb(250, 224, 66),
+    rgb(122, 117, 29)
+  );
+  border-image-slice: 1;
+  padding: 2px;
+}
