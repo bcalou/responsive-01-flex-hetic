@@ -1,0 +1,195 @@
+@import 'reset.css';
+
+@mixin landscape {
+    @media (min-aspect-ratio: 1/1) {
+      @content;
+    }
+  }
+
+  @mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  $primary-color: linear-gradient(90deg, #FEEB00 0%, rgb(194, 181, 9) 55%, rgb(100, 94, 5) 100%);
+  $secondary-color: #9ACD32;
+  $black: black;
+  $red: red;
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+body {
+    background: $primary-color;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 13px;
+    font-size: 10.5px;
+    overflow-y: hidden;
+    
+}
+
+.card {
+    background: $primary-color;
+    padding: 11px;
+    display: inline-block;
+    @include landscape {
+        padding: 8px 14px 8px 14px;
+    }
+}
+
+.content {
+    padding: 0 10px 0 10px;
+    background: $secondary-color;
+    @include flex-between();
+    flex-direction: column;
+    @include landscape {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 10px 30px 7px;
+        margin-top: 5px;
+    }
+}
+
+.card__block {
+    display: flex;
+    flex-direction: column;
+    @include landscape {
+        flex: 50%;
+    }
+
+    &--title {
+        margin-top: 6px;
+        @include flex-between();
+        @include landscape {
+           order: 2;
+        }
+
+        p {
+            flex: 50%;
+            text-align: right;
+            font-size: 1.5em;
+            color: $red;
+
+            &:first-child {
+                font-size: 0.9em;
+                width: 100%;
+                text-align: left;
+                color: $black;
+                span {
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+            }
+            &:last-child {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+
+            img {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    &--img-title {
+        display: inline-block;
+        margin-top: 6px;
+        background: $primary-color;
+        padding: 8px;
+    }
+
+    &--features {
+        font-size: 1.1em;
+        font-style: italic;
+        display: inline-block;
+        text-align: center;
+        background: $primary-color;
+        padding: 4px 8px 3px 8px;
+        margin-top: 6px;
+        align-self: center;
+        @include landscape {
+            order: 3;
+         }
+    }
+
+    &:last-child {
+        font-size: 12.5px;
+        @include landscape {
+            padding-left: 25px;
+         }
+    }
+
+    &:first-child {
+        @include landscape {
+            padding-left: 15px;
+        }
+    }
+}
+
+.card__first {
+    @include flex-center();
+    flex-direction: row;
+    padding: 4em 0 4em 0;
+
+    @include landscape {
+        padding: 2.2em 0 1em 0;
+        font-size: 1.1em;
+     }
+    &--img-title {
+        flex: 20%;
+    }
+    &--title {
+        
+        flex: 65%;
+        span {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+    }
+    &--number {
+        flex: 15%;
+        font-size: 1.8em;
+        text-align: right;
+    }
+}
+
+.card__second {
+    border-top: 2.5px solid $black;
+    padding-top: 4px;
+    font-weight: 800;
+    @include flex-between();
+
+    @include landscape {
+        font-size: 0.8em;
+     }
+}
+
+.card__third {
+    padding: 0 20px 0 20px;
+    @include flex-between();
+}
+
+.card__nth {
+    margin: 10px 0 15px 0;
+    padding: 4px;
+    font-style: italic;
+    font-size: 0.85em;
+    background: $primary-color;
+
+    div {
+        padding: 3px;
+        background: $secondary-color;
+    }
+}
