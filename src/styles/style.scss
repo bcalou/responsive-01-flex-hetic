@@ -1,0 +1,83 @@
+@import "reset.css";
+@import "header.scss";
+@import "footer.scss";
+@import "attack.scss";
+@import "image.scss";
+@import "stat.scss";
+@import "characteristics.scss";
+
+:root {
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 237, 0, 1) 0%,
+    rgb(119, 115, 30) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: yellowgreen;
+  border: 12px solid;
+  border-image: var(--gradient) 12;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+}
+.description {
+  flex-grow: 1;
+  margin: 0 15px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gameplay {
+  flex-grow: 1;
+  margin: 0 15px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 400px) {
+  body {
+    flex-direction: row;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 40%;
+  }
+  .gameplay {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 9vh;
+  }
+  .attacks {
+    justify-content: center;
+  }
+  .image {
+    min-width: 100%;
+  }
+  .identity {
+    order: 1;
+  }
+  .characteristics {
+    order: 3;
+    margin: 0;
+    margin-left: 2vw;
+  }
+}
