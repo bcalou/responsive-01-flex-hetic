@@ -1,0 +1,28 @@
+.attacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+  &__type {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+  }
+}
+
+.info {
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: left;
+
+  em {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.damage {
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+}

@@ -1,0 +1,12 @@
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+.selector {
+  color: red;
+
+  @include landscape {
+    color: blue;
+  }
+}

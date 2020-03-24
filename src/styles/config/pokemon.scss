@@ -1,0 +1,17 @@
+.pokemon {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon__img {
+  border: 5px solid;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+}
+
+.pokemon__info {
+  font-size: 13px;
+  text-align: center;
+  background: $gradient;
+  margin-top: 3px;
+}

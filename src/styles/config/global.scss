@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #9acd32;
+  border: 10px solid;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+  padding: 15px;
+
+  @include landscape {
+    display: flex;
+  }
+}
+
+.landscape {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
