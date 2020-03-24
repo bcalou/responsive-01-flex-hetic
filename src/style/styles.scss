@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+@import "reset.scss";
+@import "appearance.scss";
+@import "identity.scss";
+@import "pokedex.scss";
+@import "type.scss";
+@import "skills.scss";

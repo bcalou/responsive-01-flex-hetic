@@ -1,0 +1,27 @@
+{
+  "name": "responsive-01-flex-hetic",
+  "version": "1.0.0",
+  "description": "## Entraînement",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "sass": "^1.26.2"
+  },
+  "scripts": {
+    "serve": "parcel src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpetillot/responsive-01-flex-hetic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cpetillot/responsive-01-flex-hetic/issues"
+  },
+  "homepage": "https://github.com/cpetillot/responsive-01-flex-hetic#readme"
+}
