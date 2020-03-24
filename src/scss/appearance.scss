@@ -1,0 +1,31 @@
+.appearance {
+  padding: 0 5%;
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appearance__Bulbizarre {
+    border: 8px solid;
+    border-image: linear-gradient(45deg, #fde934, olive);
+    border-image-slice: 1;
+
+    @include landscape {
+      order: -1;
+    }
+  }
+}
+
+.appearance__description {
+  font-size: 12px;
+  font-style: italic;
+  background: linear-gradient(45deg, #fde934, olive);
+  margin: 1% 9%;
+  align-self: center;
+  text-align: center;
+
+  //   @include landscape {
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+}

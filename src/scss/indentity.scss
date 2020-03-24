@@ -1,0 +1,24 @@
+.identity {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 5%;
+  @include landscape {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.identity__evolution {
+  font-size: 10px;
+}
+
+.identity__name {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.identity__life {
+  color: red;
+}
+// .identity__type {
+// }

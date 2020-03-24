@@ -1,0 +1,20 @@
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13% 5%;
+}
+// .skill__leaf {
+// }
+.skill__description {
+  font-size: 15px;
+  span {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.skill__number {
+  font-size: 23px;
+  font-weight: bold;
+}
