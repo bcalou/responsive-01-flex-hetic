@@ -1,0 +1,18 @@
+{
+  "name": "mac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel src/index.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
