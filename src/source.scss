@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  .card {
+    border: 15px solid;
+    border-image: linear-gradient(90deg, #f0e87f 0%, #b3a925 55%, #8d8516 100%)
+      15;
+    padding: 20px;
+    background-color: yellowgreen;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .identity {
+      display: flex;
+      justify-content: space-between;
+
+      .identity__grade {
+        font-size: 12px;
+      }
+
+      .identity__name {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .identity__pv {
+        display: flex;
+        align-self: center;
+      }
+      .identity__life {
+        color: red;
+      }
+    }
+
+    .image {
+      border: 5px solid;
+      border-image: linear-gradient(
+          90deg,
+          #f3ed95 0%,
+          #afa621 55%,
+          #888016 100%
+        )
+        12;
+    }
+
+    .image__information {
+      font-size: 12px;
+      text-align: center;
+      background-color: #cabc6c;
+    }
+
+    .attack {
+      margin-top: 40px;
+      display: flex;
+
+      .attack__type {
+        align-self: center;
+      }
+
+      .attack__description {
+        // padding-right: 20px;
+      }
+
+      .attack__degats {
+        align-self: center;
+        padding-left: 20px;
+        font-size: 24px;
+      }
+    }
+    .stats {
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .details {
+      border: solid gold 2px;
+      font-size: 11px;
+      padding: 4px;
+      margin-top: 5px;
+    }
+  }
+}
