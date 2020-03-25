@@ -1,0 +1,119 @@
+@import "reset.scss";
+$primary-color: linear-gradient(90deg, #FEEB00 0%, rgb(194, 181, 9) 55%, rgb(100, 94, 5) 100%) 20;
+$primary-color-2: linear-gradient(90deg, #FEEB00 0%, rgb(194, 181, 9) 55%, rgb(100, 94, 5) 100%);
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content; 
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  border:20px solid;
+  border-image: $primary-color;
+  background-color:	rgb(121, 144, 83);
+  padding: 12px;
+  overflow: hidden;
+  .identity {
+    display:flex;
+    flex-flow: column wrap;
+    .identity__rarity {
+      margin-top:10px;
+      font-size:14px;
+      margin-bottom:10px;
+    }
+    .identity__title {
+      display:flex;
+      justify-content: space-between;
+      margin-bottom:2px;
+    .identity__name{
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .identity__blank  {
+      opacity:0;
+    }
+    .identity__stats {
+      font-size:25px;
+      color:red;
+      display:flex;
+      align-self:center;
+    }
+  }
+  }
+  .image {
+    .image__pokemon {
+      border:7px solid;
+      border-image: $primary-color;
+      margin-bottom:10px;
+    }
+    .image__legend {
+      display:flex;
+      justify-content: center;
+      font-size:16px;
+      padding-left:10px;
+      background: $primary-color-2;
+      margin-bottom:20px;
+    
+    }
+  }
+  .attack {
+    padding-top:15px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    .attack__effect{
+      font-size:18px;
+      flex-wrap:wrap;
+      line-height: 25px;
+      strong {
+        font-weight: bold;
+      }
+      margin-bottom:35px;
+    }
+    .attack__power {
+      font-size:30px;
+      font-weight: normal;
+    }
+  }
+  @include landscape{
+    
+  }
+  .stats {
+      display:flex;
+      flex-direction:row;
+      justify-content: space-between;
+      align-items: center;
+      font-size:18px;
+      margin-bottom:20px;
+      .stats__weakness,
+      .stats__resistance,
+      .stats__sacrifice {
+        flex-direction:column;
+        align-self:center;
+        justify-content: center;
+        display:flex;
+        img {
+          padding-top:10px;
+          display:flex;
+          align-self:center;
+          justify-content: center;
+      
+        }
+        .resistance__blank{
+          opacity:0;
+        }
+      }
+    }
+  .fact {
+    padding-left:10px;
+    font-size:14px;
+    border:2px ridge gold;
+    line-height: 20px;
+  }
+}
