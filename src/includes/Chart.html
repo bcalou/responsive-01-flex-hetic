@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"></script>
+    <link
+      href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css?hcode=c11e6e3cfefb406e8ce8d99fa8368d33"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      html,
+      body,
+      #container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      anychart.onDocumentReady(function() {
+        // create data set on our data
+        chartData = {
+          title: "Top 3 Des Produits Vendus",
+          header: ["#", "Paris", "Lyon", "Marseille", "Brest"],
+          rows: [
+            ["Viande", 6814, 3054, 4376, 4229],
+            ["Poisson", 7012, 5067, 8987, 3932],
+            ["Légumes", 8814, 9054, 4376, 9256]
+          ]
+        };
+
+        // create column chart
+        var chart = anychart.column();
+
+        // set chart data
+        chart.data(chartData);
+
+        // turn on chart animation
+        chart.animation(true);
+
+        chart
+          .yAxis()
+          .labels()
+          .format("€{%Value}{groupsSeparator: }");
+
+        // set titles for Y-axis
+        chart.yAxis().title("Ventes");
+
+        chart
+          .labels()
+          .enabled(true)
+          .position("center-top")
+          .anchor("center-bottom")
+          .format("€{%Value}{groupsSeparator: }");
+        chart.hovered().labels(false);
+
+        // turn on legend and tune it
+        chart
+          .legend()
+          .enabled(true)
+          .fontSize(13)
+          .padding([0, 0, 20, 0]);
+
+        // interactivity settings and tooltip position
+        chart.interactivity().hoverMode("single");
+
+        chart
+          .tooltip()
+          .positionMode("point")
+          .position("center-top")
+          .anchor("center-bottom")
+          .offsetX(0)
+          .offsetY(5)
+          .titleFormat("{%X}")
+          .format("{%SeriesName} : ${%Value}{groupsSeparator: }");
+
+        // set container id for the chart
+        chart.container("container");
+
+        // initiate chart drawing
+        chart.draw();
+      });
+    </script>
+  </body>
+</html>
