@@ -1,0 +1,13 @@
+:root {
+ --gradient: linear-gradient(
+   90deg,
+   rgba(255, 237, 0, 1) 0%,
+   rgb(119, 115, 30) 100%
+ );
+}
+
+@mixin landscape {
+ @media (min-aspect-ratio: 1/1) {
+   @content;
+ }
+}

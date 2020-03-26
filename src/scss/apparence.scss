@@ -1,13 +1,25 @@
-.apparence {
-  &__img {
-    margin-top: 10px;
-    width: 100%;
-    border: 1px blue;
-  }
+@import "./media.scss";
 
-  &__description {
+.apparence {
+  @include landscape {
+    order: -1;
+  }
+  &__image {
+    border: 5px solid;
+    border-image: var(--gradient) 5;
+    margin: 4px 16px;
+  }
+  &__details{
+    background: var(--gradient);
     font-size: 10px;
-    display: flex;
-    justify-content: right;
+    text-align: center;
+    margin: 0 25px;
+    font-style: italic;
+    line-height: 16px;
+    
+    @include landscape {
+      margin: 2px 16px 0;
+}
   }
 }
+

@@ -1,11 +1,29 @@
-$primary-color: rgb(194, 181, 9);
-$secondary-color: #9acd32;
-$black: black;
-$red: red;
+@import "./media.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
 
 body {
-  background: $primary-color;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 13px;
-  font-size: 12px;
+  background-color: yellowgreen;
+  border: 12px solid;
+  border-image: var(--gradient) 12;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+
+  @include landscape {
+    justify-content: center;
+  }
 }
