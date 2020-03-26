@@ -1,0 +1,42 @@
+/* .attack{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  &__info{
+    font-size: 15px;
+  }
+  &__damage{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &__double__leaf {
+    display:flex;
+    padding-left: 8px;
+  }
+} */
+
+.attack {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+
+  &__doubleleaf{
+    display: flex;
+    padding-right: 18px;
+    padding-left: 15px;
+  
+  }
+  &__infos {
+    font-size: 13px;
+    ;
+  }
+  &__dammage{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+}
+
