@@ -1,0 +1,108 @@
+@import "reset";
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+@media (max-width: 480px) {
+  body {
+    .tout__header {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 30px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    .pokemon_img {
+      max-width: 85%;
+      margin-left: 31px;
+    }
+    .description_pokemon {
+      max-width: 80%;
+      display: flex;
+      justify-content: center;
+      margin-left: 39px;
+      margin-top: 6px;
+    }
+    .card {
+      overflow: hidden;
+      border: solid 10px #fbea00;
+      background-color: #73af31;
+
+      .score_bulbizarre {
+        margin-right: 22px;
+        margin-top: 23px;
+      }
+
+      .score {
+        display: inline-block;
+        font-size: 24px;
+      }
+
+      .pokemon_img {
+        border: solid 4px #fbea00;
+      }
+
+      .description_pokemon {
+        background-color: #fbea00;
+      }
+
+      .attaque_pokemon {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+        padding: 29px;
+
+        .attaque_pokemon--feuille {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .attaque_pokemon--text {
+          margin-right: 26px;
+          margin-left: 27px;
+        }
+        .attaque_pokemon--number {
+          margin-top: 23px;
+          font-size: 34px;
+        }
+      }
+      .description_attaque__FRC {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 11px;
+      }
+      .description_attaque__img {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .img1 {
+        margin-left: 4px;
+        margin-top: 5px;
+      }
+
+      .img2 {
+        margin-right: 4px;
+        margin-top: 5px;
+      }
+
+      .details_pokemon {
+        border: solid 4px #fbea00;
+      }
+      .ligne {
+        border: solid 0.8px;
+        background-color: black;
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
