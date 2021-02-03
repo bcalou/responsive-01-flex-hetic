@@ -1,0 +1,120 @@
+@import "reset";
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding: 5px 5px;
+  font-family: sans-serif;
+  background-color: #9acd32;
+  border: solid 10px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    105deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgb(70, 94, 66) 100%
+  );
+}
+.header {
+  padding: 0 10px;
+}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__info__left__type {
+  font-size: 11px;
+  font-weight: 200px;
+}
+.header__info__left__name {
+  font-size: 20px;
+  font-weight: 800;
+}
+.header__info__right__health {
+  margin-left: auto;
+  font-size: 16px;
+  color: #f3721b;
+  font-weight: 200;
+}
+.header__info__right__element {
+  margin-left: 5px;
+}
+.header__pokemon__picture {
+  border: solid 5px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    105deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgb(70, 94, 66) 100%
+  );
+}
+.header__pokemon__stats {
+  margin: 2px 15px;
+  padding: 2px;
+  font-style: italic;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(105deg, #ffda08, #7c6a01);
+}
+
+.main {
+  margin: 73px 2px;
+  display: flex;
+  align-items: center;
+}
+.main__elements {
+  display: flex;
+}
+.main__attack {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 20px;
+}
+.main__attack__name {
+  font-size: 15px;
+  font-weight: 900;
+}
+.main__damage {
+  font-size: 20px;
+}
+
+.footer {
+  border-top: solid 2px black;
+}
+.footer__relations {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__relations__weakness,
+.footer__relations__resistance,
+.footer__relations__retreat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__relations__weakness__title,
+.footer__relations__resistance__title,
+.footer__relations__retreat__title {
+  font-size: 11px;
+  font-weight: 800;
+}
+.footer__bio {
+  margin-top: 5px;
+  padding: 2px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: italic;
+  border: solid 3px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    105deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgb(70, 94, 66) 100%
+  );
+}
