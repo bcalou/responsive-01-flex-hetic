@@ -1,0 +1,30 @@
+.mainfooter {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid black;
+  margin: 45px 17px 0 17px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerfinal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footermore {
+  margin: 10px 17px 0 17px;
+}
+
+.footermore__info {
+  font-size: 13px;
+  border: 2px solid;
+  border-image-source: linear-gradient(70deg, #fdeb00, #feec00, #77731e);
+  border-image-slice: 1;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,31 @@
+.navfirst {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  margin-left: 15px;
+}
+
+.nav_info {
+  font-size: 12px;
+}
+
+.nav_poke {
+  margin-bottom: 3px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.navmore {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navmore_info {
+  color: red;
+  margin-right: 10px;
+  font-size: 18px;
+}
