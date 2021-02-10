@@ -7,8 +7,14 @@ img {
   max-width: 100%;
 }
 
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
 body {
-  padding: 5px 5px;
+  padding: 8px;
   font-family: sans-serif;
   background-color: #9acd32;
   border: solid 10px;
@@ -18,33 +24,51 @@ body {
     rgba(255, 222, 0, 1) 0%,
     rgb(70, 94, 66) 100%
   );
+  @include landscape {
+    display: flex;
+    padding: 33px 8px;
+  }
 }
-.header {
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 0 10px;
+
+  @include landscape {
+    flex-basis: 50%;
+    justify-content: center;
+  }
 }
-.header__info {
+.info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include landscape {
+    order: 2;
+    margin: 10px 0 5px 0;
+  }
 }
-.header__info__left__type {
-  font-size: 11px;
-  font-weight: 200px;
+.info__type {
+  font-size: 10px;
+  font-weight: 300;
 }
-.header__info__left__name {
+.info__name {
   font-size: 20px;
   font-weight: 800;
 }
-.header__info__right__health {
+.info__health {
   margin-left: auto;
   font-size: 16px;
   color: #f3721b;
   font-weight: 200;
 }
-.header__info__right__element {
+.info__element {
   margin-left: 5px;
 }
-.header__pokemon__picture {
+.appearance {
+  margin: 5px 0;
   border: solid 5px;
   border-image-slice: 1;
   border-image-source: linear-gradient(
@@ -52,8 +76,13 @@ body {
     rgba(255, 222, 0, 1) 0%,
     rgb(70, 94, 66) 100%
   );
+
+  @include landscape {
+    margin: 0;
+    order: 1;
+  }
 }
-.header__pokemon__stats {
+.stats {
   margin: 2px 15px;
   padding: 2px;
   font-style: italic;
@@ -61,26 +90,44 @@ body {
   font-weight: 600;
   text-align: center;
   background: linear-gradient(105deg, #ffda08, #7c6a01);
+
+  @include landscape {
+    order: 3;
+    margin: 0;
+  }
 }
 
-.main {
-  margin: 73px 2px;
+main {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 50%;
+  }
+}
+.attack {
+  margin: 60px 2px;
   display: flex;
   align-items: center;
+
+  @include landscape {
+    margin: 27px 2px;
+  }
 }
-.main__elements {
+.attack__elements {
   display: flex;
+  flex-shrink: 0;
 }
-.main__attack {
+.attack__desc {
   font-size: 14px;
   line-height: 16px;
   margin: 0 20px;
 }
-.main__attack__name {
+.attack__name {
   font-size: 15px;
   font-weight: 900;
 }
-.main__damage {
+.attack__damage {
   font-size: 20px;
 }
 
@@ -91,16 +138,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.footer__relations__weakness,
-.footer__relations__resistance,
-.footer__relations__retreat {
+.footer__weakness,
+.footer__resistance,
+.footer__retreat {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer__relations__weakness__title,
-.footer__relations__resistance__title,
-.footer__relations__retreat__title {
+.footer__weakness__title,
+.footer__resistance__title,
+.footer__retreat__title {
   font-size: 11px;
   font-weight: 800;
 }
@@ -117,4 +164,9 @@ body {
     rgba(255, 222, 0, 1) 0%,
     rgb(70, 94, 66) 100%
   );
+
+  @include landscape {
+    font-size: 10.5px;
+    padding: 2px;
+  }
 }
