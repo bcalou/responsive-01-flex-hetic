@@ -1,0 +1,172 @@
+@import "reset";
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+body {
+  padding: 8px;
+  font-family: sans-serif;
+  background-color: #9acd32;
+  border: solid 10px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    105deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgb(70, 94, 66) 100%
+  );
+  @include landscape {
+    display: flex;
+    padding: 33px 8px;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 10px;
+
+  @include landscape {
+    flex-basis: 50%;
+    justify-content: center;
+  }
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include landscape {
+    order: 2;
+    margin: 10px 0 5px 0;
+  }
+}
+.info__type {
+  font-size: 10px;
+  font-weight: 300;
+}
+.info__name {
+  font-size: 20px;
+  font-weight: 800;
+}
+.info__health {
+  margin-left: auto;
+  font-size: 16px;
+  color: #f3721b;
+  font-weight: 200;
+}
+.info__element {
+  margin-left: 5px;
+}
+.appearance {
+  margin: 5px 0;
+  border: solid 5px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    105deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgb(70, 94, 66) 100%
+  );
+
+  @include landscape {
+    margin: 0;
+    order: 1;
+  }
+}
+.stats {
+  margin: 2px 15px;
+  padding: 2px;
+  font-style: italic;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-align: center;
+  background: linear-gradient(105deg, #ffda08, #7c6a01);
+
+  @include landscape {
+    order: 3;
+    margin: 0;
+  }
+}
+
+main {
+  @include landscape {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 50%;
+  }
+}
+.attack {
+  margin: 60px 2px;
+  display: flex;
+  align-items: center;
+
+  @include landscape {
+    margin: 27px 2px;
+  }
+}
+.attack__elements {
+  display: flex;
+  flex-shrink: 0;
+}
+.attack__desc {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 20px;
+}
+.attack__name {
+  font-size: 15px;
+  font-weight: 900;
+}
+.attack__damage {
+  font-size: 20px;
+}
+
+.footer {
+  border-top: solid 2px black;
+}
+.footer__relations {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__weakness,
+.footer__resistance,
+.footer__retreat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__weakness__title,
+.footer__resistance__title,
+.footer__retreat__title {
+  font-size: 11px;
+  font-weight: 800;
+}
+.footer__bio {
+  margin-top: 5px;
+  padding: 2px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: italic;
+  border: solid 3px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    105deg,
+    rgba(255, 222, 0, 1) 0%,
+    rgb(70, 94, 66) 100%
+  );
+
+  @include landscape {
+    font-size: 10.5px;
+    padding: 2px;
+  }
+}
