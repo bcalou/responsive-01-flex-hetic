@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/styles.scss" />
+    <title>Periodic Table of elements</title>
+  </head>
+  <body>
+    <article class="el el--otherNonMetal" data-period="1" data-group="1">
+      <p class="el__number">1</p>
+      <abbr class="el__symbol">H</abbr>
+      <p class="el__name">Hydrogen</p>
+    </article>
+    <article class="el el--nobleGas" data-period="1" data-group="18">
+      <p class="el__number">2</p>
+      <abbr class="el__symbol">He</abbr>
+      <p class="el__name">Helium</p>
+    </article>
+    <article class="el el--alkaliMetal" data-period="2" data-group="1">
+      <p class="el__number">3</p>
+      <abbr class="el__symbol">Li</abbr>
+      <p class="el__name">Lithium</p>
+    </article>
+    <article class="el el--alkalineEarthMetal" data-period="2" data-group="2">
+      <p class="el__number">4</p>
+      <abbr class="el__symbol">Be</abbr>
+      <p class="el__name">Beryllium</p>
+    </article>
+    <article class="el el--metalloid" data-period="2" data-group="13">
+      <p class="el__number">5</p>
+      <abbr class="el__symbol">B</abbr>
+      <p class="el__name">Boron</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="2" data-group="14">
+      <p class="el__number">6</p>
+      <abbr class="el__symbol">C</abbr>
+      <p class="el__name">Carbon</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="2" data-group="15">
+      <p class="el__number">7</p>
+      <abbr class="el__symbol">N</abbr>
+      <p class="el__name">Nitrogen</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="2" data-group="16">
+      <p class="el__number">8</p>
+      <abbr class="el__symbol">O</abbr>
+      <p class="el__name">Oxygène</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="2" data-group="17">
+      <p class="el__number">9</p>
+      <abbr class="el__symbol">F</abbr>
+      <p class="el__name">Fluorine</p>
+    </article>
+    <article class="el el--nobleGas" data-period="2" data-group="18">
+      <p class="el__number">10</p>
+      <abbr class="el__symbol">Ne</abbr>
+      <p class="el__name">Neon</p>
+    </article>
+    <article class="el el--alkaliMetal" data-period="3" data-group="1">
+      <p class="el__number">11</p>
+      <abbr class="el__symbol">Na</abbr>
+      <p class="el__name">Sodium</p>
+    </article>
+    <article class="el el--alkalineEarthMetal" data-period="3" data-group="2">
+      <p class="el__number">12</p>
+      <abbr class="el__symbol">Mg</abbr>
+      <p class="el__name">Magnesium</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="3" data-group="13">
+      <p class="el__number">13</p>
+      <abbr class="el__symbol">Al</abbr>
+      <p class="el__name">Aluminium</p>
+    </article>
+    <article class="el el--metalloid" data-period="3" data-group="14">
+      <p class="el__number">14</p>
+      <abbr class="el__symbol">Si</abbr>
+      <p class="el__name">Silicon</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="3" data-group="15">
+      <p class="el__number">15</p>
+      <abbr class="el__symbol">P</abbr>
+      <p class="el__name">Phosphorus</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="3" data-group="16">
+      <p class="el__number">16</p>
+      <abbr class="el__symbol">S</abbr>
+      <p class="el__name">Sulfur</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="3" data-group="17">
+      <p class="el__number">17</p>
+      <abbr class="el__symbol">Cl</abbr>
+      <p class="el__name">Chlorine</p>
+    </article>
+    <article class="el el--nobleGas" data-period="3" data-group="18">
+      <p class="el__number">18</p>
+      <abbr class="el__symbol">Ar</abbr>
+      <p class="el__name">Argon</p>
+    </article>
+    <article class="el el--alkaliMetal" data-period="4" data-group="1">
+      <p class="el__number">19</p>
+      <abbr class="el__symbol">K</abbr>
+      <p class="el__name">Potassium</p>
+    </article>
+    <article class="el el--alkalineEarthMetal" data-period="4" data-group="2">
+      <p class="el__number">20</p>
+      <abbr class="el__symbol">Ca</abbr>
+      <p class="el__name">Calcium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="3">
+      <p class="el__number">21</p>
+      <abbr class="el__symbol">Sc</abbr>
+      <p class="el__name">Scandium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="4">
+      <p class="el__number">22</p>
+      <abbr class="el__symbol">Ti</abbr>
+      <p class="el__name">Titanium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="5">
+      <p class="el__number">23</p>
+      <abbr class="el__symbol">V</abbr>
+      <p class="el__name">Vanadium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="6">
+      <p class="el__number">24</p>
+      <abbr class="el__symbol">Cr</abbr>
+      <p class="el__name">Chromium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="7">
+      <p class="el__number">25</p>
+      <abbr class="el__symbol">Mn</abbr>
+      <p class="el__name">Manganese</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="8">
+      <p class="el__number">26</p>
+      <abbr class="el__symbol">Fe</abbr>
+      <p class="el__name">Iron</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="9">
+      <p class="el__number">27</p>
+      <abbr class="el__symbol">Co</abbr>
+      <p class="el__name">Cobalt</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="10">
+      <p class="el__number">28</p>
+      <abbr class="el__symbol">Ni</abbr>
+      <p class="el__name">Nickel</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="11">
+      <p class="el__number">29</p>
+      <abbr class="el__symbol">Cu</abbr>
+      <p class="el__name">Copper</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="4" data-group="12">
+      <p class="el__number">30</p>
+      <abbr class="el__symbol">Zn</abbr>
+      <p class="el__name">Zinc</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="4" data-group="13">
+      <p class="el__number">31</p>
+      <abbr class="el__symbol">Ga</abbr>
+      <p class="el__name">Gallium</p>
+    </article>
+    <article class="el el--metalloid" data-period="4" data-group="14">
+      <p class="el__number">32</p>
+      <abbr class="el__symbol">Ge</abbr>
+      <p class="el__name">Germanium</p>
+    </article>
+    <article class="el el--metalloid" data-period="4" data-group="15">
+      <p class="el__number">33</p>
+      <abbr class="el__symbol">As</abbr>
+      <p class="el__name">Arsenic</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="4" data-group="16">
+      <p class="el__number">34</p>
+      <abbr class="el__symbol">Se</abbr>
+      <p class="el__name">Selenium</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="4" data-group="17">
+      <p class="el__number">35</p>
+      <abbr class="el__symbol">Br</abbr>
+      <p class="el__name">Bromine</p>
+    </article>
+    <article class="el el--nobleGas" data-period="4" data-group="18">
+      <p class="el__number">36</p>
+      <abbr class="el__symbol">Kr</abbr>
+      <p class="el__name">Krypton</p>
+    </article>
+    <article class="el el--alkaliMetal" data-period="5" data-group="1">
+      <p class="el__number">37</p>
+      <abbr class="el__symbol">Rb</abbr>
+      <p class="el__name">Rubidium</p>
+    </article>
+    <article class="el el--alkalineEarthMetal" data-period="5" data-group="2">
+      <p class="el__number">38</p>
+      <abbr class="el__symbol">Sr</abbr>
+      <p class="el__name">Strontium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="3">
+      <p class="el__number">39</p>
+      <abbr class="el__symbol">Y</abbr>
+      <p class="el__name">Yttrium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="4">
+      <p class="el__number">40</p>
+      <abbr class="el__symbol">Zr</abbr>
+      <p class="el__name">Zirconium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="5">
+      <p class="el__number">41</p>
+      <abbr class="el__symbol">Nb</abbr>
+      <p class="el__name">Niobium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="6">
+      <p class="el__number">42</p>
+      <abbr class="el__symbol">Mo</abbr>
+      <p class="el__name">Molybdenum</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="7">
+      <p class="el__number">43</p>
+      <abbr class="el__symbol">Tc</abbr>
+      <p class="el__name">Technetium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="8">
+      <p class="el__number">44</p>
+      <abbr class="el__symbol">Ru</abbr>
+      <p class="el__name">Ruthenium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="9">
+      <p class="el__number">45</p>
+      <abbr class="el__symbol">Rh</abbr>
+      <p class="el__name">Rhodium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="10">
+      <p class="el__number">46</p>
+      <abbr class="el__symbol">Pd</abbr>
+      <p class="el__name">Palladium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="11">
+      <p class="el__number">47</p>
+      <abbr class="el__symbol">Ag</abbr>
+      <p class="el__name">Silver</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="5" data-group="12">
+      <p class="el__number">48</p>
+      <abbr class="el__symbol">Cd</abbr>
+      <p class="el__name">Cadmium</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="5" data-group="13">
+      <p class="el__number">49</p>
+      <abbr class="el__symbol">In</abbr>
+      <p class="el__name">Indium</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="5" data-group="14">
+      <p class="el__number">50</p>
+      <abbr class="el__symbol">Sn</abbr>
+      <p class="el__name">Tin</p>
+    </article>
+    <article class="el el--metalloid" data-period="5" data-group="15">
+      <p class="el__number">51</p>
+      <abbr class="el__symbol">Sb</abbr>
+      <p class="el__name">Antimony</p>
+    </article>
+    <article class="el el--metalloid" data-period="5" data-group="16">
+      <p class="el__number">52</p>
+      <abbr class="el__symbol">Te</abbr>
+      <p class="el__name">Tellurium</p>
+    </article>
+    <article class="el el--otherNonMetal" data-period="5" data-group="17">
+      <p class="el__number">53</p>
+      <abbr class="el__symbol">I</abbr>
+      <p class="el__name">Iodine</p>
+    </article>
+    <article class="el el--nobleGas" data-period="5" data-group="18">
+      <p class="el__number">54</p>
+      <abbr class="el__symbol">Xe</abbr>
+      <p class="el__name">Xenon</p>
+    </article>
+    <article class="el el--alkaliMetal" data-period="6" data-group="1">
+      <p class="el__number">55</p>
+      <abbr class="el__symbol">Cs</abbr>
+      <p class="el__name">Cesium</p>
+    </article>
+    <article class="el el--alkalineEarthMetal" data-period="6" data-group="2">
+      <p class="el__number">56</p>
+      <abbr class="el__symbol">Ba</abbr>
+      <p class="el__name">Barium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">57</p>
+      <abbr class="el__symbol">La</abbr>
+      <p class="el__name">Lanthanium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">58</p>
+      <abbr class="el__symbol">Ce</abbr>
+      <p class="el__name">Cerium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">59</p>
+      <abbr class="el__symbol">Pr</abbr>
+      <p class="el__name">Praseodymium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">60</p>
+      <abbr class="el__symbol">Nd</abbr>
+      <p class="el__name">Neodymium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">61</p>
+      <abbr class="el__symbol">Pm</abbr>
+      <p class="el__name">Promethium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">62</p>
+      <abbr class="el__symbol">Sm</abbr>
+      <p class="el__name">Samarium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">63</p>
+      <abbr class="el__symbol">Eu</abbr>
+      <p class="el__name">Europium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">64</p>
+      <abbr class="el__symbol">Gd</abbr>
+      <p class="el__name">Gadolinium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">65</p>
+      <abbr class="el__symbol">Tb</abbr>
+      <p class="el__name">Terbium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">66</p>
+      <abbr class="el__symbol">Dy</abbr>
+      <p class="el__name">Dysprosium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">67</p>
+      <abbr class="el__symbol">Ho</abbr>
+      <p class="el__name">Holmium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">68</p>
+      <abbr class="el__symbol">Er</abbr>
+      <p class="el__name">Erbium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">69</p>
+      <abbr class="el__symbol">Tm</abbr>
+      <p class="el__name">Thulium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">70</p>
+      <abbr class="el__symbol">Yb</abbr>
+      <p class="el__name">Ytterbium</p>
+    </article>
+    <article class="el el--lanthanide" data-period="6">
+      <p class="el__number">71</p>
+      <abbr class="el__symbol">Lu</abbr>
+      <p class="el__name">Lutetium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="4">
+      <p class="el__number">72</p>
+      <abbr class="el__symbol">Hf</abbr>
+      <p class="el__name">Hafnium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="5">
+      <p class="el__number">73</p>
+      <abbr class="el__symbol">Ta</abbr>
+      <p class="el__name">Tantalum</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="6">
+      <p class="el__number">74</p>
+      <abbr class="el__symbol">W</abbr>
+      <p class="el__name">Tungsten</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="7">
+      <p class="el__number">75</p>
+      <abbr class="el__symbol">Re</abbr>
+      <p class="el__name">Rhenium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="8">
+      <p class="el__number">76</p>
+      <abbr class="el__symbol">Os</abbr>
+      <p class="el__name">Osmium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="9">
+      <p class="el__number">77</p>
+      <abbr class="el__symbol">Ir</abbr>
+      <p class="el__name">Iridium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="10">
+      <p class="el__number">78</p>
+      <abbr class="el__symbol">Pt</abbr>
+      <p class="el__name">Platinium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="11">
+      <p class="el__number">79</p>
+      <abbr class="el__symbol">Au</abbr>
+      <p class="el__name">Gold</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="6" data-group="12">
+      <p class="el__number">80</p>
+      <abbr class="el__symbol">Hg</abbr>
+      <p class="el__name">Mercury</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="6" data-group="13">
+      <p class="el__number">81</p>
+      <abbr class="el__symbol">Tl</abbr>
+      <p class="el__name">Thallium</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="6" data-group="14">
+      <p class="el__number">82</p>
+      <abbr class="el__symbol">Pb</abbr>
+      <p class="el__name">Lead</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="6" data-group="15">
+      <p class="el__number">83</p>
+      <abbr class="el__symbol">Bi</abbr>
+      <p class="el__name">Bismuth</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="6" data-group="16">
+      <p class="el__number">84</p>
+      <abbr class="el__symbol">Po</abbr>
+      <p class="el__name">Polonium</p>
+    </article>
+    <article class="el el--metalloid" data-period="6" data-group="17">
+      <p class="el__number">85</p>
+      <abbr class="el__symbol">At</abbr>
+      <p class="el__name">Astatine</p>
+    </article>
+    <article class="el el--nobleGas" data-period="6" data-group="18">
+      <p class="el__number">86</p>
+      <abbr class="el__symbol">Rn</abbr>
+      <p class="el__name">Radon</p>
+    </article>
+    <article class="el el--alkaliMetal" data-period="7" data-group="1">
+      <p class="el__number">87</p>
+      <abbr class="el__symbol">Fr</abbr>
+      <p class="el__name">Francium</p>
+    </article>
+    <article class="el el--alkalineEarthMetal" data-period="7" data-group="2">
+      <p class="el__number">88</p>
+      <abbr class="el__symbol">Ra</abbr>
+      <p class="el__name">Radium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">89</p>
+      <abbr class="el__symbol">Ac</abbr>
+      <p class="el__name">Actinium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">90</p>
+      <abbr class="el__symbol">Th</abbr>
+      <p class="el__name">Thorium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">91</p>
+      <abbr class="el__symbol">Pa</abbr>
+      <p class="el__name">Protactinium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">92</p>
+      <abbr class="el__symbol">U</abbr>
+      <p class="el__name">Uranium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">93</p>
+      <abbr class="el__symbol">Np</abbr>
+      <p class="el__name">Neptunium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">94</p>
+      <abbr class="el__symbol">Pu</abbr>
+      <p class="el__name">Plutonium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">95</p>
+      <abbr class="el__symbol">Am</abbr>
+      <p class="el__name">Americium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">96</p>
+      <abbr class="el__symbol">Cm</abbr>
+      <p class="el__name">Curium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">97</p>
+      <abbr class="el__symbol">Bk</abbr>
+      <p class="el__name">Berkelium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">98</p>
+      <abbr class="el__symbol">Cf</abbr>
+      <p class="el__name">Californium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">99</p>
+      <abbr class="el__symbol">Es</abbr>
+      <p class="el__name">Einsteinium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">100</p>
+      <abbr class="el__symbol">Fm</abbr>
+      <p class="el__name">Fermium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">101</p>
+      <abbr class="el__symbol">Md</abbr>
+      <p class="el__name">Mendelevium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">102</p>
+      <abbr class="el__symbol">No</abbr>
+      <p class="el__name">Nobelium</p>
+    </article>
+    <article class="el el--actinide" data-period="7">
+      <p class="el__number">103</p>
+      <abbr class="el__symbol">Lr</abbr>
+      <p class="el__name">Lawrencium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="7" data-group="4">
+      <p class="el__number">104</p>
+      <abbr class="el__symbol">Rf</abbr>
+      <p class="el__name">Rutherfordium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="7" data-group="5">
+      <p class="el__number">105</p>
+      <abbr class="el__symbol">Db</abbr>
+      <p class="el__name">Dubnium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="7" data-group="6">
+      <p class="el__number">106</p>
+      <abbr class="el__symbol">Sg</abbr>
+      <p class="el__name">Seaborgium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="7" data-group="7">
+      <p class="el__number">107</p>
+      <abbr class="el__symbol">Bh</abbr>
+      <p class="el__name">Bohrium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="7" data-group="8">
+      <p class="el__number">108</p>
+      <abbr class="el__symbol">Hs</abbr>
+      <p class="el__name">Hassium</p>
+    </article>
+    <article class="el" data-period="7" data-group="9">
+      <p class="el__number">109</p>
+      <abbr class="el__symbol">Mt</abbr>
+      <p class="el__name">Metnerium</p>
+    </article>
+    <article class="el" data-period="7" data-group="10">
+      <p class="el__number">110</p>
+      <abbr class="el__symbol">Ds</abbr>
+      <p class="el__name">Darmstadtium</p>
+    </article>
+    <article class="el" data-period="7" data-group="11">
+      <p class="el__number">111</p>
+      <abbr class="el__symbol">Rg</abbr>
+      <p class="el__name">Roentgenium</p>
+    </article>
+    <article class="el el--transitionMetal" data-period="7" data-group="12">
+      <p class="el__number">112</p>
+      <abbr class="el__symbol">Cn</abbr>
+      <p class="el__name">Copernicium</p>
+    </article>
+    <article class="el" data-period="7" data-group="13">
+      <p class="el__number">113</p>
+      <abbr class="el__symbol">Nh</abbr>
+      <p class="el__name">Nihonium</p>
+    </article>
+    <article class="el el--postTransitionMetal" data-period="7" data-group="14">
+      <p class="el__number">114</p>
+      <abbr class="el__symbol">Fl</abbr>
+      <p class="el__name">Flerovium</p>
+    </article>
+    <article class="el" data-period="7" data-group="15">
+      <p class="el__number">115</p>
+      <abbr class="el__symbol">Mc</abbr>
+      <p class="el__name">Moscovium</p>
+    </article>
+    <article class="el" data-period="7" data-group="16">
+      <p class="el__number">116</p>
+      <abbr class="el__symbol">Lv</abbr>
+      <p class="el__name">Livermorium</p>
+    </article>
+    <article class="el" data-period="7" data-group="17">
+      <p class="el__number">117</p>
+      <abbr class="el__symbol">Ts</abbr>
+      <p class="el__name">Tennessine</p>
+    </article>
+    <article class="el" data-period="7" data-group="18">
+      <p class="el__number">118</p>
+      <abbr class="el__symbol">Og</abbr>
+      <p class="el__name">Oganesson</p>
+    </article>
+  </body>
+</html>

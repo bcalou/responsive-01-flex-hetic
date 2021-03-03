@@ -1,70 +1,59 @@
-# Modern responsive part 1 : flexbox
+# Modern responsive part 2 : Grid
 
 ## Entraînement
 
-Pour se familiariser avec les différentes propriétés :
-[Flexbox Froggy](https://flexboxfroggy.com/#fr)
+Pour se familiariser avec les différentes propriétés : [Grid Garden](https://cssgridgarden.com/#fr)
 
 ## TP : à vous !
 
-Le but de l'exercice est de reproduire une célèbre carte à jouer en utilisant les propriétés flexbox. Voici le modèle :
+Le but de ce TP est d'utiliser CSS Grid pour intégrer simplement un tableau complexe : le tableau périodique des éléments.
 
-<img src="src/assets/models/card.jpg" width="300px">
+<img src="src/assets/models/periodic.png" width="600px">
 
-### Étape 0 : Configuration VSCode
+Le tableau interactif (mais non responsive !) qui nous servira de référence se trouve [ici](https://www.ptable.com/?lang=en).
+
+### Étape 0 : mise en place
 
 - Créer un fork de ce repository
-- Installer le plugin _Prettier_
-  - Dans les options :
-    - Cocher "Format on save"
-    - Régler "Default formatter" sur "...prettier..."
-  - Vérifier le bon fonctionnement sur les fichiers HTML et CSS (à la sauvegarde, le code est-il reformaté ?)
-- Installer le plugin _Live Server_
-  - Vérifier qu'un fichier HTML peut-être ouvert avec le bouton "Go Live" en bas à droite (auto-refresh du navigateur)
+- Cloner le fork sur votre machine
 
-### Étape 1 : Les fondations (HTML sauce BEM)
+### Étape 1 : Comprendre le tableau et le HTML
 
-- Rappel BEM : [ici](https://www.alticreation.com/bem-pour-le-css/) (français) ou [là](https://css-tricks.com/bem-101/)
-- Déterminer quels sont les blocs constituant la carte (une demi-douzaine, selon le choix de découpage), et leur donner un nom simple
-- Écrire le HTML correspondant, sans CSS pour le moment
-  - Les images sont dans le dossier `src/assets/img`
+Le fichier `index.html` contient déjà ce qu'il nous faut : la liste de tous les
+éléments.
 
-Résultat approximatif à cette étape :
+_Note : Pour simplifier, nous allons ignorer les deux lignes "externes" au tableau pour le moment (en bas). On laissera deux cases vides au sein du tableau principal. C'est pourquoi les éléments correspondants sont commentés dans le HTML._
 
-![](src/assets/models/html.png)
-
-Attention à vérifier la présence de la balise _meta viewport_ pour un bon dimensionnement sur mobile !
+Voici par exemple l'**Argon** en BEM (rappel : l'élément `<abbr>` représente une abbréviation):
 
 ```
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<article class="el el--nobleGas" data-period="3" data-group="18">
+  <p class="el__number">18</p>
+  <abbr class="el__symbol">Ar</abbr>
+  <p class="el__name">Argon</p>
+</article>
 ```
 
-- Solliciter une vérification de ma part, attendre la correction ou continuer si tout se passe bien !
-- `git commit` avant de passer à la suite
+Prenez le temps de bien comprendre chaque information, en comparant avec le tableau de référence :
 
-### Étape 2 : Découper le HTML avec pug
+- `el--nobleGas` : modificateur BEM désignant le type d'élement. L'argon est un gaz noble.
+- `data-period="3"` : attribut désignant la ligne sur laquelle se trouve l'élément (la période, pour les intimes). L'argon se trouve sur la troisième ligne.
+- `data-group="18"`: attribut désignant la colonne sur laquelle se trouve l'élément (le groupe). L'argon se trouve sur la dix-huitième colonne.
 
-Pug est un langage de templating HTML. Un de ses atouts principaux est de permettre l'inclusion de templates HTML dans d'autres.
+À vous de jouer :
 
-Cela permet par exemple de ne pas répéter le header et le footer à chaque page d'un site.
+- L'oxygène a été retiré du fichier `index.html` : rajoutez-le.
+- Il est déjà temps d'effectuer un petit `commit` pour conclure cette introduction.
 
-Ici, cela va nous permettre de découper notre page en plusieurs fichiers .pug, un pour chaque bloc.
+### Étape 2 : Un peu de couleur avec SCSS
 
-- Afin de pouvoir utiliser Pug :
+- Afin de pouvoir utiliser SCSS :
   - Dans le dossier de travail, transformer votre projet simple en projet npm avec `npm init`
   - Installer [parcel](https://parceljs.org/) avec `npm install parcel --save-dev`
-  - Dans `package.json`, ajouter un script `"serve": "parcel src/index.pug"`
-  - Changer l'extension de votre fichier `index.html` pour `index.pug`.
-  - Lancer `npm run serve`. Parcel _build_ votre site et l'ouvre dans le navigateur, sur _localhost_. En cas d'erreur, il faut d'abord adapter votre index.html à la syntaxe imposée par pug.
-- Déplacer chaque bloc BEM dans son propre fichier pug, dans un dossier dédié (nommé par exemple `src/includes`). Il y aura donc autant de fichiers pug que de blocs BEM.
-- En vous inspirant de la [documentation](https://pugjs.org/language/includes.html), modifier votre code pour inclure les différents fichiers créés dans `index.pug`.
-
-_Note : le mot clé `include` de pug fonctionne même si le reste du code reste au format HTML classique. Pas besoin de tout ré-écrire._
-
-### Étape 3 : Styling SCSS
-
-- Ajouter un fichier `styles.scss` à votre projet et l'importer à partir de l'index. Parcel s'occupera de la transformation en CSS.
-- Ajouter un fichier `reset.scss` à votre projet contenant le [reset CSS classique](https://meyerweb.com/eric/tools/css/reset/), sans l'importer dans l'index.
+  - Dans `package.json`, ajouter un script `"serve": "parcel src/index.html"`
+  - Lancer `npm run serve`. Parcel _build_ votre site et l'ouvre dans le navigateur, sur _localhost_.
+- Ajouter un fichier `styles.scss` à votre projet et l'importer à partir du HTML. Parcel s'occupera de la transformation en CSS.
+- Ajouter un fichier `reset.scss` à votre projet contenant le [reset CSS classique](https://meyerweb.com/eric/tools/css/reset/), sans l'importer dans le HTML.
 - Dans le fichier `styles.scss`, utiliser un import SASS pour importer le fichier `reset.scss`.
 
 Dans vos projets, toujours inclure les deux règles CSS suivantes (rappel sur [box-sizing](https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing)) :
@@ -79,71 +68,114 @@ img {
 }
 ```
 
-Propriétés "interdites" (car inutiles) pour cet exercice :
+Les couleurs du tableau périodique ne sont pas normalisées, il est donc possible de les choisir, tant que un type est strictement associé à une couleur. Voici un exemple :
+
+![](src/assets/models/colors.png)
+
+Tout d'abord, utilisez `lightgrey` sur le sélecteur `.el`, pour que les éléments sans type soient en gris à la fin.
+
+Pour le reste des couleurs, plutôt que de le faire à la main, utilisons les fonctionnalités avancées de SASS :
+
+- [Lists](https://sass-lang.com/documentation/values/lists) (pour contenir les types)
+- [Boucle each](https://sass-lang.com/documentation/at-rules/control/each) ou [boucle for](https://sass-lang.com/documentation/at-rules/control/for) (pour itérer dessus)
+- [Couleurs HSL](https://sass-lang.com/documentation/modules#global-functions)(en faisant varier le paramètre hue entre 0 & 360, vous obtiendrez différentes teintes)
+- Les fonctions `$length`, `$nth`, `$index`...
+
+Plusieurs syntaxes sont possibles, mais le résultat doit occuper moins de 10 lignes.
+
+Pour vous aider à démarrer, voici la liste des types au format SCSS :
+
+```
+$types: alkaliMetal lanthanide nobleGas transitionMetal postTransitionMetal alkalineEarthMetal actinide metalloid otherNonMetal;
+```
+
+Une fois ceci fait, `git commit` !
+
+### Étape 3 : Grille mobile
+
+Les propriétés suivantes seront exclues :
 
 - `width`
 - `height`
 - `float`
 - `position`
 - `transform`
+- `display` autre que `display: flex` ou `display: grid`
 
-Votre but est maintenant de reproduire la carte sur un écran de type iPhone5 (320\*568). Il vous appartient de pousser la ressemblance avec l'original au maximum, mais voici un exemple :
+Le tableau ne peut pas être représenté dans sa forme classique sur mobile, mais on peut l'adapter. Sur mobile, on souhaite présenter les éléments "en bloc" :
 
-![](src/assets/models/portrait.png)
+![](src/assets/models/mobile-grid.png)
 
-- En accord avec la convention BEM :
-  - Utilisez quasiment exclusivement des sélecteurs de classe
-  - Évitez au maximum les imbrications. SASS sera utile, mais surtout pour la suite.
-- Solliciter une vérification de ma part, attendre la correction ou continuer si tout se passe bien !
-- `git commit` avant de passer à la suite
+Et voici le comportement responsive souhaité, tant que l'écran n'est pas assez grand pour présenter la mise en forme classique :
 
-### Étape 4 : Mode paysage
+![](src/assets/models/responsive.gif)
 
-On souhaite adapter la carte à un mobile de la même taille en mode paysage (568\*320), autrement dit lorsque la largeur est plus grande que la hauteur.
-Pour ce faire, vous pouvez ajouter une mixin SASS en début de fichier :
+Vous aurez besoin :
 
-```
-@mixin landscape {
-  @media (min-aspect-ratio: 1/1) {
-    @content;
-  }
-}
-```
+- De transformer le `body` en grille
+- De définir la hauteur des `rows`, peu importe combien il y en a
+- De définir les `columns`, variant d'un minimum à un maximum, mais remplissant toujours l'espace horizontal
 
-Grâce à cette mixin, vous pouvez écrire :
+Un peu [d'inspiration](https://codepen.io/chriscoyier/pen/ecff0af160b3fd32cf67841b1eb6cfc3) pour résoudre ce problème !
 
-```
-.selector {
-  color: red;
+N'oubliez pas le `commit` de fin d'étape.
 
-  @include landscape {
-    color: blue;
-  }
-}
-```
+### Étape 4 : Grille classique
 
-Cela permet d'inclure les variations au plus proche du sélecteur de base, au lieu de tout écrire en fin de fichier, ce qui rend le code plus maintenable / lisible.
+Inspirez vous de l'étape 3 du TP Flexbox pour écrire une `mixin` vous permettant de cibler les écrans de taille supérieure à `1400px`.
 
-Voici le nouvel objectif à atteindre :
+_Note : pour ne pas être gêné par la longueur du nom de certains éléments (#rutherfordium), je vous conseille de réduire leur font-size à 10px._
 
-![](src/assets/models/landscape.png)
+Utilisez cette `mixin` pour re-définir sur le `body` les `rows` et les `columns`, dont vous connaissez maintenant le nombre (pour rappel, on ignore les deux lignes du bas sur le tableau classique).
 
-- Solliciter une vérification de ma part ou attendre la correction
-- `git commit` pour finir
+Indice : le mot-clé `repeat` vous sera utile à deux reprises.
 
-### Étape 5 : Rendu
+Comme les éléments ne sont pas encore correctement placés, le résultat va ressembler à ça :
 
-Rendez votre travail en créant une pull request de votre repository de travail vers ce repository.
-Indiquez votre nom dans le titre ou commentaire de la PR.
+<img src="src/assets/models/stack.png" width="600px">
 
-# Ressources
+_Note : vous pouvez-voir où sont les cellules de la grille en survolant les éléments dans l'inspecteur._
 
-- En cas de besoin : [Exercices HTML/CSS](https://htmlcss2018.netlify.com/)
-- [Méthode BEM](http://getbem.com/introduction/)
-- [Pug](https://pugjs.org)
+`git commit`
 
-## Flexbox
+### Étape 5 : Placer les éléments
+
+Rappelez-vous : chaque élément possède des attributs `data-period` et `data-group`, définissant respectivement leur ligne et colonne.
+
+Vous pouvez placer les éléments dans la grille en combinant :
+
+- [Boucle for SASS](https://sass-lang.com/documentation/at-rules/control/for)
+- [Sélecteurs d'attribut](https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_d_attribut)
+- `grid-row` & `grid-column`
+
+10 lignes vous suffiront, à ajouter à nouveau avec `git commit`.
+
+Le résultat attendu :
+
+<img src="src/assets/models/final.png" width="600px">
+
+Félicitations, vous avez complété le TP. Vous pouvez aller plus loin (voir section suivante) ou soumettre votre travail via une pull request.
+
+### Aller plus loin
+
+Le [tableau](https://www.ptable.com/?lang=en) n'est pas complet ! Il manque les **lanthanides** et les **actinides**, qui ont la particularité d'être souvent représentés en dessous du tableau principal.
+
+À vous de trouver comment modifier la grille pour afficher ces éléments. Ils sont déjà présents dans le HTML, il vous suffit de retirer les commentaires. Modifiez le HTML selon vos besoins.
+
+### Aller encore plus loin
+
+Et si l'écran était assez large pour afficher les **lanthanides** et les **actinides** dans le tableau principal, et pas dans des lignes externes ?
+
+C'est ce que vous pouvez voir en cliquant sur le bouton _wide_, en haut à droite du [tableau](https://www.ptable.com/?lang=en).
+
+Ajoutez une media query pour les très grands écrans pour afficher le tableau complet.
+
+![](src/assets/models/wide.png)
+
+## Ressources
 
 - Reférence : [CSS Tricks Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- Outil : [Flexulator, calculateur de flexbox](https://www.flexulator.com/)
-- Entraînement : [Flexbox Froggy](https://flexboxfroggy.com/#fr)
+- Outil : [Grid generator](https://grid.layoutit.com/)
+- Entraînement [Grid Garden](https://cssgridgarden.com/#fr)
+- Exemple : [grid-auto-flow: dense](https://codepen.io/imjuangarcia/pen/bzpYyj)
+- Le futur [Subgrid](https://dev.to/kenbellows/why-we-need-css-subgrid-53mh)
