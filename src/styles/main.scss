@@ -1,0 +1,115 @@
+@import "./reset.scss";
+
+:root {
+  --color-primary: #9acd32;
+  --color-secondary: #fbe900;
+  --color-tertiary: #fb3200;
+  --margin-horiz-s: 5%;
+  --margin-horiz-m: 10%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-color: var(--color-primary);
+  border: 10px solid var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.id {
+  margin: 0% var(--margin-horiz-s);
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+
+  & div:first-child {
+  }
+
+  & div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  &__grade {
+    font-size: 12px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  &__life {
+    color: var(--color-tertiary);
+    font-size: 26px;
+  }
+  &__type {
+    padding-bottom: 3%;
+  }
+}
+
+.img {
+  margin: 0.5% var(--margin-horiz-s);
+  border: 10px solid var(--color-secondary);
+}
+
+.caption {
+  background: rgb(251, 233, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 233, 0, 1) 30%,
+    rgb(44, 44, 44) 100%
+  );
+  margin: 0 var(--margin-horiz-m);
+  padding: 5px 15px;
+}
+
+.spell {
+  margin: var(--margin-horiz-s);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 3;
+
+  em {
+    font-weight: 700;
+  }
+
+  &__dammage {
+    font-size: 40;
+  }
+  &__imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__info {
+    flex-basis: 50%;
+  }
+}
+
+.stats {
+  margin: 0 var(--margin-horiz-s);
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  border-top: solid 3px black;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.details {
+  margin: 2% var(--margin-horiz-s);
+  border: 5px solid (var(--color-secondary));
+  font-style: italic;
+}
