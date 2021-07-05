@@ -1,0 +1,16 @@
+.illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__pokemon {
+    border: 5px solid;
+    border-image: linear-gradient(#c2a60a, #ddda0a) 15;
+  }
+  &__description {
+    margin: 4px;
+    background: radial-gradient(#c2a60a, #ddda0a);
+    padding: 3px 10px;
+  }
+}

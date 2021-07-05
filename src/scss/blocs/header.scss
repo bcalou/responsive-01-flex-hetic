@@ -1,0 +1,17 @@
+.id {
+  display: flex;
+  justify-content: space-between;
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hp {
+    color: red;
+  }
+}
