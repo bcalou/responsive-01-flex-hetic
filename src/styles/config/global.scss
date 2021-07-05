@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh; // je l'ai rajouté car mon border n'allait pas en bas de on viewport
+  background-color: $green;
+  border: 10px solid;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

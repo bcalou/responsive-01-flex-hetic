@@ -1,0 +1,13 @@
+.details {
+  border: 3px solid;
+  border-image-source: $gradient;
+  border-image-slice: 1;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: $margin;
+  margin-right: $margin;
+  font-style: italic;
+  margin-top: 5px;
+  //   margin-bottom: 17px;
+}

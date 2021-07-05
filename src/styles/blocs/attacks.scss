@@ -1,0 +1,29 @@
+.attacks {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 7px;
+  margin-right: 7px;
+  justify-content: center;
+}
+.attacks__cost {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.attacks__desc {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  em {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.power {
+  font-weight: 600;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+}

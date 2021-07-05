@@ -1,0 +1,24 @@
+.id {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: $margin;
+  margin-right: $margin;
+}
+.id__group {
+  display: flex;
+  flex-direction: column;
+}
+.id__rareness {
+  font-size: 10px;
+}
+
+.id__name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.id__life {
+  color: red;
+  font-size: 20px;
+}
