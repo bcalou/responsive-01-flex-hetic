@@ -1,0 +1,37 @@
+.attack {
+    display: flex;
+    margin-top: 30px;
+    @include landscape;
+    .attack__type1, .attack__type2 {
+        display: flex;
+        align-self: center;
+    }
+    .attack__type1 {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .attack__type2 {
+        margin-right: 10px;
+    }
+    .attack__infos {
+        display: flex;
+        flex-wrap: wrap;
+
+        .attack__infos--name {
+            font-weight: bold;
+        }
+        .attack__infos--description {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    .attack__damage {
+        font-weight: bold;
+        font-size: 21px;
+        display: flex;
+        align-self: center;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+}

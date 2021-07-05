@@ -1,0 +1,31 @@
+.skill {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-top: solid 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 5px;
+    color: black;
+    @include landscape {
+        color: red;
+    }
+
+    .skill__less {
+        display: flex;
+        flex-direction: column;
+        .skill__less--type {
+            display: flex;
+            align-self: center;
+            
+        }
+    }
+    .skill__critick {
+        display: flex;
+        flex-direction: column;
+        .skill__critick--type {
+            display: flex;
+            align-self: center;
+        }
+    }
+}
