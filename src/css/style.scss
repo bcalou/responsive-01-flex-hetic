@@ -1,0 +1,158 @@
+@import "reset.scss";
+
+/* variables */
+$red: red;
+$gradient: linear-gradient(-90deg, #5e6921, #eefa04)10;
+$gradient-radial: radial-gradient(#eefa04, #5e6921);
+$black: black;
+
+* {
+  box-sizing: border-box;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  border: 15px solid ;
+  min-height: 100vh;
+  border-image: $gradient;
+  background-color: yellowgreen;
+}
+
+.identity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.identity__container--left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+.identity__name{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.identity__container--right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-top: 16px;;
+}
+
+.identity__hp{
+  color: $red;
+  padding-top: 3px;
+  font-size: 20px;
+}
+
+.identity__type{
+  padding-left: 5px;
+}
+
+.imageLegend{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageLegend__Bulbizare{
+  border: 5px solid;
+  border-image: $gradient;
+  justify-content: center ;
+  max-width: 90%;
+  margin-bottom: 5px;
+}
+
+.imageLegend__description{
+  padding: 5px;
+  background: $gradient-radial;
+}
+
+.attack{
+  display: flex;
+  align-items: center;
+  margin-top: 14%;
+  margin-bottom: 60px;
+}
+
+.attack__image{
+  min-width: 25px;
+  min-height: 23px;
+}
+
+.attack__description--name{
+  font-size: 20px;
+  align-self: flex-start;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.attack__description{
+  align-self: center;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  padding-top: 5px;
+}
+
+.attack__damage{
+  margin-left: 20px;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.line{
+  border: 2px solid $black;
+  margin-top: 3%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.resilience__stats--container{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resilience__name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.resilience__border{
+  border: 3px solid;
+  border-image: $gradient;
+  flex-direction: row;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+
+.resilience__description{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  flex-wrap: wrap;
+}
+
+.resilience__lvl{
+  align-self: flex-end;
+}
