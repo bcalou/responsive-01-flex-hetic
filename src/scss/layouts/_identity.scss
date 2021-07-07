@@ -1,0 +1,35 @@
+.identity {
+  display: flex;
+  justify-content: space-between;
+
+  @include landscape {
+    margin-top: 3%;
+
+  }
+
+
+  &__evolution {
+    font-size: 10px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__life {
+    font-size: 18px;
+    color: red;
+  }
+
+  .onlyLandscape {
+    display: none;
+
+    @include landscape {
+      display: block;
+    }
+
+
+  }
+
+}
