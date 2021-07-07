@@ -1,0 +1,22 @@
+.container {
+  border-width: 10px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #ccc901 0%, #5c4e01 100%);
+  border-image-slice: 1;
+  padding: 4.5%;
+
+  @include landscape {
+    display: flex;
+    padding: 4%;
+
+    &__right {
+      flex-shrink: 3;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-shrink: 2;
+    }
+  }
+}
