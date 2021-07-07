@@ -1,0 +1,26 @@
+/************ COLOR ************/
+
+$background-color: #9ace33;
+$border-color1: #ffec01;
+$border-color2: #79751f;
+$black: black;
+$mix-border-color: linear-gradient( to right, $border-color1 0%, $border-color2 100%);
+
+
+/************ DISPLAY ************/
+
+@mixin flex ($direction: row, $justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+
+

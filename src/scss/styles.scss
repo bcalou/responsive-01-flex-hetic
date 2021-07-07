@@ -1,0 +1,41 @@
+
+/************ IMPORT GLOBAL ************/
+
+@import "global/reset.scss";
+@import "global/variables.scss";
+
+/************ IMPORT PAGES ************/
+
+@import "pages/_header.scss";
+@import "pages/_appearence.scss";
+@import "pages/_skill.scss";
+@import "pages/_types.scss";
+@import "pages/_pokedex.scss";
+
+
+
+/************ CODES START HERE ************/
+
+
+body {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  background-color: $background-color;
+  border: 12px solid;
+  border-image-source: $mix-border-color;
+  border-image-slice: 1;
+
+  @include landscape {
+    @include flex;
+    flex-wrap: wrap;
+  }
+
+}
+

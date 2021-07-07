@@ -1,0 +1,28 @@
+.appearence {
+  @include flex(column, center, center);
+  padding: 0 20px;
+
+  &__image {
+    margin: 4px 0;
+    border: 4px solid;
+    border-image-source: $mix-border-color;
+    border-image-slice: 1;
+
+    @include landscape {
+      order: 0;
+      align-self: flex-start;
+    }
+  }
+
+  &__details {
+    background: linear-gradient( to right, $border-color1 0%, $border-color2 100%);
+
+
+    @include landscape {
+      order: 0;
+    }
+  }
+
+ 
+
+}
