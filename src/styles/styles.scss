@@ -1,0 +1,150 @@
+@import "./reset.scss";
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+.selector {
+  color: red;
+
+  @include landscape {
+    color: blue;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.all__items {
+  background: rgb(125, 184, 37);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  &__pv {
+    display: flex;
+    align-items: center;
+  
+    p {
+      display: flex;
+      font-size: 20px;
+      color: red;
+      align-items: flex-end;
+    }
+  }
+}
+
+
+
+b {
+  font-weight: bold;
+  font-size: 16px;
+}
+.bulbizarre {
+  display: flex;
+  flex-direction: column;
+ 
+  p {
+    background: linear-gradient(70deg, yellow, #8a791d);
+    padding: 3px;
+    margin: 5px 22px;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+  }
+}
+
+.property {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__text {
+    padding: 61px 10px;
+    font-size: 14px;
+  }
+  &__image {
+    flex-shrink: 0;
+  }
+    &__number{
+      font-size: 5px;
+    }
+}
+
+
+
+hr {
+  border: none;
+  border-top: 2px solid black;
+}
+
+
+.footer {
+  padding: 4px;
+  border-top: black 2px solid;
+  &__power {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p {
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  &__level {
+    background: rgb(125, 184, 37);
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px;
+  
+  }
+}
+
+.border{
+  background: linear-gradient(70deg, yellow, #8a791d);
+  padding: 4px;
+ 
+  &__buttom{
+    background: linear-gradient(70deg, yellow, #8a791d);
+    padding: 2px;
+  }
+    &__all{
+      background: linear-gradient(70deg, yellow, #8a791d);
+      padding: 10px;
+    }
+  
+}
+
+@media (min-width: 568px) and (min-height:320px){
+  .flex1{
+    display: flex;
+   
+
+  }
+}
