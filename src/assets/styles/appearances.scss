@@ -1,0 +1,80 @@
+.appearence__pokemon {
+  display: flex;
+  justify-content: center;
+}
+
+.appearence__border {
+  max-width: 100%;
+  border: 8px solid;
+  border-image: linear-gradient(35.11deg, #fbea4f -23.25%, #7a752e 133.76%) 12;
+}
+
+.appearence__infos {
+  margin-top: 8px;
+  font-size: 13px;
+  text-align: center;
+
+  background: rgba(252, 235, 0, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(252, 235, 0, 1) 0%,
+    rgba(252, 235, 0, 1) 22%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(169, 160, 17, 1) 73%,
+    rgba(122, 118, 30, 1) 92%,
+    rgba(122, 118, 30, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(252, 235, 0, 1)),
+    color-stop(22%, rgba(252, 235, 0, 1)),
+    color-stop(58%, rgba(185, 174, 13, 1)),
+    color-stop(58%, rgba(185, 174, 13, 1)),
+    color-stop(73%, rgba(169, 160, 17, 1)),
+    color-stop(92%, rgba(122, 118, 30, 1)),
+    color-stop(100%, rgba(122, 118, 30, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(252, 235, 0, 1) 0%,
+    rgba(252, 235, 0, 1) 22%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(169, 160, 17, 1) 73%,
+    rgba(122, 118, 30, 1) 92%,
+    rgba(122, 118, 30, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(252, 235, 0, 1) 0%,
+    rgba(252, 235, 0, 1) 22%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(169, 160, 17, 1) 73%,
+    rgba(122, 118, 30, 1) 92%,
+    rgba(122, 118, 30, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(252, 235, 0, 1) 0%,
+    rgba(252, 235, 0, 1) 22%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(169, 160, 17, 1) 73%,
+    rgba(122, 118, 30, 1) 92%,
+    rgba(122, 118, 30, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(252, 235, 0, 1) 0%,
+    rgba(252, 235, 0, 1) 22%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(185, 174, 13, 1) 58%,
+    rgba(169, 160, 17, 1) 73%,
+    rgba(122, 118, 30, 1) 92%,
+    rgba(122, 118, 30, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceb00', endColorstr='#7a761e', GradientType=1 );
+}

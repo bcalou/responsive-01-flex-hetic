@@ -1,0 +1,21 @@
+@import "reset.scss";
+@import "../src/assets/styles/identity.scss";
+@import "../src/assets/styles/appearances.scss";
+@import "../src/assets/styles/skill.scss";
+@import "../src/assets/styles/capacity.scss";
+@import "../src/assets/styles/pokedex.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border: 12px solid;
+  border-image: linear-gradient(35.11deg, #fbea4f -23.25%, #7a752e 133.76%) 12;
+  background-color: #9acd32;
+  height: 100vh;
+}
+
+main {
+  padding: 5px 10px;
+}
